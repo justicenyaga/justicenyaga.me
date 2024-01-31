@@ -102,7 +102,7 @@
     "keywords": ["wsl2","ubuntu","ubuntu-desktop","vsxsrv"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "261"
+    "wordCount": "281"
   }]
   </script>
 
@@ -557,7 +557,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>261 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>281 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -782,6 +782,8 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mv /etc/acpi/events /etc/acpi/events.bak
 </span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.service
 </span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.path
+</span></span></code></pre></div><p>Run the following command to reconfigure the unpacked packages that were skipped on the previous step.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dpkg --configure -a
 </span></span></code></pre></div><h2 class="relative group">Step 2: Set Up Environment Variables 
     <div id="step-2-set-up-environment-variables" class="anchor"></div>
     
