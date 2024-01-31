@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vcxsrv on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/vcxsrv/</link>
+    <description>Recent content in vcxsrv on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Wed, 31 Jan 2024 02:31:15 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/vcxsrv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Ubuntu Desktop Environment on Wsl2</title>
+      <link>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</link>
+      <pubDate>Wed, 31 Jan 2024 02:31:15 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</guid>
+      <description>A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

@@ -9,6 +9,17 @@
     <copyright>© 2024 Justice Nyaga</copyright>
     <lastBuildDate>Wed, 31 Jan 2024 02:31:15 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Me</title>
+      <link>https://justicenyaga.me/about/</link>
+      <pubDate>Thu, 01 Feb 2024 00:01:40 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/about/</guid>
+      <description>I&amp;rsquo;m a fullstack software developer based in Kenya. I&amp;rsquo;m proficient in Python, Django, Javascript, Node.js, React, React Native and Golang.
+Dive into my blog for concise insights and hands-on experiences, where we&amp;rsquo;ll unravel the intricacies of software engineering together.</description>
+      
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>https://justicenyaga.me/projects/</link>
       <pubDate>Wed, 31 Jan 2024 02:49:46 +0300</pubDate>
