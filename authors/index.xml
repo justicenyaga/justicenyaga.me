@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Justice Nyaga</title>
-    <link>http://justicenyaga.me/authors/</link>
+    <link>https://justicenyaga.me/authors/</link>
     <description>Recent content in Authors on Justice Nyaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <atom:link href="http://justicenyaga.me/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://justicenyaga.me/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
