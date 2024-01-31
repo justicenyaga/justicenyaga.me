@@ -3,46 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://justicenyaga.me/projects/</loc>
+    <loc>http://justicenyaga.me/projects/</loc>
     <lastmod>2024-01-31T02:49:46+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/</loc>
+    <loc>http://justicenyaga.me/</loc>
     <lastmod>2024-01-31T02:31:15+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/posts/</loc>
+    <loc>http://justicenyaga.me/posts/</loc>
     <lastmod>2024-01-31T02:31:15+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</loc>
+    <loc>http://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</loc>
     <lastmod>2024-01-31T02:31:15+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/authors/</loc>
+    <loc>http://justicenyaga.me/authors/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/categories/</loc>
+    <loc>http://justicenyaga.me/categories/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/series/</loc>
+    <loc>http://justicenyaga.me/series/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/tags/</loc>
+    <loc>http://justicenyaga.me/tags/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
