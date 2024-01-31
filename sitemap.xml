@@ -1,1 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://justicenyaga.me/projects/</loc><lastmod>2024-01-31T02:49:46+03:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/</loc><lastmod>2024-01-31T02:31:15+03:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/posts/</loc><lastmod>2024-01-31T02:31:15+03:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</loc><lastmod>2024-01-31T02:31:15+03:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/authors/</loc><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/categories/</loc><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/series/</loc><changefreq>daily</changefreq><priority>0.5</priority></url><url><loc>https://justicenyaga.me/tags/</loc><changefreq>daily</changefreq><priority>0.5</priority></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://justicenyaga.me/projects/</loc>
+    <lastmod>2024-01-31T02:49:46+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/</loc>
+    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/posts/</loc>
+    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</loc>
+    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/authors/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
