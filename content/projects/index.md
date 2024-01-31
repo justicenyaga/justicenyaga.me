@@ -17,9 +17,9 @@ layoutBackgroundHeaderSpace = false
 #groupByYear  = false
 +++
 
-I always try to find time to work and learn something new. Usually, most of these _pet-projects_
-don't see the light of day. They are, however, great opportunities to try something in the real
-world and learn from it.
+Step into the realm of my digital playground, a space where curiosity meets code and innovation takes flight.
+Within these project walls, each endeavor is a crafted narrative, a testament to my commitment to perpetual
+learning and creative exploration.
 
 <table>
     <thead>
@@ -31,23 +31,23 @@ world and learn from it.
         </tr>
     </thead>
     <tbody>
-         <!-- <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish_logo.png"/></td>
-            <td>Blowfish</td>
-            <td>A powerful, lightweight theme for Hugo built with Tailwind CSS.</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish">github</a></td>
+         <tr>
+            <td><img class="customEntitityAlbum" style="background-color:transparent" src="proshop.png"/></td>
+            <td>Proshop</td>
+            <td>A fake shopping app built on React. The app utilizes <a target="_blank" href="https://proshop-eshop.azurewebsites.net/">proshop_api</a> (Django REST API)</td>
+            <td><a target="_blank" href="https://proshop-eshop.web.app/">site</a></br><a target="_blank" href="https://github.com/justicenyaga/proshop">github</a></td>
         </tr>
          <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="blowfish-tools.png"/></td>
-            <td>Blowfish-Tools</td>
-            <td>CLI to initialize a Blowfish project</td>
-            <td><a target="_blank" href="https://blowfish.page">site</a></br><a target="_blank" href="https://github.com/nunocoracao/blowfish-tools">github</a></br><a target="_blank" href="https://www.npmjs.com/package/blowfish-tools">NPM</a></td>
+            <td><img class="customEntitityAlbum" style="background-color:transparent" src="proshop-api.png"/></td>
+            <td>Proshop-Api</td>
+            <td>An e-commerce REST API crafted with Django and Django Rest Framework, incorporating diverse shopping app features.</td>
+            <td><a target="_blank" href="https://proshop-eshop.azurewebsites.net/">site</a></br><a target="_blank" href="https://github.com/justicenyaga/proshop_api">github</a></td>
         </tr>
         <tr>
-            <td><img class="customEntitityAlbum" style="background-color:transparent" src="wormhole-logo-square.png"/></td>
-            <td>Wormhole</td>
-            <td>A wormhole into the universe - web feed for deep space photography</td>
-            <td><a target="_blank" href="https://wormhole.photos">site</a></br><a target="_blank" href="https://github.com/wormhole-photos">github</a></td>
-        </tr> -->
+            <td><img class="customEntitityAlbum" style="background-color:transparent" src="done-with-it.png"/></td>
+            <td>DoneWithIt</td>
+            <td>A faux native app marketplace designed for selling items you no longer need.</td>
+            <td><a target="_blank" href="https://github.com/justicenyaga/done_with_it">github</a></td>
+        </tr>
     </tbody>
 </table>
