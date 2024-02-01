@@ -134,3 +134,15 @@ Before diving into the configuration, ensure you have the following prerequisite
    ```
 
 That's it! Your Neovim environment is now configured and ready for use. Customize further based on your preferences, and happy coding!
+
+<br/>
+
+## Recommendations
+
+Congratulations on setting up your Neovim environment! If you're looking to further enhance your terminal experience, I highly recommend checking out my tmux configuration post linked below. Tmux is a powerful terminal multiplexer that allows you to organize and manage multiple terminal sessions effortlessly.
+
+{{< article link="/posts/202401-my-tmux-configuration/" >}}
+
+Discover how to optimize your workflow, split your terminal into panes, and efficiently navigate through different sessions. Tmux can significantly boost your productivity and provide a seamless terminal experience alongside your Neovim setup.
+
+Happy coding, and may your terminal sessions be ever productive!
