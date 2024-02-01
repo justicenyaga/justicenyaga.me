@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tpm on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/tpm/</link>
+    <description>Recent content in tpm on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Sat, 20 Jan 2024 14:47:38 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/tpm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Tmux Configuration: Elevating Your Terminal Experience</title>
+      <link>https://justicenyaga.me/posts/202401-my-tmux-configuration/</link>
+      <pubDate>Sat, 20 Jan 2024 14:47:38 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202401-my-tmux-configuration/</guid>
+      <description>Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&amp;rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

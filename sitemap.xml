@@ -63,6 +63,54 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://justicenyaga.me/posts/202401-my-tmux-configuration/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/neovim/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/tmux/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/tmux-continuum/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/tmux-resurrect/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/tmux-themepack/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/tpm/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/vim-tmux-navigator/</loc>
+    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://justicenyaga.me/tags/lua/</loc>
     <lastmod>2024-01-16T13:32:33+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -70,12 +118,6 @@
   </url>
   <url>
     <loc>https://justicenyaga.me/posts/202401-my-neovim-configuration/</loc>
-    <lastmod>2024-01-16T13:32:33+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://justicenyaga.me/tags/neovim/</loc>
     <lastmod>2024-01-16T13:32:33+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

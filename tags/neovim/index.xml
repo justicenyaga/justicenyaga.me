@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Tue, 16 Jan 2024 13:32:33 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jan 2024 14:47:38 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Tmux Configuration: Elevating Your Terminal Experience</title>
+      <link>https://justicenyaga.me/posts/202401-my-tmux-configuration/</link>
+      <pubDate>Sat, 20 Jan 2024 14:47:38 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202401-my-tmux-configuration/</guid>
+      <description>Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&amp;rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" />
+    </item>
+    
     <item>
       <title>My Neovim Configuration Setup Guide</title>
       <link>https://justicenyaga.me/posts/202401-my-neovim-configuration/</link>

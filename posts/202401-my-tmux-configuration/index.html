@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Setting up Ubuntu Desktop Environment on WSL2 &middot; Justice Nyaga</title>
-  <meta name="title" content="Setting up Ubuntu Desktop Environment on WSL2 &middot; Justice Nyaga" />
+  <title>My Tmux Configuration: Elevating Your Terminal Experience &middot; Justice Nyaga</title>
+  <meta name="title" content="My Tmux Configuration: Elevating Your Terminal Experience &middot; Justice Nyaga" />
   
-  <meta name="description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough." />
-  <meta name="keywords" content="wsl2, ubuntu, ubuntu-desktop, vcxsrv, " />
+  <meta name="description" content="Justice Nyaga" />
+  <meta name="keywords" content="tmux, tpm, vim-tmux-navigator, tmux-themepack, tmux-resurrect, tmux-continuum, neovim, " />
   
   
-  <link rel="canonical" href="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/" />
+  <link rel="canonical" href="https://justicenyaga.me/posts/202401-my-tmux-configuration/" />
   
   
   
@@ -65,17 +65,17 @@
   
   
   
-  <meta property="og:title" content="Setting up Ubuntu Desktop Environment on WSL2" />
-<meta property="og:description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough." />
+  <meta property="og:title" content="My Tmux Configuration: Elevating Your Terminal Experience" />
+<meta property="og:description" content="Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/" /><meta property="og:image" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-31T02:31:15+03:00" />
-<meta property="article:modified_time" content="2024-01-31T02:31:15+03:00" />
+<meta property="og:url" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/" /><meta property="og:image" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-20T14:47:38+03:00" />
+<meta property="article:modified_time" content="2024-01-20T14:47:38+03:00" />
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg" /><meta name="twitter:title" content="Setting up Ubuntu Desktop Environment on WSL2"/>
-<meta name="twitter:description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough."/>
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" /><meta name="twitter:title" content="My Tmux Configuration: Elevating Your Terminal Experience"/>
+<meta name="twitter:description" content="Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration."/>
 
   
   <script type="application/ld+json">
@@ -83,26 +83,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Setting up Ubuntu Desktop Environment on WSL2",
-    "headline": "Setting up Ubuntu Desktop Environment on WSL2",
-    "description": "A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.",
-    "abstract": "A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.",
+    "name": "My Tmux Configuration: Elevating Your Terminal Experience",
+    "headline": "My Tmux Configuration: Elevating Your Terminal Experience",
+    
+    "abstract": "Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we\u0026rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.",
     "inLanguage": "en",
-    "url" : "https:\/\/justicenyaga.me\/posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/",
+    "url" : "https:\/\/justicenyaga.me\/posts\/202401-my-tmux-configuration\/",
     "author" : {
       "@type": "Person",
       "name": "Justice Nyaga"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-01-31T02:31:15\u002b03:00",
-    "datePublished": "2024-01-31T02:31:15\u002b03:00",
+    "dateCreated": "2024-01-20T14:47:38\u002b03:00",
+    "datePublished": "2024-01-20T14:47:38\u002b03:00",
     
-    "dateModified": "2024-01-31T02:31:15\u002b03:00",
+    "dateModified": "2024-01-20T14:47:38\u002b03:00",
     
-    "keywords": ["wsl2","ubuntu","ubuntu-desktop","vcxsrv"],
+    "keywords": ["tmux","tpm","vim-tmux-navigator","tmux-themepack","tmux-resurrect","tmux-continuum","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "300"
+    "wordCount": "721"
   }]
   </script>
 
@@ -449,7 +449,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg);">
+    style="background-image:url(/posts/202401-my-tmux-configuration/featured.jpg);">
     
 
 
@@ -502,8 +502,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/"
-      >Setting up Ubuntu Desktop Environment on WSL2</a
+      href="/posts/202401-my-tmux-configuration/"
+      >My Tmux Configuration: Elevating Your Terminal Experience</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -512,7 +512,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Setting up Ubuntu Desktop Environment on WSL2
+      My Tmux Configuration: Elevating Your Terminal Experience
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -557,7 +557,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>300 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-01-20 14:47:38 &#43;0300 &#43;0300">20-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>721 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
   
 
   
@@ -581,34 +581,58 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/wsl2/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    wsl2
+    tmux
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ubuntu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tpm/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ubuntu
+    tpm
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ubuntu-desktop/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vim-tmux-navigator/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ubuntu-desktop
+    vim-tmux-navigator
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vcxsrv/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-themepack/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    vcxsrv
+    tmux-themepack
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-resurrect/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    tmux-resurrect
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-continuum/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    tmux-continuum
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/neovim/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    neovim
   </span>
 </span>
   </span>
@@ -654,15 +678,15 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#step-1-install-ubuntu-desktop-and-mesa-utils">Step 1: Install Ubuntu Desktop and Mesa-utils</a>
+    <li><a href="#configuration-setup-step">Configuration Setup Step</a></li>
+    <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#troubleshooting-for-transport-endpoint-is-not-connected-error">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error</a></li>
+        <li><a href="#keybinds-explanation">Keybinds Explanation</a></li>
+        <li><a href="#copy-mode-and-selection">Copy Mode and Selection</a></li>
+        <li><a href="#neovim-integration">Neovim Integration</a></li>
+        <li><a href="#tmux-plugins">Tmux Plugins</a></li>
       </ul>
     </li>
-    <li><a href="#step-2-set-up-environment-variables">Step 2: Set Up Environment Variables</a></li>
-    <li><a href="#step-3-install-vcxsrv-on-windows">Step 3: Install VcXsrv on Windows</a></li>
-    <li><a href="#step-4-verify-installation-with-xeyes">Step 4: Verify Installation with xeyes</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
   </div>
@@ -677,15 +701,15 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#step-1-install-ubuntu-desktop-and-mesa-utils">Step 1: Install Ubuntu Desktop and Mesa-utils</a>
+    <li><a href="#configuration-setup-step">Configuration Setup Step</a></li>
+    <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#troubleshooting-for-transport-endpoint-is-not-connected-error">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error</a></li>
+        <li><a href="#keybinds-explanation">Keybinds Explanation</a></li>
+        <li><a href="#copy-mode-and-selection">Copy Mode and Selection</a></li>
+        <li><a href="#neovim-integration">Neovim Integration</a></li>
+        <li><a href="#tmux-plugins">Tmux Plugins</a></li>
       </ul>
     </li>
-    <li><a href="#step-2-set-up-environment-variables">Step 2: Set Up Environment Variables</a></li>
-    <li><a href="#step-3-install-vcxsrv-on-windows">Step 3: Install VcXsrv on Windows</a></li>
-    <li><a href="#step-4-verify-installation-with-xeyes">Step 4: Verify Installation with xeyes</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
   </div>
@@ -750,107 +774,299 @@
     </span>        
     
 </h2>
-<p>Welcome to this comprehensive guide on installing and configuring Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.</p>
-<p>This post assumes that you have already installed Ubuntu within WSL2. If not, please do install it before proceeding.</p>
-<h2 class="relative group">Step 1: Install Ubuntu Desktop and Mesa-utils 
-    <div id="step-1-install-ubuntu-desktop-and-mesa-utils" class="anchor"></div>
+<p>Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</p>
+<p>Designed for efficient integration with Neovim, this carefully crafted configuration aims to streamline your terminal workflow. It provides a seamless and productive environment for both Tmux and Neovim enthusiasts. Whether you&rsquo;re a seasoned user or just diving into the world of terminal customization, this guide will help you unlock the full potential of Tmux in conjunction with Neovim. Let&rsquo;s dive in!</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/posts/202401-my-tmux-configuration/tmux.png"
+        alt="MyTmux"
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<h2 class="relative group">Configuration Setup Step 
+    <div id="configuration-setup-step" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-1-install-ubuntu-desktop-and-mesa-utils" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#configuration-setup-step" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Begin by installing the Ubuntu Desktop and mesa-utils packages:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
-</span></span><span class="line"><span class="cl">sudo apt install ubuntu-desktop mesa-utils
-</span></span></code></pre></div><h3 class="relative group">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error 
-    <div id="troubleshooting-for-transport-endpoint-is-not-connected-error" class="anchor"></div>
+<p>Follow these steps to set up and enhance your Tmux experience:</p>
+<ol>
+<li>
+<p><strong>Install Tmux:</strong></p>
+<p>If Tmux is not already installed on your system, you can install it using your package manager. For example, on Debian-based systems, run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install tmux
+</span></span></code></pre></div><p>Verify the installation by checking the Tmux version:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux -V
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Retrieve the Configuration File:</strong></p>
+<p>Download the Tmux configuration file and seamlessly integrate it into your home directory using the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://raw.githubusercontent.com/justicenyaga/my_nvim_config/main/.tmux.conf -O ~/.tmux.conf
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Install Tmux Plugin Manager (tpm):</strong></p>
+<p>Clone the Tmux Plugin Manager repository to your local machine:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Create a Tmux session:</strong></p>
+<p>Start a new Tmux session with a specific name (replace <code>SessionName</code> with your desired name):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux new -s SessionName
+</span></span></code></pre></div><p>This should create a session and attach you to the created session.</p>
+</li>
+<li>
+<p><strong>Reload the Tmux configuration file:</strong></p>
+<p>Press your Tmux prefix key (the configuration file uses <code>Ctrl + N</code>) followed by <code>r</code> to reload the configuration file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-n&gt;r
+</span></span></code></pre></div>
+  
+  
+  
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><p>On the configuration file, replace <code>C-n</code> with a prefered key bind to override the default prefix key bind, on the following lines:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">set</span> -g prefix C-n
+</span></span><span class="line"><span class="cl">bind-key C-n send-prefix
+</span></span></code></pre></div></span>
+</div>
+
+</li>
+<li>
+<p><strong>Install Tmux plugins:</strong></p>
+<p>While inside a Tmux session, install plugins by pressing your Tmux prefix key followed by <code>I</code> (uppercase):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-n&gt;I
+</span></span></code></pre></div>
+  
+  
+  
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
+    
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
+
+    
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    >Again, replace <code>&lt;C-n&gt;</code> with your configured prefix key bind.</span>
+</div>
+
+</li>
+</ol>
+<p>That&rsquo;s it! Your Tmux environment is now configured with the specified settings and plugins. Customize further based on your preferences.</p>
+<h2 class="relative group">Usage 
+    <div id="usage" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#troubleshooting-for-transport-endpoint-is-not-connected-error" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#usage" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<h3 class="relative group">Keybinds Explanation 
+    <div id="keybinds-explanation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#keybinds-explanation" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>If you encounter the error &ldquo;Transport endpoint is not connected&rdquo; during the setup, perform the following troubleshooting steps:</p>
-<ol>
-<li>Press <code>Ctrl + C</code> to skip packages with the error.</li>
-<li>Run the following commands:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mv /etc/acpi/events /etc/acpi/events.bak
-</span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.service
-</span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.path
-</span></span></code></pre></div><p>Run the following command to reconfigure the unpacked packages that were skipped on the previous step.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dpkg --configure -a
-</span></span></code></pre></div><h2 class="relative group">Step 2: Set Up Environment Variables 
-    <div id="step-2-set-up-environment-variables" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-2-set-up-environment-variables" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Configure environment variables for persistent settings. It&rsquo;s recommended to add these to your <code>.bashrc</code> or <code>.zshrc</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>grep nameserver /etc/resolv.conf <span class="p">|</span> sed <span class="s1">&#39;s/nameserver //&#39;</span><span class="k">)</span><span class="s2">:0&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LIBGL_ALWAYS_INDIRECT</span><span class="o">=</span><span class="m">0</span>
-</span></span></code></pre></div><h2 class="relative group">Step 3: Install VcXsrv on Windows 
-    <div id="step-3-install-vcxsrv-on-windows" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-3-install-vcxsrv-on-windows" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>On the Windows side, install <a href="https://sourceforge.net/projects/vcxsrv/"   target="_blank">
-    VcXsrv</a>. After installation, choose the following setup options:</p>
 <ul>
 <li>
-<p>Multiple windows</p>
+<p><strong>Prefix Key: <code>C-n</code></strong></p>
+<ul>
+<li>The prefix key is set to <code>C-n</code> for easier accessibility and to avoid conflicts with the default <code>C-b</code>. It&rsquo;s a comfortable and ergonomic choice.</li>
+</ul>
 </li>
 <li>
-<p>Display number: 0</p>
+<p><strong>Vertical Split: <code>prefix + |</code></strong></p>
+<ul>
+<li>The keybind for vertical split is set to <code>prefix + |</code> for better visualization. The vertical bar (<code>|</code>) visually represents a vertical split, making it intuitive and memorable.</li>
+</ul>
 </li>
 <li>
-<p>Start no client</p>
+<p><strong>Horizontal Split: <code>prefix + -</code></strong></p>
+<ul>
+<li>Horizontal split is initiated with <code>prefix + -</code>, providing a straightforward and balanced key combination for creating horizontal panes.</li>
+</ul>
 </li>
 <li>
-<p>Check everything on Extra settings, that is, clipboard, primary selection, Native opengl, Disable access control</p>
-<p>You can save the configuration for future use</p>
+<p><strong>Reload Configuration: <code>prefix + r</code></strong></p>
+<ul>
+<li>Reloading the configuration is done with <code>prefix + r</code>, making it quick and easy to apply any changes made to the configuration file.</li>
+</ul>
 </li>
 <li>
-<p>Click finish to start the server</p>
+<p><strong>Resize Panes: <code>prefix + j/k/l/h</code></strong></p>
+<ul>
+<li>Resizing panes is streamlined with <code>prefix + j/k/l/h</code> for downward, upward, right, and left respectively. The mnemonic association with arrow keys makes it intuitive.</li>
+</ul>
+</li>
+<li>
+<p><strong>Maximize Pane: <code>prefix + m</code></strong></p>
+<ul>
+<li>The keybind <code>prefix + m</code> maximizes the active pane, providing a convenient way to focus on one task at a time.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enable Mouse Mode: <code>prefix + M</code></strong></p>
+<ul>
+<li>Mouse mode is toggled with <code>prefix + M</code>, allowing for easy resizing and scrolling using the mouse.</li>
+</ul>
 </li>
 </ul>
-<h2 class="relative group">Step 4: Verify Installation with xeyes 
-    <div id="step-4-verify-installation-with-xeyes" class="anchor"></div>
+<h3 class="relative group">Copy Mode and Selection 
+    <div id="copy-mode-and-selection" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-4-verify-installation-with-xeyes" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#copy-mode-and-selection" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
-<p>Ensure VcXsrv is running and test the setup by opening xeyes app or any other installed desktop app such as firefox on your WSL terminal:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xeyes
-</span></span></code></pre></div><h2 class="relative group">Conclusion 
-    <div id="conclusion" class="anchor"></div>
+</h3>
+<ul>
+<li>
+<p><strong>Enter Copy Mode: <code>prefix + [</code></strong></p>
+<ul>
+<li>Copy mode is entered with <code>prefix + [</code>, initiating vi-style selection for efficient copying of text.</li>
+</ul>
+</li>
+<li>
+<p><strong>Start Selection: <code>v</code></strong></p>
+<ul>
+<li>Text selection starts with the <code>v</code> key in copy mode, following the vi-style conventions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Copy Selection: <code>y</code></strong></p>
+<ul>
+<li>The selected text is copied using the <code>y</code> key in copy mode, mirroring vi-style copy operations.</li>
+</ul>
+</li>
+<li>
+<p><strong>No Exit on Mouse Drag:</strong></p>
+<ul>
+<li>Dragging with the mouse in copy mode (<code>MouseDragEnd1Pane</code>) won&rsquo;t exit copy mode, providing a seamless experience.</li>
+</ul>
+</li>
+</ul>
+<h3 class="relative group">Neovim Integration 
+    <div id="neovim-integration" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#neovim-integration" aria-label="Anchor">#</a>
     </span>        
     
-</h2>
-<p>The successful opening of the xeyes app indicates that you have seamlessly set up the Ubuntu Desktop environment on WSL2. Happy coding!</p>
+</h3>
+<ul>
+<li>
+<p><strong>No Delay for Exiting Insert Mode:</strong></p>
+<ul>
+<li>The delay for exiting insert mode with <code>ESC</code> in Neovim is removed (<code>escape-time 10</code>), ensuring a smooth transition.</li>
+</ul>
+</li>
+</ul>
+<h3 class="relative group">Tmux Plugins 
+    <div id="tmux-plugins" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tmux-plugins" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>
+<p><strong>Tmux Plugin Manager (tpm):</strong></p>
+<ul>
+<li>The Tmux Plugin Manager is initialized at the bottom of the configuration, allowing easy management of plugins.</li>
+</ul>
+</li>
+<li>
+<p><strong>List of Plugins:</strong></p>
+<ul>
+<li>
+<ul>
+<li><a href="https://github.com/christoomey/vim-tmux-navigator"   target="_blank">
+    vim-tmux-navigator</a>: Navigate seamlessly between Vim and Tmux panes.</li>
+<li><a href="https://github.com/jimeh/tmux-themepack"   target="_blank">
+    tmux-themepack</a>: A collection of themes for Tmux.</li>
+<li><a href="https://github.com/tmux-plugins/tmux-resurrect"   target="_blank">
+    tmux-resurrect</a>: Persist Tmux sessions after computer restart.</li>
+<li><a href="https://github.com/tmux-plugins/tmux-continuum"   target="_blank">
+    tmux-continuum</a>: Automatically save sessions every 15 minutes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Theme: Powerline Cyan</strong></p>
+<ul>
+<li>The chosen theme from tmux-themepack is <code>powerline/default/cyan</code> for a visually appealing and distinctive look.</li>
+</ul>
+</li>
+</ul>
+<p>Remember to customize these keybinds further based on your preferences and workflow!</p>
 
         </div>
                 
@@ -863,8 +1079,8 @@
      
     
      <script>
-        var oid = "views_posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/index.md"
-        var oid_likes = "likes_posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/index.md"
+        var oid = "views_posts\/202401-my-tmux-configuration\/index.md"
+        var oid_likes = "likes_posts\/202401-my-tmux-configuration\/index.md"
       </script>
       
       
@@ -887,18 +1103,40 @@
       <div class="flex justify-between pt-3">
         <span>
           
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/202401-my-tmux-configuration/">
+            <a class="flex group mr-3" href="/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >My Tmux Configuration: Elevating Your Terminal Experience</span
+                  >Setting up Ubuntu Desktop Environment on WSL2</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-20 14:47:38 &#43;0300 &#43;0300">20-01-2024</time>
+                    <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/202401-my-neovim-configuration/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >My Neovim Configuration Setup Guide</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time>
                   
                 </span>
               </span>
