@@ -40,6 +40,16 @@ Dive into my blog for concise insights and hands-on experiences, where we&amp;rs
     </item>
     
     <item>
+      <title>My Neovim Configuration Setup Guide</title>
+      <link>https://justicenyaga.me/posts/202401-my-neovim-configuration/</link>
+      <pubDate>Tue, 16 Jan 2024 13:32:33 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202401-my-neovim-configuration/</guid>
+      <description>Introduction # Welcome to my Neovim configuration! Follow these steps to set up and enhance your Neovim experience. Prerequisites # Before diving into the configuration, ensure you have the following prerequisites installed:</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-neovim-configuration/featured.jpg" />
+    </item>
+    
+    <item>
       <title>CyberSpaceKE the CSPKE CryptoFREE Vault Writeup</title>
       <link>https://justicenyaga.me/posts/202103-cyberspaceke-the-cspke-cryptofree-vault-writeup/</link>
       <pubDate>Tue, 09 Mar 2021 13:04:22 +0300</pubDate>
