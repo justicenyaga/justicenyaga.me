@@ -42,37 +42,21 @@ Before diving into the configuration, ensure you have the following prerequisite
    pip install -U pynvim
    ```
 
-5. **Go Language Server (gopls):**
-   For Go language support, you need to install the Go Language Server (gopls). Run the following command:
-
-   ```bash
-   go install golang.org/x/tools/gopls@latest
-   ```
-
-   After installation, set up the required environment variables in your shell configuration file (e.g., `.bashrc` or `.zshrc`):
-
-   ```bash
-   export GOPATH=~/go
-   export GOROOT=/usr/local/go
-   export PATH=$PATH:/usr/local/go/bin
-   export PATH=$PATH:~/go/bin
-   ```
-
-   Ensure that the `python` command points to `python3` by adding the following alias:
+   Ensure that the `python` command points to `python3` by adding the following alias on your `.bashrc` or `.zshrc`:
 
    ```bash
    alias python=python3
 
    ```
 
-6. **Clone Configuration Repository:**
+5. **Clone Configuration Repository:**
    Clone my Neovim configuration repository to `~/.config/nvim`:
 
    ```bash
    git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
    ```
 
-7. **_For WSL users_, Download win32yank to interact with windows clipboard:**
+6. **_For WSL users_, Download win32yank to interact with windows clipboard:**
 
    Download win32yank binary here [https://github.com/equalsraf/win32yank/releases](https://github.com/equalsraf/win32yank/releases)
    then copy it to `/usr/local/bin`
