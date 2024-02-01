@@ -63,6 +63,24 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://justicenyaga.me/tags/cryptography/</loc>
+    <lastmod>2021-03-09T13:04:22+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/ctf/</loc>
+    <lastmod>2021-03-09T13:04:22+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/posts/202103-cyberspaceke-the-cspke-cryptofree-vault-writeup/</loc>
+    <lastmod>2021-03-09T13:04:22+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://justicenyaga.me/authors/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
