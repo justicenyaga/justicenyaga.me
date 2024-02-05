@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/neovim/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/nvim-jdtls/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/nvim-lspconfig/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/posts/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://justicenyaga.me/tags/</loc>
+    <lastmod>2024-02-05T16:36:17+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://justicenyaga.me/about/</loc>
     <lastmod>2024-02-01T00:01:40+03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -15,25 +57,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://justicenyaga.me/</loc>
-    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://justicenyaga.me/posts/</loc>
-    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/</loc>
-    <lastmod>2024-01-31T02:31:15+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://justicenyaga.me/tags/</loc>
     <lastmod>2024-01-31T02:31:15+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -64,12 +88,6 @@
   </url>
   <url>
     <loc>https://justicenyaga.me/posts/202401-my-tmux-configuration/</loc>
-    <lastmod>2024-01-20T14:47:38+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://justicenyaga.me/tags/neovim/</loc>
     <lastmod>2024-01-20T14:47:38+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

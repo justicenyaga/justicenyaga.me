@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nvim-jdtls on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/nvim-jdtls/</link>
+    <description>Recent content in nvim-jdtls on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Mon, 05 Feb 2024 16:36:17 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/nvim-jdtls/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Java LSP for Neovim with nvim-jdtls</title>
+      <link>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</link>
+      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</guid>
+      <description>Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Sat, 20 Jan 2024 14:47:38 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Feb 2024 16:36:17 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Java LSP for Neovim with nvim-jdtls</title>
+      <link>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</link>
+      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</guid>
+      <description>Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" />
+    </item>
+    
     <item>
       <title>My Tmux Configuration: Elevating Your Terminal Experience</title>
       <link>https://justicenyaga.me/posts/202401-my-tmux-configuration/</link>

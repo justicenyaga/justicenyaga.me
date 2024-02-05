@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Wed, 31 Jan 2024 02:31:15 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Feb 2024 16:36:17 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>neovim</title>
+      <link>https://justicenyaga.me/tags/neovim/</link>
+      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/tags/neovim/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>nvim-jdtls</title>
+      <link>https://justicenyaga.me/tags/nvim-jdtls/</link>
+      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/tags/nvim-jdtls/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>nvim-lspconfig</title>
+      <link>https://justicenyaga.me/tags/nvim-lspconfig/</link>
+      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/tags/nvim-lspconfig/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>ubuntu</title>
       <link>https://justicenyaga.me/tags/ubuntu/</link>
@@ -44,16 +74,6 @@
       <pubDate>Wed, 31 Jan 2024 02:31:15 +0300</pubDate>
       
       <guid>https://justicenyaga.me/tags/wsl2/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>neovim</title>
-      <link>https://justicenyaga.me/tags/neovim/</link>
-      <pubDate>Sat, 20 Jan 2024 14:47:38 +0300</pubDate>
-      
-      <guid>https://justicenyaga.me/tags/neovim/</guid>
       <description></description>
       
     </item>

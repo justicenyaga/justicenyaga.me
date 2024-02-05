@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Setting up Ubuntu Desktop Environment on WSL2 &middot; Justice Nyaga</title>
-  <meta name="title" content="Setting up Ubuntu Desktop Environment on WSL2 &middot; Justice Nyaga" />
+  <title>Configuring Java LSP for Neovim with nvim-jdtls &middot; Justice Nyaga</title>
+  <meta name="title" content="Configuring Java LSP for Neovim with nvim-jdtls &middot; Justice Nyaga" />
   
-  <meta name="description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough." />
-  <meta name="keywords" content="wsl2, ubuntu, ubuntu-desktop, vcxsrv, " />
+  <meta name="description" content="Justice Nyaga" />
+  <meta name="keywords" content="neovim, nvim-lspconfig, nvim-jdtls, " />
   
   
-  <link rel="canonical" href="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/" />
+  <link rel="canonical" href="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/" />
   
   
   
@@ -65,17 +65,17 @@
   
   
   
-  <meta property="og:title" content="Setting up Ubuntu Desktop Environment on WSL2" />
-<meta property="og:description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough." />
+  <meta property="og:title" content="Configuring Java LSP for Neovim with nvim-jdtls" />
+<meta property="og:description" content="Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/" /><meta property="og:image" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-31T02:31:15+03:00" />
-<meta property="article:modified_time" content="2024-01-31T02:31:15+03:00" />
+<meta property="og:url" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/" /><meta property="og:image" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-05T16:36:17+03:00" />
+<meta property="article:modified_time" content="2024-02-05T16:36:17+03:00" />
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://justicenyaga.me/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg" /><meta name="twitter:title" content="Setting up Ubuntu Desktop Environment on WSL2"/>
-<meta name="twitter:description" content="A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough."/>
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" /><meta name="twitter:title" content="Configuring Java LSP for Neovim with nvim-jdtls"/>
+<meta name="twitter:description" content="Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls."/>
 
   
   <script type="application/ld+json">
@@ -83,26 +83,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Setting up Ubuntu Desktop Environment on WSL2",
-    "headline": "Setting up Ubuntu Desktop Environment on WSL2",
-    "description": "A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.",
-    "abstract": "A comprehensive guide to installing and configuring the Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.",
+    "name": "Configuring Java LSP for Neovim with nvim-jdtls",
+    "headline": "Configuring Java LSP for Neovim with nvim-jdtls",
+    
+    "abstract": "Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls.",
     "inLanguage": "en",
-    "url" : "https:\/\/justicenyaga.me\/posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/",
+    "url" : "https:\/\/justicenyaga.me\/posts\/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls\/",
     "author" : {
       "@type": "Person",
       "name": "Justice Nyaga"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-01-31T02:31:15\u002b03:00",
-    "datePublished": "2024-01-31T02:31:15\u002b03:00",
+    "dateCreated": "2024-02-05T16:36:17\u002b03:00",
+    "datePublished": "2024-02-05T16:36:17\u002b03:00",
     
-    "dateModified": "2024-01-31T02:31:15\u002b03:00",
+    "dateModified": "2024-02-05T16:36:17\u002b03:00",
     
-    "keywords": ["wsl2","ubuntu","ubuntu-desktop","vcxsrv"],
+    "keywords": ["neovim","nvim-lspconfig","nvim-jdtls"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "300"
+    "wordCount": "386"
   }]
   </script>
 
@@ -449,7 +449,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/featured.jpg);">
+    style="background-image:url(/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png);">
     
 
 
@@ -502,8 +502,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/"
-      >Setting up Ubuntu Desktop Environment on WSL2</a
+      href="/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/"
+      >Configuring Java LSP for Neovim with nvim-jdtls</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -512,7 +512,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Setting up Ubuntu Desktop Environment on WSL2
+      Configuring Java LSP for Neovim with nvim-jdtls
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -557,7 +557,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>300 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-02-05 16:36:17 &#43;0300 &#43;0300">05-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>386 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -581,34 +581,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/wsl2/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/neovim/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    wsl2
+    neovim
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ubuntu/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvim-lspconfig/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ubuntu
+    nvim-lspconfig
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/ubuntu-desktop/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/nvim-jdtls/&#34;,'_self');">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    ubuntu-desktop
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vcxsrv/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    vcxsrv
+    nvim-jdtls
   </span>
 </span>
   </span>
@@ -654,14 +646,9 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#step-1-install-ubuntu-desktop-and-mesa-utils">Step 1: Install Ubuntu Desktop and Mesa-utils</a>
-      <ul>
-        <li><a href="#troubleshooting-for-transport-endpoint-is-not-connected-error">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error</a></li>
-      </ul>
-    </li>
-    <li><a href="#step-2-set-up-environment-variables">Step 2: Set Up Environment Variables</a></li>
-    <li><a href="#step-3-install-vcxsrv-on-windows">Step 3: Install VcXsrv on Windows</a></li>
-    <li><a href="#step-4-verify-installation-with-xeyes">Step 4: Verify Installation with xeyes</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installing-nvim-jdtls-plugin">Installing nvim-jdtls plugin</a></li>
+    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -677,14 +664,9 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#step-1-install-ubuntu-desktop-and-mesa-utils">Step 1: Install Ubuntu Desktop and Mesa-utils</a>
-      <ul>
-        <li><a href="#troubleshooting-for-transport-endpoint-is-not-connected-error">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error</a></li>
-      </ul>
-    </li>
-    <li><a href="#step-2-set-up-environment-variables">Step 2: Set Up Environment Variables</a></li>
-    <li><a href="#step-3-install-vcxsrv-on-windows">Step 3: Install VcXsrv on Windows</a></li>
-    <li><a href="#step-4-verify-installation-with-xeyes">Step 4: Verify Installation with xeyes</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#installing-nvim-jdtls-plugin">Installing nvim-jdtls plugin</a></li>
+    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -750,97 +732,237 @@
     </span>        
     
 </h2>
-<p>Welcome to this comprehensive guide on installing and configuring Ubuntu Desktop environment on Windows Subsystem for Linux 2 (WSL2). Enhance your development environment and streamline your coding experience with this step-by-step walkthrough.</p>
-<p>This post assumes that you have already installed Ubuntu within WSL2. If not, please do install it before proceeding.</p>
-<h2 class="relative group">Step 1: Install Ubuntu Desktop and Mesa-utils 
-    <div id="step-1-install-ubuntu-desktop-and-mesa-utils" class="anchor"></div>
+<p>Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring <code>nvim-jdtls</code>. This plugin, available at <a href="https://github.com/mfussenegger/nvim-jdtls"   target="_blank">
+    nvim-jdtls</a>, offers a comprehensive set of features tailored for Java, addressing challenges such as navigating to the definition of methods and classes outside your project.</p>
+<p>Before we proceed, ensure you&rsquo;ve checked out my Neovim configuration post, which complements this setup:</p>
+
+<section class="space-y-10 w-full">
+    
+    
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article border border-neutral-200 dark:border-neutral-700 border-2 rounded-md overflow-hidden" href="/posts/202401-my-neovim-configuration/">
+    
+        
+        <div class="w-full md:w-auto h-full thumbnail nozoom " style="background-image:url(/posts/202401-my-neovim-configuration/featured.jpg);"></div>
+        
+      <div class=" p-4">
+      <div class="items-center text-left text-xl font-semibold">
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/202401-my-neovim-configuration/">My Neovim Configuration Setup Guide</div>
+        
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>500 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/lua/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    lua
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/neovim/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    neovim
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+      </div>
+      
+    </div>
+  </a>
+        
+    
+</section>
+<h2 class="relative group">Prerequisites 
+    <div id="prerequisites" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-1-install-ubuntu-desktop-and-mesa-utils" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#prerequisites" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Begin by installing the Ubuntu Desktop and mesa-utils packages:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
-</span></span><span class="line"><span class="cl">sudo apt install ubuntu-desktop mesa-utils
-</span></span></code></pre></div><h3 class="relative group">Troubleshooting for &ldquo;Transport endpoint is not connected&rdquo; error 
-    <div id="troubleshooting-for-transport-endpoint-is-not-connected-error" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#troubleshooting-for-transport-endpoint-is-not-connected-error" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>If you encounter the error &ldquo;Transport endpoint is not connected&rdquo; during the setup, perform the following troubleshooting steps:</p>
 <ol>
-<li>Press <code>Ctrl + C</code> to skip packages with the error.</li>
-<li>Run the following commands:</li>
+<li>
+<p><strong>Neovim version &gt;= 0.6.0</strong></p>
+<p>Verify your Neovim version using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvim --version
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Java runtime environment 17 and above</strong></p>
+<p>Install the desired Java version, ensuring it is 17 or above. For example, to install OpenJDK version 21:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install openjdk-21-jdk
+</span></span></code></pre></div><p>Set the <code>JAVA_HOME</code> environment variable to point to the JDK or JRE directory. Identify the correct path using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo update-alternatives --config java
+</span></span></code></pre></div><p>Set <code>JAVA_HOME</code> in your <code>.bashrc</code> or <code>.zshrc</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/path/to/openjdk-21
+</span></span></code></pre></div><p>For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-21-openjdk-amd64
+</span></span></code></pre></div></li>
+<li>
+<p><strong>eclipse.jdt.ls</strong></p>
+<p>Download and extract a snapshot build from <a href="http://download.eclipse.org/jdtls/snapshots/"   target="_blank">
+    http://download.eclipse.org/jdtls/snapshots/</a>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
+</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo mv /etc/acpi/events /etc/acpi/events.bak
-</span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.service
-</span></span><span class="line"><span class="cl">sudo ln -s /dev/null /etc/systemd/system/acpid.path
-</span></span></code></pre></div><p>Run the following command to reconfigure the unpacked packages that were skipped on the previous step.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dpkg --configure -a
-</span></span></code></pre></div><h2 class="relative group">Step 2: Set Up Environment Variables 
-    <div id="step-2-set-up-environment-variables" class="anchor"></div>
+<h2 class="relative group">Installing nvim-jdtls plugin 
+    <div id="installing-nvim-jdtls-plugin" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-2-set-up-environment-variables" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#installing-nvim-jdtls-plugin" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Configure environment variables for persistent settings. It&rsquo;s recommended to add these to your <code>.bashrc</code> or <code>.zshrc</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="s2">&#34;</span><span class="k">$(</span>grep nameserver /etc/resolv.conf <span class="p">|</span> sed <span class="s1">&#39;s/nameserver //&#39;</span><span class="k">)</span><span class="s2">:0&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LIBGL_ALWAYS_INDIRECT</span><span class="o">=</span><span class="m">0</span>
-</span></span></code></pre></div><h2 class="relative group">Step 3: Install VcXsrv on Windows 
-    <div id="step-3-install-vcxsrv-on-windows" class="anchor"></div>
+<p>Install the plugin using your preferred plugin manager. If using Lazy, add the following line to your init.lua file and install with <code>:Lazy</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="s2">&#34;mfussenegger/nvim-jdtls&#34;</span><span class="p">,</span> <span class="c1">-- java lsp</span>
+</span></span></code></pre></div><h2 class="relative group">Configuration 
+    <div id="configuration" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-3-install-vcxsrv-on-windows" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#configuration" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>On the Windows side, install <a href="https://sourceforge.net/projects/vcxsrv/"   target="_blank">
-    VcXsrv</a>. After installation, choose the following setup options:</p>
-<ul>
-<li>
-<p>Multiple windows</p>
-</li>
-<li>
-<p>Display number: 0</p>
-</li>
-<li>
-<p>Start no client</p>
-</li>
-<li>
-<p>Check everything on Extra settings, that is, clipboard, primary selection, Native opengl, Disable access control</p>
-<p>You can save the configuration for future use</p>
-</li>
-<li>
-<p>Click finish to start the server</p>
-</li>
-</ul>
-<h2 class="relative group">Step 4: Verify Installation with xeyes 
-    <div id="step-4-verify-installation-with-xeyes" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#step-4-verify-installation-with-xeyes" aria-label="Anchor">#</a>
-    </span>        
-    
-</h2>
-<p>Ensure VcXsrv is running and test the setup by opening xeyes app or any other installed desktop app such as firefox on your WSL terminal:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xeyes
-</span></span></code></pre></div><h2 class="relative group">Conclusion 
+<p>To avoid conficts, ensure you do not run <code>nvim-lspconfig</code> and <code>nvim-jdtls</code> simultaneously. Add the following setup_handler configuration to your <code>nvim-lspconfig</code> in my case it&rsquo;s <code>~/.config/nvim/lua/justice/plugins/lsp/lspconfig.lua</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="c1">-- empty function to ignore jdtls</span>
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">noop</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span> <span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">require</span><span class="p">(</span><span class="s2">&#34;mason-lspconfig&#34;</span><span class="p">).</span><span class="n">setup_handlers</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">function</span><span class="p">(</span><span class="n">server_name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">lspconfig</span><span class="p">[</span><span class="n">server_name</span><span class="p">].</span><span class="n">setup</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="n">on_attach</span> <span class="o">=</span> <span class="n">on_attach</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">capabilities</span> <span class="o">=</span> <span class="n">capabilities</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s2">&#34;jdtls&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">noop</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></div><p>Create a <code>~/.config/nvim/ftplugin/java.lua</code> file with the following code for jdtls configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">jdtls_bin</span> <span class="o">=</span> <span class="n">vim.fn</span><span class="p">.</span><span class="n">stdpath</span><span class="p">(</span><span class="s2">&#34;data&#34;</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;/mason/bin/jdtls&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">keymap</span> <span class="o">=</span> <span class="n">vim.keymap</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">opts</span> <span class="o">=</span> <span class="p">{</span> <span class="n">noremap</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">silent</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">lsp_attach</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bufnr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">opts.buffer</span> <span class="o">=</span> <span class="n">bufnr</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">-- set keybinds. Copied my lspconfig keybinds here</span>
+</span></span><span class="line"><span class="cl"><span class="kr">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">cmd</span> <span class="o">=</span> <span class="p">{</span> <span class="n">jdtls_bin</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="n">root_dir</span> <span class="o">=</span> <span class="n">vim.fs</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">vim.fs</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="s2">&#34;gradlew&#34;</span><span class="p">,</span> <span class="s2">&#34;.git&#34;</span><span class="p">,</span> <span class="s2">&#34;mvnw&#34;</span> <span class="p">},</span> <span class="p">{</span> <span class="n">upward</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">})[</span><span class="mi">1</span><span class="p">]),</span>
+</span></span><span class="line"><span class="cl">  <span class="n">on_attach</span> <span class="o">=</span> <span class="n">lsp_attach</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">require</span><span class="p">(</span><span class="s2">&#34;jdtls&#34;</span><span class="p">).</span><span class="n">start_or_attach</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+</span></span></code></pre></div><p>Explore my configuration files by visiting <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/java/lua/justice/plugins/lsp/lspconfig.lua"   target="_blank">
+    lspconfig.lua</a> and <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/java/ftplugin/java.lua"   target="_blank">
+    java.lua</a>.</p>
+<h2 class="relative group">Conclusion 
     <div id="conclusion" class="anchor"></div>
     
     <span
@@ -850,7 +972,7 @@
     </span>        
     
 </h2>
-<p>The successful opening of the xeyes app indicates that you have seamlessly set up the Ubuntu Desktop environment on WSL2. Happy coding!</p>
+<p>Kudos on completing the setup! Your Neovim environment is now finely tuned for Java development with the configured Java LSP. Wishing you smooth coding sessions ahead - Happy coding!</p>
 
         </div>
                 
@@ -863,8 +985,8 @@
      
     
      <script>
-        var oid = "views_posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/index.md"
-        var oid_likes = "likes_posts\/202401-setting-up-ubuntu-desktop-environment-on-wsl2\/index.md"
+        var oid = "views_posts\/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls\/index.md"
+        var oid_likes = "likes_posts\/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls\/index.md"
       </script>
       
       
@@ -887,40 +1009,18 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Configuring Java LSP for Neovim with nvim-jdtls</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-02-05 16:36:17 &#43;0300 &#43;0300">05-02-2024</time>
-                  
-                </span>
-              </span>
-            </a>
-          
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/posts/202401-my-tmux-configuration/">
+            <a class="flex text-right group ml-3" href="/posts/202401-setting-up-ubuntu-desktop-environment-on-wsl2/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >My Tmux Configuration: Elevating Your Terminal Experience</span
+                  >Setting up Ubuntu Desktop Environment on WSL2</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-01-20 14:47:38 &#43;0300 &#43;0300">20-01-2024</time>
+                    <time datetime="2024-01-31 02:31:15 &#43;0300 &#43;0300">31-01-2024</time>
                   
                 </span>
               </span>
