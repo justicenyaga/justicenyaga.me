@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data-structures-and-algorithms on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/data-structures-and-algorithms/</link>
+    <description>Recent content in data-structures-and-algorithms on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Sat, 10 Feb 2024 17:00:45 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/data-structures-and-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big O Notation: Understanding Algorithmic Efficiency</title>
+      <link>https://justicenyaga.me/posts/202402-big-o-notation/</link>
+      <pubDate>Sat, 10 Feb 2024 17:00:45 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-big-o-notation/</guid>
+      <description>Introduction # Big O notation is a mathematical tool that helps describe the limiting behavior of a function as its input approaches infinity. It is commonly used in computer science to analyze and compare the efficiency of algorithms.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-big-o-notation/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
