@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Arrays: The Fundamental Data Structure &middot; Justice Nyaga</title>
+  <meta name="title" content="Arrays: The Fundamental Data Structure &middot; Justice Nyaga" />
+  
+  <meta name="description" content="Justice Nyaga" />
+  <meta name="keywords" content="data-structures-and-algorithms, arrays, " />
+  
+  
+  <link rel="canonical" href="https://justicenyaga.me/posts/202402-arrays/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.0c0b7222b21cb12b4a16aa0877c7a9df120878781b64cce1e020b1e8a27ba8b90ee1baa7d5f33777292de8cfa2ab3ab63fe7230aaf58f73d0b6d123bbed1f06e.css"
+    integrity="sha512-DAtyIrIcsStKFqoId8ep3xIIeHgbZMzh4CCx6KJ7qLkO4bqn1fM3dykt6M&#43;iqzq2P&#43;cjCq9Y9z0LbRI7vtHwbg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.303ad233e0be50d5627470bb94d41e48da77656d3b828057ba8c2626a420b99c0be45cc4a51f16af4d7b2e0b2b277087569a7af3cf37d071cf618a1870622e23.js"
+    integrity="sha512-MDrSM&#43;C&#43;UNVidHC7lNQeSNp3ZW07goBXuowmJqQguZwL5FzEpR8Wr017LgsrJ3CHVpp688830HHPYYoYcGIuIw=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.1271c22a557a15f10b5d38d2c87e49503604cfeffebadc1e7c267934e4b9f3ba1b74d81371219f9681dab2141482fc4ed2a8b462b179f0ef43a5f76d0575e85b.js"
+    integrity="sha512-EnHCKlV6FfELXTjSyH5JUDYEz&#43;/&#43;utwefCZ5NOS587obdNgTcSGfloHashQUgvxO0qi0YrF58O9DpfdtBXXoWw==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Arrays: The Fundamental Data Structure" />
+<meta property="og:description" content="Introduction # Arrays stand as one of the fundamental data structures, serving as a go-to choice for storing a sequence of items, be it strings, numbers, objects, or any other data type." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://justicenyaga.me/posts/202402-arrays/" /><meta property="og:image" content="https://justicenyaga.me/posts/202402-arrays/featured.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-11T22:39:33+03:00" />
+<meta property="article:modified_time" content="2024-02-11T22:39:33+03:00" />
+<meta property="og:see_also" content="https://justicenyaga.me/posts/202402-big-o-notation/" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202402-arrays/featured.png" /><meta name="twitter:title" content="Arrays: The Fundamental Data Structure"/>
+<meta name="twitter:description" content="Introduction # Arrays stand as one of the fundamental data structures, serving as a go-to choice for storing a sequence of items, be it strings, numbers, objects, or any other data type."/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Arrays: The Fundamental Data Structure",
+    "headline": "Arrays: The Fundamental Data Structure",
+    
+    "abstract": "Introduction # Arrays stand as one of the fundamental data structures, serving as a go-to choice for storing a sequence of items, be it strings, numbers, objects, or any other data type.",
+    "inLanguage": "en",
+    "url" : "https:\/\/justicenyaga.me\/posts\/202402-arrays\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Justice Nyaga"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-02-11T22:39:33\u002b03:00",
+    "datePublished": "2024-02-11T22:39:33\u002b03:00",
+    
+    "dateModified": "2024-02-11T22:39:33\u002b03:00",
+    
+    "keywords": ["data-structures-and-algorithms","arrays"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1889"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Justice Nyaga" />
+  
+  
+  
+  <link href="mailto:justiceevansmwema@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/justicenyaga" rel="me" />
+  
+  
+  <link href="https://linkedin.com/in/justice-nyaga" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">Justice Nyaga</span>
+
+            <img src="/img/logo.png" width="750" height="369"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="Justice Nyaga" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+        Posts
+    </p>
+</a>
+
+
+            
+            
+  <a href="/projects/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Projects
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About Me">
+        About
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+            Posts
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/projects/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Projects
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About Me">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/posts/202402-arrays/featured.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Justice Nyaga</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/202402-arrays/"
+      >Arrays: The Fundamental Data Structure</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Arrays: The Fundamental Data Structure
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-02-11 22:39:33 &#43;0300 &#43;0300">11-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>1889 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/data-structures-and-algorithms/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    data-structures-and-algorithms
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/arrays/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    arrays
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#limitations-of-arrays">Limitations of Arrays</a>
+      <ul>
+        <li><a href="#static-nature">Static Nature</a></li>
+        <li><a href="#removal-operations">Removal Operations</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-arrays-in-java">Working with Arrays in Java</a></li>
+    <li><a href="#exercise">Exercise</a>
+      <ul>
+        <li><a href="#creating-the-dynamic-array-class">Creating the Dynamic Array Class</a></li>
+        <li><a href="#testing-the-dynamic-array">Testing the Dynamic Array</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic-arrays-in-java">Dynamic Arrays in Java</a>
+      <ul>
+        <li><a href="#1-vector">1. Vector</a></li>
+        <li><a href="#2-arraylist">2. ArrayList</a></li>
+        <li><a href="#exploring-the-arraylist-class">Exploring the ArrayList Class</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#limitations-of-arrays">Limitations of Arrays</a>
+      <ul>
+        <li><a href="#static-nature">Static Nature</a></li>
+        <li><a href="#removal-operations">Removal Operations</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-arrays-in-java">Working with Arrays in Java</a></li>
+    <li><a href="#exercise">Exercise</a>
+      <ul>
+        <li><a href="#creating-the-dynamic-array-class">Creating the Dynamic Array Class</a></li>
+        <li><a href="#testing-the-dynamic-array">Testing the Dynamic Array</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic-arrays-in-java">Dynamic Arrays in Java</a>
+      <ul>
+        <li><a href="#1-vector">1. Vector</a></li>
+        <li><a href="#2-arraylist">2. ArrayList</a></li>
+        <li><a href="#exploring-the-arraylist-class">Exploring the ArrayList Class</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5" >
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Data Structures and Algorithms - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://justicenyaga.me/posts/202402-big-o-notation/">
+            Part 1: Big O Notation: Understanding Algorithmic Efficiency
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 2: This Article
+    </div>
+    
+    
+
+</details>
+
+
+
+        <div class="article-content max-w-prose mb-20">
+          <h2 class="relative group">Introduction 
+    <div id="introduction" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Arrays stand as one of the fundamental data structures, serving as a go-to choice for storing a sequence of items, be it strings, numbers, objects, or any other data type.</p>
+<p>The effectiveness of arrays stems from their sequential storage in memory, as illustrated below:</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/posts/202402-arrays/featured.png"
+        alt="Array Illustration"
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<p>Consider an array of 5 integers, with the first item residing at memory address 100. Each subsequent item is placed in addresses like 104, 108, and so forth, given that integers in Java occupy 4 bytes each.</p>
+<p>The efficiency of array indexing shines through with a constant runtime complexity of <code>O(1)</code>. This simplicity arises from the direct calculation of memory addresses, free from loops or intricate logic. If your goal is to store a list of items and access them by index swiftly, arrays emerge as the optimal choice.</p>
+<h2 class="relative group">Limitations of Arrays 
+    <div id="limitations-of-arrays" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#limitations-of-arrays" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<h3 class="relative group">Static Nature 
+    <div id="static-nature" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#static-nature" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Arrays, in Java and many other languages, have a fixed size. When you create an array, you have to decide how big it will be, and you can&rsquo;t change it later. This becomes a problem when you don&rsquo;t know exactly how many items you need. Guessing too high wastes memory because some spaces are never used. On the other hand, guessing too low means the array quickly gets filled up, and you have to resize it. Unfortunately, resizing has a cost, taking more time as the array gets bigger. This process is known as a runtime complexity of <code>O(n)</code>.</p>
+<h3 class="relative group">Removal Operations 
+    <div id="removal-operations" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#removal-operations" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>While removing the last item from an array is easy and quick (<code>O(1)</code> time), things get more complicated when removing an item at the beginning. In this case, all items to the right of the removed one need to shift to the left 1 position to fill the gap. The bigger the array, the more time it takes to do this. As a result, the worst-case runtime complexity for removing an item at the beginning is <code>O(n)</code>.</p>
+<p>Understanding these details helps developers make smart choices about using arrays, thinking about both their benefits and drawbacks when creating efficient algorithms and data structures.</p>
+<h2 class="relative group">Working with Arrays in Java 
+    <div id="working-with-arrays-in-java" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#working-with-arrays-in-java" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>When working with arrays in Java, you declare them using the following syntax:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">3</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>This statement declares an array that will store items of the integer type, with a size of 3, meaning it can only store 3 items. The <code>variable_name</code> is a variable that points to the memory address of the array.</p>
+<p>To print the value of <code>variable_name</code>, it will display the array hash code along with the array type, i.e., the data type the array is storing.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">3</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">variable_name</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Output:
+
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        src="/posts/202402-arrays/array-variable-output.png"
+        alt="Array Variable Output"
+      />
+      
+      
+    </figure>
+  
+
+</p>
+<p>The <code>[</code> Indicates its an array the <code>I</code> is the data type and the value after the <code>@</code> is the array hash code.</p>
+<p>To print the actual items in the array, you can use the <code>Arrays</code> class from the <code>java.util</code> package and the <code>toString</code> method to convert the array to a string.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">3</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">variable_name</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>This will print <code>[0, 0, 0]</code> because when declaring arrays using this method, the array is instantiated with default values. For integers, the default value is 0.</p>
+<p>To change the values of items in the array, you use their index as shown below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">3</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">variable_name</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">10</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">variable_name</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">20</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">variable_name</span><span class="o">[</span><span class="n">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">30</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">variable_name</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>The line <code>variable_name[0] = 10;</code> sets the value of the first item to 10, and so on.</p>
+<p>If you know the items you are going to store in the array ahead of time, there is a shorter and cleaner way to initialize the array:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">20</span><span class="p">,</span><span class="w"> </span><span class="n">30</span><span class="w"> </span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">variable_name</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">variable_name</span><span class="p">.</span><span class="na">length</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>This method declares and initializes the array with the values provided in the braces, setting the size of the array to the number of items in the braces, which, in this case, is 3 and cannot be changed.</p>
+<p>If you want to add another item to the array, you need to create a new array with a larger size, then copy the items from the old array and add the new item.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">variable_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">20</span><span class="p">,</span><span class="w"> </span><span class="n">30</span><span class="w"> </span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">4</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">variable_name</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">variable_name</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="o">[</span><span class="n">3</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">40</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">variable_name</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>This limitation of arrays in Java leads to the need for dynamic arrays or lists. If you want to work with lists that grow or shrink automatically, you would use linked lists.</p>
+<h2 class="relative group">Exercise 
+    <div id="exercise" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#exercise" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>As you&rsquo;ve learned, arrays in Java are static, meaning they have a fixed size that cannot be changed. In this section, we will create an <code>Array</code> class that behaves like a dynamic array. As we add new items, it will automatically grow, and as we remove items, it will automatically shrink.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Array</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Array</span><span class="p">(</span><span class="n">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// Create an instance of the Array class with an initial size of 3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Adding items to the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">10</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">20</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">30</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Displaying the items in the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Original array:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">print</span><span class="p">();</span><span class="w"> </span><span class="c1">// Expected output: 10, 20, 30 on separate lines</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Adding an item beyond the initial size (which was 3)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">40</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Displaying the updated array after insertion</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Updated array - after insertion:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">print</span><span class="p">();</span><span class="w"> </span><span class="c1">// Expected output: 10, 20, 30, 40 on separate lines</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Removing an item at a specified index (0 in this case)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">removeAt</span><span class="p">(</span><span class="n">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// This will remove the first item (10)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Displaying the updated array after removal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Updated array - after removing index 0:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">print</span><span class="p">();</span><span class="w"> </span><span class="c1">// Expected output: 20, 30, 40 on separate lines</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Finding the index of an item (30 in this case)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Index of 30 in the updated array:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="n">30</span><span class="p">));</span><span class="w"> </span><span class="c1">// Expected output: 1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="n">100</span><span class="p">));</span><span class="w"> </span><span class="c1">// Expected output: -1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">Creating the Dynamic Array Class 
+    <div id="creating-the-dynamic-array-class" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#creating-the-dynamic-array-class" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Array</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">items</span><span class="p">;</span><span class="w"> </span><span class="c1">// Array to store items</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="c1">// Number of items in the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Constructor initializes the array based on the specified length</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">Array</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">length</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">length</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Insert method adds an item to the array, dynamically resizing if needed</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">item</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">items</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">count</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Resize the array by creating a new one with double the size</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">newItems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">count</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">2</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Copy existing items to the new array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">newItems</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newItems</span><span class="p">;</span><span class="w"> </span><span class="c1">// Update the array reference</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">items</span><span class="o">[</span><span class="n">count</span><span class="o">++]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">item</span><span class="p">;</span><span class="w"> </span><span class="c1">// Add the new item at the end then increment the item count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// RemoveAt method removes an item at a given index, maintaining array integrity</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">removeAt</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">count</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalArgumentException</span><span class="p">(</span><span class="s">&#34;Invalid index&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Shift items to the left to fill the gap</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">items</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">items</span><span class="o">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">1</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">count</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// Update the item count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// IndexOf method finds the index of a specified item</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">indexOf</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">item</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">items</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="c1">// Return the index when the item is found</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="n">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// Return -1 if the item is not in the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Print method displays the items in the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">items</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 class="relative group">Testing the Dynamic Array 
+    <div id="testing-the-dynamic-array" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#testing-the-dynamic-array" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Now, let&rsquo;s put the dynamic array to the test in the <code>Main</code> class.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Array</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Array</span><span class="p">(</span><span class="n">3</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Adding items to the array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">10</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">20</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">30</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">40</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Displaying the items in the array after insertion</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Updated array - after insertion:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">print</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Removing an item at a specified index (0 in this case)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">removeAt</span><span class="p">(</span><span class="n">0</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Displaying the updated array after removal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Updated array - after removing index 0:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">numbers</span><span class="p">.</span><span class="na">print</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Finding the index of an item (30 in this case)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Index of 30 in the updated array:&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="n">30</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="n">100</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>In this implementation, the <code>Array</code> class dynamically adjusts its size, providing a flexible and efficient solution for managing arrays in Java.</p>
+<h2 class="relative group">Dynamic Arrays in Java 
+    <div id="dynamic-arrays-in-java" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#dynamic-arrays-in-java" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>In our previous exercise, we acquired knowledge on constructing dynamic arrays, offering flexibility in managing data structures. Now, let&rsquo;s delve into Java&rsquo;s specific implementations of dynamic arrays: <code>Vector</code> and <code>ArrayList</code>. These implementations are vital components of the <code>java.util</code> package.</p>
+<h3 class="relative group">1. Vector 
+    <div id="1-vector" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-vector" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The <code>Vector</code> class is a dynamic array that exhibits growth by 100% of its size when reaching capacity. This means that when the array is full, its size doubles to accommodate more elements efficiently.</p>
+<h3 class="relative group">2. ArrayList 
+    <div id="2-arraylist" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-arraylist" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The <code>ArrayList</code> class, another dynamic array in Java, follows a growth strategy by 50% of its size when the array becomes full. This approach ensures a more conservative increase in size, balancing efficiency and memory utilization.</p>
+<h3 class="relative group">Exploring the ArrayList Class 
+    <div id="exploring-the-arraylist-class" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#exploring-the-arraylist-class" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Let&rsquo;s take a quick tour of the <code>ArrayList</code> class with a code snippet:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.ArrayList</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Create an ArrayList of Integers</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">10</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">20</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">30</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Display the ArrayList</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: [10, 20, 30]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Remove an element at index 0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">0</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: [20, 30]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Find the index of an element (e.g., 20)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="n">20</span><span class="p">));</span><span class="w"> </span><span class="c1">// Output: 0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Add another 20 to the list</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">20</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w"> </span><span class="c1">// Output: [20, 30, 20]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Find the last occurrence of an element (e.g., 20)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="na">lastIndexOf</span><span class="p">(</span><span class="n">20</span><span class="p">));</span><span class="w"> </span><span class="c1">// Output: 2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Check if the list contains a specific element (e.g., 30)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">30</span><span class="p">);</span><span class="w"> </span><span class="c1">// Returns a boolean value</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Get the size of the ArrayList</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Convert the ArrayList to a regular array</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">list</span><span class="p">.</span><span class="na">toArray</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>This tour provides a glimpse into the versatility of the <code>ArrayList</code> class, showcasing its dynamic growth strategy, methods for manipulation, and additional utility functions. Understanding these dynamic array implementations is essential for effective data management in Java.</p>
+<h2 class="relative group">Conclusion 
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>In conclusion, understanding arrays in Java is a foundational step in mastering data structures. Arrays provide a simple yet powerful way to organize and access data sequentially in memory, offering quick look-up times with a constant runtime complexity of <code>O(1)</code>. However, it&rsquo;s crucial to be aware of their limitations, particularly their static nature, requiring predefined sizes and potential inefficiencies when resizing.</p>
+<p>This exploration of arrays serves as a foundation for a broader understanding of data structures and algorithms. The next destination in this series is the intriguing world of Linked Lists, where we&rsquo;ll delve into new possibilities for data organization and manipulation.</p>
+<p>As you progress through this series, mastering fundamental data structures like arrays will empower you to create efficient algorithms and build strong, reliable applications.</p>
+<h2 class="relative group">References 
+    <div id="references" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>Mosh Hamedani. <a href="https://codewithmosh.com/p/data-structures-algorithms-part1"   target="_blank">
+    Ultimate Data Structures &amp; Algorithms: Part 1</a></li>
+<li><a href="https://www.javatpoint.com/data-structure-array"   target="_blank">
+    JavaTpoint</a> - JavaTpoint&rsquo;s comprehensive tutorials on &ldquo;Array in Data Structure&rdquo; in Java.</li>
+</ul>
+
+        </div>
+                
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Data Structures and Algorithms - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://justicenyaga.me/posts/202402-big-o-notation/">
+            Part 1: Big O Notation: Understanding Algorithmic Efficiency
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 2: This Article
+    </div>
+    
+    
+
+</details>
+
+
+        
+
+          
+      </div>
+     
+    
+     <script>
+        var oid = "views_posts\/202402-arrays\/index.md"
+        var oid_likes = "likes_posts\/202402-arrays\/index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.5b1bad196a6075a1e11bae1dc95f24f67b610948a00525e347566c5a62338ea78f1c7224ab9a53873dcdb2a1a7d7d391b8a8ef45561297f68806c01315b0c4f6.js" integrity="sha512-WxutGWpgdaHhG64dyV8k9nthCUigBSXjR1ZsWmIzjqePHHIkq5pThz3NsqGn19ORuKjvRVYSl/aIBsATFbDE9g=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/202402-big-o-notation/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Big O Notation: Understanding Algorithmic Efficiency</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-02-10 17:00:45 &#43;0300 &#43;0300">10-02-2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/tags/"
+            title="Tags">
+            
+            Tags
+          </a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/series/"
+            title="Series">
+            
+            Series
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      Justice Nyaga
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://justicenyaga.me/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arrays on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/arrays/</link>
+    <description>Recent content in arrays on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Sun, 11 Feb 2024 22:39:33 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arrays: The Fundamental Data Structure</title>
+      <link>https://justicenyaga.me/posts/202402-arrays/</link>
+      <pubDate>Sun, 11 Feb 2024 22:39:33 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-arrays/</guid>
+      <description>Introduction # Arrays stand as one of the fundamental data structures, serving as a go-to choice for storing a sequence of items, be it strings, numbers, objects, or any other data type.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-arrays/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
