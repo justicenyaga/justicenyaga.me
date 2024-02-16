@@ -34,7 +34,8 @@
       <pubDate>Tue, 16 Jan 2024 13:32:33 +0300</pubDate>
       
       <guid>https://justicenyaga.me/posts/202401-my-neovim-configuration/</guid>
-      <description>Introduction # Welcome to my Neovim configuration! Follow these steps to set up and enhance your Neovim experience. Prerequisites # Before diving into the configuration, ensure you have the following prerequisites installed:</description>
+      <description>Introduction # Welcome to my Neovim configuration repository, where I&amp;rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.
+Screenshots # Features # Plugins managed with lazy.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-neovim-configuration/featured.jpg" />
     </item>
     
