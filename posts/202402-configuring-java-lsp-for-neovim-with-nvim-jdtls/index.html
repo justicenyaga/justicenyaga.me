@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Configuring Java LSP for Neovim with nvim-jdtls &middot; Justice Nyaga</title>
-  <meta name="title" content="Configuring Java LSP for Neovim with nvim-jdtls &middot; Justice Nyaga" />
+  <title>Configuring Java LSP, and Debugger for Neovim with nvim-jdtls &middot; Justice Nyaga</title>
+  <meta name="title" content="Configuring Java LSP, and Debugger for Neovim with nvim-jdtls &middot; Justice Nyaga" />
   
   <meta name="description" content="Justice Nyaga" />
   <meta name="keywords" content="neovim, nvim-lspconfig, nvim-jdtls, " />
@@ -65,7 +65,7 @@
   
   
   
-  <meta property="og:title" content="Configuring Java LSP for Neovim with nvim-jdtls" />
+  <meta property="og:title" content="Configuring Java LSP, and Debugger for Neovim with nvim-jdtls" />
 <meta property="og:description" content="Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/" /><meta property="og:image" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" /><meta property="article:section" content="posts" />
@@ -75,7 +75,7 @@
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" /><meta name="twitter:title" content="Configuring Java LSP for Neovim with nvim-jdtls"/>
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" /><meta name="twitter:title" content="Configuring Java LSP, and Debugger for Neovim with nvim-jdtls"/>
 <meta name="twitter:description" content="Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls."/>
 
   
@@ -84,8 +84,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Configuring Java LSP for Neovim with nvim-jdtls",
-    "headline": "Configuring Java LSP for Neovim with nvim-jdtls",
+    "name": "Configuring Java LSP, and Debugger for Neovim with nvim-jdtls",
+    "headline": "Configuring Java LSP, and Debugger for Neovim with nvim-jdtls",
     
     "abstract": "Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls.",
     "inLanguage": "en",
@@ -103,7 +103,7 @@
     "keywords": ["neovim","nvim-lspconfig","nvim-jdtls"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "400"
+    "wordCount": "620"
   }]
   </script>
 
@@ -504,7 +504,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/"
-      >Configuring Java LSP for Neovim with nvim-jdtls</a
+      >Configuring Java LSP, and Debugger for Neovim with nvim-jdtls</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -513,7 +513,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Configuring Java LSP for Neovim with nvim-jdtls
+      Configuring Java LSP, and Debugger for Neovim with nvim-jdtls
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -558,7 +558,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-05 16:36:17 &#43;0300 &#43;0300">05-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>400 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+  <time datetime="2024-02-05 16:36:17 &#43;0300 &#43;0300">05-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>620 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
   
 
   
@@ -648,8 +648,21 @@
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#installing-nvim-jdtls-plugin">Installing nvim-jdtls plugin</a></li>
-    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#installing-plugins">Installing plugins</a>
+      <ul>
+        <li><a href="#1-nvim-jdtls">1. nvim-jdtls</a></li>
+        <li><a href="#2-nvim-dap">2. nvim-dap</a></li>
+        <li><a href="#3-jdtls-lsp">3. jdtls LSP</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration">Configuration</a>
+      <ul>
+        <li><a href="#1-avoid-confict-between-nvim-lspconfig-and-nvim-jdtls">1. Avoid confict between nvim-lspconfig and nvim-jdtls</a></li>
+        <li><a href="#2-jdtls-configuration">2. jdtls configuration</a></li>
+        <li><a href="#3-nvim-dap-configuration">3. nvim-dap configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#my-configuration-files">My configuration files</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -666,8 +679,21 @@
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#installing-nvim-jdtls-plugin">Installing nvim-jdtls plugin</a></li>
-    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#installing-plugins">Installing plugins</a>
+      <ul>
+        <li><a href="#1-nvim-jdtls">1. nvim-jdtls</a></li>
+        <li><a href="#2-nvim-dap">2. nvim-dap</a></li>
+        <li><a href="#3-jdtls-lsp">3. jdtls LSP</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration">Configuration</a>
+      <ul>
+        <li><a href="#1-avoid-confict-between-nvim-lspconfig-and-nvim-jdtls">1. Avoid confict between nvim-lspconfig and nvim-jdtls</a></li>
+        <li><a href="#2-jdtls-configuration">2. jdtls configuration</a></li>
+        <li><a href="#3-nvim-dap-configuration">3. nvim-dap configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#my-configuration-files">My configuration files</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -905,20 +931,61 @@
     http://download.eclipse.org/jdtls/snapshots/</a>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
 </span></span></code></pre></div></li>
+<li>
+<p><strong>java-debug</strong>
+To debug java programs, load the <code>java-debug</code> extension. Install it on your neovim data folder <code>~/.local/share/nvim</code> using the follwoing commands</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/java-debug
+</span></span><span class="line"><span class="cl">./mvnw clean install
+</span></span></code></pre></div></li>
 </ol>
-<h2 class="relative group">Installing nvim-jdtls plugin 
-    <div id="installing-nvim-jdtls-plugin" class="anchor"></div>
+<h2 class="relative group">Installing plugins 
+    <div id="installing-plugins" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#installing-nvim-jdtls-plugin" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#installing-plugins" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
+<h3 class="relative group">1. nvim-jdtls 
+    <div id="1-nvim-jdtls" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-nvim-jdtls" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Install the plugin using your preferred plugin manager. If using Lazy, add the following line to your init.lua file and install with <code>:Lazy</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="s2">&#34;mfussenegger/nvim-jdtls&#34;</span><span class="p">,</span> <span class="c1">-- java lsp</span>
-</span></span></code></pre></div><p>Install <code>jdtls</code> using mason by initiating mason with <code>:Mason</code> and proceeding with the installation.</p>
+</span></span></code></pre></div><h3 class="relative group">2. nvim-dap 
+    <div id="2-nvim-dap" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-nvim-dap" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install <a href="https://github.com/mfussenegger/nvim-dap"   target="_blank">
+    nvim-dap</a> using your preferred plugin manager. Check out my <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/lua/justice/plugins/dap.lua"   target="_blank">
+    nvim-dap configuration</a> which provides a user-friendly UI as well as key mappings for debugging.</p>
+<h3 class="relative group">3. jdtls LSP 
+    <div id="3-jdtls-lsp" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-jdtls-lsp" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install <code>jdtls</code> lsp using Mason by initiating mason with <code>:Mason</code> and proceeding with the installation. Check out my <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/lua/justice/plugins/lsp/mason.lua"   target="_blank">
+    Mason configuration</a> if you haven&rsquo;t setup Mason. Mason is just a plugin for managing LSPs, linters, formatters, and DAPs.</p>
 <h2 class="relative group">Configuration 
     <div id="configuration" class="anchor"></div>
     
@@ -929,7 +996,18 @@
     </span>        
     
 </h2>
-<p>To avoid conficts, ensure you do not run <code>nvim-lspconfig</code> and <code>nvim-jdtls</code> simultaneously. Add the following setup_handler configuration to your <code>nvim-lspconfig</code> in my case it&rsquo;s <code>~/.config/nvim/lua/justice/plugins/lsp/lspconfig.lua</code>.</p>
+<h3 class="relative group">1. Avoid confict between nvim-lspconfig and nvim-jdtls 
+    <div id="1-avoid-confict-between-nvim-lspconfig-and-nvim-jdtls" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-avoid-confict-between-nvim-lspconfig-and-nvim-jdtls" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Skip this step if you are not using <code>nvim-lspconfig</code>.</p>
+<p>To avoid conficts, ensure you do not run <code>nvim-lspconfig</code> and <code>nvim-jdtls</code> simultaneously. Add the following setup_handler configuration to your <code>nvim-lspconfig</code> (in my case it&rsquo;s <code>~/.config/nvim/lua/justice/plugins/lsp/lspconfig.lua</code>):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="c1">-- empty function to ignore jdtls</span>
 </span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">noop</span> <span class="o">=</span> <span class="kr">function</span><span class="p">()</span> <span class="kr">end</span>
 </span></span><span class="line"><span class="cl">
@@ -942,7 +1020,17 @@
 </span></span><span class="line"><span class="cl">  <span class="kr">end</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="s2">&#34;jdtls&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">noop</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">})</span>
-</span></span></code></pre></div><p>Create a <code>~/.config/nvim/ftplugin/java.lua</code> file with the following code for jdtls configuration:</p>
+</span></span></code></pre></div><h3 class="relative group">2. jdtls configuration 
+    <div id="2-jdtls-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-jdtls-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Create a <code>~/.config/nvim/ftplugin/java.lua</code> file with the following code for jdtls configuration:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">jdtls_bin</span> <span class="o">=</span> <span class="n">vim.fn</span><span class="p">.</span><span class="n">stdpath</span><span class="p">(</span><span class="s2">&#34;data&#34;</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;/mason/bin/jdtls&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">keymap</span> <span class="o">=</span> <span class="n">vim.keymap</span>
@@ -950,6 +1038,8 @@
 </span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">opts</span> <span class="o">=</span> <span class="p">{</span> <span class="n">noremap</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">silent</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">local</span> <span class="n">lsp_attach</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bufnr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">require</span><span class="p">(</span><span class="s2">&#34;jdtls.dap&#34;</span><span class="p">).</span><span class="n">setup_dap_main_class_configs</span><span class="p">()</span> <span class="c1">-- Discover main classes for debugging</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="n">opts.buffer</span> <span class="o">=</span> <span class="n">bufnr</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">-- set keybinds. Copied my lspconfig keybinds here</span>
@@ -959,11 +1049,51 @@
 </span></span><span class="line"><span class="cl">  <span class="n">cmd</span> <span class="o">=</span> <span class="p">{</span> <span class="n">jdtls_bin</span> <span class="p">},</span>
 </span></span><span class="line"><span class="cl">  <span class="n">root_dir</span> <span class="o">=</span> <span class="n">vim.fs</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">vim.fs</span><span class="p">.</span><span class="n">find</span><span class="p">({</span> <span class="s2">&#34;gradlew&#34;</span><span class="p">,</span> <span class="s2">&#34;.git&#34;</span><span class="p">,</span> <span class="s2">&#34;mvnw&#34;</span> <span class="p">},</span> <span class="p">{</span> <span class="n">upward</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">})[</span><span class="mi">1</span><span class="p">]),</span>
 </span></span><span class="line"><span class="cl">  <span class="n">on_attach</span> <span class="o">=</span> <span class="n">lsp_attach</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="n">init_options</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bundles</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">vim.fn</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="n">vim.fn</span><span class="p">.</span><span class="n">stdpath</span><span class="p">(</span><span class="s2">&#34;data&#34;</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&#34;/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="n">require</span><span class="p">(</span><span class="s2">&#34;jdtls&#34;</span><span class="p">).</span><span class="n">start_or_attach</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
-</span></span></code></pre></div><p>Explore my configuration files by visiting <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/java/lua/justice/plugins/lsp/lspconfig.lua"   target="_blank">
-    lspconfig.lua</a> and <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/java/ftplugin/java.lua"   target="_blank">
-    java.lua</a>.</p>
+</span></span></code></pre></div><h3 class="relative group">3. nvim-dap configuration 
+    <div id="3-nvim-dap-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-nvim-dap-configuration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Given that you have already installed <code>nvim-dap</code>, nvim-jdtls provides integration with nvim-dap, so you don&rsquo;t need to configure Java debug adapters; nvim-jdtls adds that for you automatically. The only thing you&rsquo;ll need to do is add a java configuration for debugging. Check out their <a href="https://github.com/mfussenegger/nvim-dap/wiki/Java"   target="_blank">
+    wiki</a> for more details. Add the following configuration to your <code>nvim-dap</code> plugin configuration file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">require</span><span class="p">(</span><span class="s2">&#34;dap&#34;</span><span class="p">).</span><span class="n">configurations</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">java</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">type</span> <span class="o">=</span> <span class="s2">&#34;java&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Debug&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">request</span> <span class="o">=</span> <span class="s2">&#34;launch&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">program</span> <span class="o">=</span> <span class="s2">&#34;${file}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">-- configurations for other languages</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 class="relative group">My configuration files 
+    <div id="my-configuration-files" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#my-configuration-files" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Explore my configuration files by visiting <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/lua/justice/plugins/lsp/lspconfig.lua"   target="_blank">
+    lspconfig.lua</a>, <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/ftplugin/java.lua"   target="_blank">
+    java.lua</a> and <a href="https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/lua/justice/plugins/dap.lua"   target="_blank">
+    dap.lua</a>.</p>
 <h2 class="relative group">Conclusion 
     <div id="conclusion" class="anchor"></div>
     

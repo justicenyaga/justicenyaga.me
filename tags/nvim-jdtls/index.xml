@@ -9,7 +9,7 @@
     <copyright>© 2024 Justice Nyaga</copyright>
     <lastBuildDate>Mon, 05 Feb 2024 16:36:17 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/nvim-jdtls/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configuring Java LSP for Neovim with nvim-jdtls</title>
+      <title>Configuring Java LSP, and Debugger for Neovim with nvim-jdtls</title>
       <link>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</link>
       <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
       

@@ -29,7 +29,7 @@
     </item>
     
     <item>
-      <title>Configuring Java LSP for Neovim with nvim-jdtls</title>
+      <title>Configuring Java LSP, and Debugger for Neovim with nvim-jdtls</title>
       <link>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</link>
       <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
       
