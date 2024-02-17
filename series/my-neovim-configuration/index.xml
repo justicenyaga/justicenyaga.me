@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>neovim on Justice Nyaga</title>
-    <link>https://justicenyaga.me/tags/neovim/</link>
-    <description>Recent content in neovim on Justice Nyaga</description>
+    <title>My Neovim Configuration on Justice Nyaga</title>
+    <link>https://justicenyaga.me/series/my-neovim-configuration/</link>
+    <description>Recent content in My Neovim Configuration on Justice Nyaga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Sat, 17 Feb 2024 23:36:25 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Feb 2024 23:36:25 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/series/my-neovim-configuration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Neovim Keymaps</title>
       <link>https://justicenyaga.me/posts/202402-my-neovim-keymaps/</link>
@@ -17,26 +17,6 @@
       <description>In this article, I&amp;rsquo;ll be sharing the keymaps I&amp;rsquo;ve configured within my Neovim setup to enhance simplicity and improve efficiency.
 Basic Keymaps # Keymap Mode Description &amp;lt;Space&amp;gt; N/A Leader key jk Insert Exit insert mode &amp;lt;leader&amp;gt;nh Normal Clear search highlights &amp;lt;leader&amp;gt;+ Normal Increment number under cursor &amp;lt;leader&amp;gt;- Normal Decrement number under cursor &amp;lt;leader&amp;gt;rw Normal Toggle Find &amp;amp; Replace &amp;lt;leader&amp;gt;rc Normal Toggle Find &amp;amp; Replace for word under cursor &amp;lt;C-z&amp;gt; Normal &amp;amp; Terminal Toggle FTerm terminal Window Management Keymaps # Keymap Mode Description &amp;lt;leader&amp;gt;sv Normal Split window vertically &amp;lt;leader&amp;gt;sh Normal Split window horizontally &amp;lt;leader&amp;gt;se Normal Make split windows equal width &amp;amp; height &amp;lt;leader&amp;gt;sm Normal Maximize/Minimize a split window &amp;lt;leader&amp;gt;sx Normal Close current slit window Tab Management Keymaps # Keymap Mode Description &amp;lt;leader&amp;gt;to Normal Open new tab &amp;lt;leader&amp;gt;tx Normal Close current tab &amp;lt;leader&amp;gt;tn Normal Go to next tab &amp;lt;leader&amp;gt;tp Normal Go to previous tab &amp;lt;leader&amp;gt;tf Normal Move current buffer to new tab Window Navigation Keymaps # Keymap Mode Description &amp;lt;C-h&amp;gt; Normal Move cursor to the window on the left &amp;lt;C-j&amp;gt; Normal Move cursor to the window below &amp;lt;C-k&amp;gt; Normal Move cursor to the window above &amp;lt;C-l&amp;gt; Normal Move cursor to the window on the right This works with my Tmux confnguration, so be sure to check it out as well.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-my-neovim-keymaps/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>Configuring Java LSP, and Debugger for Neovim with nvim-jdtls</title>
-      <link>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</link>
-      <pubDate>Mon, 05 Feb 2024 16:36:17 +0300</pubDate>
-      
-      <guid>https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/</guid>
-      <description>Introduction # Developing Java code in Neovim can be a seamless experience with the right Language Server Protocol (LSP) setup. In this blog post, we will explore how to enhance your Neovim environment for Java development by configuring nvim-jdtls.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-configuring-java-lsp-for-neovim-with-nvim-jdtls/featured.png" />
-    </item>
-    
-    <item>
-      <title>My Tmux Configuration: Elevating Your Terminal Experience</title>
-      <link>https://justicenyaga.me/posts/202401-my-tmux-configuration/</link>
-      <pubDate>Sat, 20 Jan 2024 14:47:38 +0300</pubDate>
-      
-      <guid>https://justicenyaga.me/posts/202401-my-tmux-configuration/</guid>
-      <description>Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&amp;rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" />
     </item>
     
     <item>

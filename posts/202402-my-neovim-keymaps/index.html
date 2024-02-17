@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>My Neovim Keymaps &middot; Justice Nyaga</title>
+  <meta name="title" content="My Neovim Keymaps &middot; Justice Nyaga" />
+  
+  <meta name="description" content="Justice Nyaga" />
+  <meta name="keywords" content="neovim, " />
+  
+  
+  <link rel="canonical" href="https://justicenyaga.me/posts/202402-my-neovim-keymaps/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.0c0b7222b21cb12b4a16aa0877c7a9df120878781b64cce1e020b1e8a27ba8b90ee1baa7d5f33777292de8cfa2ab3ab63fe7230aaf58f73d0b6d123bbed1f06e.css"
+    integrity="sha512-DAtyIrIcsStKFqoId8ep3xIIeHgbZMzh4CCx6KJ7qLkO4bqn1fM3dykt6M&#43;iqzq2P&#43;cjCq9Y9z0LbRI7vtHwbg==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.303ad233e0be50d5627470bb94d41e48da77656d3b828057ba8c2626a420b99c0be45cc4a51f16af4d7b2e0b2b277087569a7af3cf37d071cf618a1870622e23.js"
+    integrity="sha512-MDrSM&#43;C&#43;UNVidHC7lNQeSNp3ZW07goBXuowmJqQguZwL5FzEpR8Wr017LgsrJ3CHVpp688830HHPYYoYcGIuIw=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.1271c22a557a15f10b5d38d2c87e49503604cfeffebadc1e7c267934e4b9f3ba1b74d81371219f9681dab2141482fc4ed2a8b462b179f0ef43a5f76d0575e85b.js"
+    integrity="sha512-EnHCKlV6FfELXTjSyH5JUDYEz&#43;/&#43;utwefCZ5NOS587obdNgTcSGfloHashQUgvxO0qi0YrF58O9DpfdtBXXoWw==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="My Neovim Keymaps" />
+<meta property="og:description" content="In this article, I&rsquo;ll be sharing the keymaps I&rsquo;ve configured within my Neovim setup to enhance simplicity and improve efficiency.
+Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert Exit insert mode &lt;leader&gt;nh Normal Clear search highlights &lt;leader&gt;&#43; Normal Increment number under cursor &lt;leader&gt;- Normal Decrement number under cursor &lt;leader&gt;rw Normal Toggle Find &amp; Replace &lt;leader&gt;rc Normal Toggle Find &amp; Replace for word under cursor &lt;C-z&gt; Normal &amp; Terminal Toggle FTerm terminal Window Management Keymaps # Keymap Mode Description &lt;leader&gt;sv Normal Split window vertically &lt;leader&gt;sh Normal Split window horizontally &lt;leader&gt;se Normal Make split windows equal width &amp; height &lt;leader&gt;sm Normal Maximize/Minimize a split window &lt;leader&gt;sx Normal Close current slit window Tab Management Keymaps # Keymap Mode Description &lt;leader&gt;to Normal Open new tab &lt;leader&gt;tx Normal Close current tab &lt;leader&gt;tn Normal Go to next tab &lt;leader&gt;tp Normal Go to previous tab &lt;leader&gt;tf Normal Move current buffer to new tab Window Navigation Keymaps # Keymap Mode Description &lt;C-h&gt; Normal Move cursor to the window on the left &lt;C-j&gt; Normal Move cursor to the window below &lt;C-k&gt; Normal Move cursor to the window above &lt;C-l&gt; Normal Move cursor to the window on the right This works with my Tmux confnguration, so be sure to check it out as well." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://justicenyaga.me/posts/202402-my-neovim-keymaps/" /><meta property="og:image" content="https://justicenyaga.me/posts/202402-my-neovim-keymaps/featured.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-17T23:36:25+03:00" />
+<meta property="article:modified_time" content="2024-02-17T23:36:25+03:00" />
+<meta property="og:see_also" content="https://justicenyaga.me/posts/202401-my-neovim-configuration/" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202402-my-neovim-keymaps/featured.jpg" /><meta name="twitter:title" content="My Neovim Keymaps"/>
+<meta name="twitter:description" content="In this article, I&rsquo;ll be sharing the keymaps I&rsquo;ve configured within my Neovim setup to enhance simplicity and improve efficiency.
+Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert Exit insert mode &lt;leader&gt;nh Normal Clear search highlights &lt;leader&gt;&#43; Normal Increment number under cursor &lt;leader&gt;- Normal Decrement number under cursor &lt;leader&gt;rw Normal Toggle Find &amp; Replace &lt;leader&gt;rc Normal Toggle Find &amp; Replace for word under cursor &lt;C-z&gt; Normal &amp; Terminal Toggle FTerm terminal Window Management Keymaps # Keymap Mode Description &lt;leader&gt;sv Normal Split window vertically &lt;leader&gt;sh Normal Split window horizontally &lt;leader&gt;se Normal Make split windows equal width &amp; height &lt;leader&gt;sm Normal Maximize/Minimize a split window &lt;leader&gt;sx Normal Close current slit window Tab Management Keymaps # Keymap Mode Description &lt;leader&gt;to Normal Open new tab &lt;leader&gt;tx Normal Close current tab &lt;leader&gt;tn Normal Go to next tab &lt;leader&gt;tp Normal Go to previous tab &lt;leader&gt;tf Normal Move current buffer to new tab Window Navigation Keymaps # Keymap Mode Description &lt;C-h&gt; Normal Move cursor to the window on the left &lt;C-j&gt; Normal Move cursor to the window below &lt;C-k&gt; Normal Move cursor to the window above &lt;C-l&gt; Normal Move cursor to the window on the right This works with my Tmux confnguration, so be sure to check it out as well."/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "My Neovim Keymaps",
+    "headline": "My Neovim Keymaps",
+    
+    "abstract": "In this article, I\u0026rsquo;ll be sharing the keymaps I\u0026rsquo;ve configured within my Neovim setup to enhance simplicity and improve efficiency.\nBasic Keymaps # Keymap Mode Description \u0026lt;Space\u0026gt; N\/A Leader key jk Insert Exit insert mode \u0026lt;leader\u0026gt;nh Normal Clear search highlights \u0026lt;leader\u0026gt;\u002b Normal Increment number under cursor \u0026lt;leader\u0026gt;- Normal Decrement number under cursor \u0026lt;leader\u0026gt;rw Normal Toggle Find \u0026amp; Replace \u0026lt;leader\u0026gt;rc Normal Toggle Find \u0026amp; Replace for word under cursor \u0026lt;C-z\u0026gt; Normal \u0026amp; Terminal Toggle FTerm terminal Window Management Keymaps # Keymap Mode Description \u0026lt;leader\u0026gt;sv Normal Split window vertically \u0026lt;leader\u0026gt;sh Normal Split window horizontally \u0026lt;leader\u0026gt;se Normal Make split windows equal width \u0026amp; height \u0026lt;leader\u0026gt;sm Normal Maximize\/Minimize a split window \u0026lt;leader\u0026gt;sx Normal Close current slit window Tab Management Keymaps # Keymap Mode Description \u0026lt;leader\u0026gt;to Normal Open new tab \u0026lt;leader\u0026gt;tx Normal Close current tab \u0026lt;leader\u0026gt;tn Normal Go to next tab \u0026lt;leader\u0026gt;tp Normal Go to previous tab \u0026lt;leader\u0026gt;tf Normal Move current buffer to new tab Window Navigation Keymaps # Keymap Mode Description \u0026lt;C-h\u0026gt; Normal Move cursor to the window on the left \u0026lt;C-j\u0026gt; Normal Move cursor to the window below \u0026lt;C-k\u0026gt; Normal Move cursor to the window above \u0026lt;C-l\u0026gt; Normal Move cursor to the window on the right This works with my Tmux confnguration, so be sure to check it out as well.",
+    "inLanguage": "en",
+    "url" : "https:\/\/justicenyaga.me\/posts\/202402-my-neovim-keymaps\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Justice Nyaga"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-02-17T23:36:25\u002b03:00",
+    "datePublished": "2024-02-17T23:36:25\u002b03:00",
+    
+    "dateModified": "2024-02-17T23:36:25\u002b03:00",
+    
+    "keywords": ["neovim"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1729"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Justice Nyaga" />
+  
+  
+  
+  <link href="mailto:justiceevansmwema@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/justicenyaga" rel="me" />
+  
+  
+  <link href="https://linkedin.com/in/justice-nyaga" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">Justice Nyaga</span>
+
+            <img src="/img/logo.png" width="750" height="369"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="Justice Nyaga" />
+
+        </a>
+    </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Posts">
+        Posts
+    </p>
+</a>
+
+
+            
+            
+  <a href="/projects/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Projects">
+        Projects
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="About Me">
+        About
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400 h-12"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button">
+                    <div class="flex items-center justify-center h-12 dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden h-12 dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" style="margin-right:5px">
+                <div class="flex items-center justify-center h-12 dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden h-12 dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Posts">
+            Posts
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/projects/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Projects">
+            Projects
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="About Me">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/posts/202402-my-neovim-keymaps/featured.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Justice Nyaga</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/202402-my-neovim-keymaps/"
+      >My Neovim Keymaps</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      My Neovim Keymaps
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-02-17 23:36:25 &#43;0300 &#43;0300">17-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>1729 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/neovim/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    neovim
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+  
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-keymaps">Basic Keymaps</a></li>
+    <li><a href="#window-management-keymaps">Window Management Keymaps</a></li>
+    <li><a href="#tab-management-keymaps">Tab Management Keymaps</a></li>
+    <li><a href="#window-navigation-keymaps">Window Navigation Keymaps</a></li>
+    <li><a href="#file-explorer-keymaps">File Explorer Keymaps</a></li>
+    <li><a href="#navigation-within-code">Navigation within Code</a></li>
+    <li><a href="#swap-text-objects-in-code">Swap Text Objects in Code</a></li>
+    <li><a href="#manipulate-text-objects-in-code">Manipulate Text Objects in Code</a></li>
+    <li><a href="#fuzzy-search-keybinds">Fuzzy Search Keybinds</a></li>
+    <li><a href="#code-comments-keymaps">Code Comments Keymaps</a></li>
+    <li><a href="#delimiter-pairs-keymaps">Delimiter Pairs Keymaps</a></li>
+    <li><a href="#code-completion">Code Completion</a></li>
+    <li><a href="#language-server-keymaps">Language Server Keymaps</a></li>
+    <li><a href="#debugging-keymaps">Debugging Keymaps</a></li>
+    <li><a href="#formatting-keymaps">Formatting Keymaps</a></li>
+    <li><a href="#linting-keymaps">Linting Keymaps</a></li>
+    <li><a href="#git-keymaps">Git Keymaps</a>
+      <ul>
+        <li><a href="#commits">Commits</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#stash">Stash</a></li>
+        <li><a href="#merge">Merge</a></li>
+        <li><a href="#rebase">Rebase</a></li>
+        <li><a href="#cherry-pick">Cherry Pick</a></li>
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#remote">Remote</a></li>
+      </ul>
+    </li>
+    <li><a href="#git-diffview">Git diffview</a>
+      <ul>
+        <li><a href="#diffview-file-panel">diffview File Panel</a></li>
+        <li><a href="#diffview-view-panel">diffview View Panel</a></li>
+        <li><a href="#diffview-file-history-panel">diffview File History Panel</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-keymaps">Basic Keymaps</a></li>
+    <li><a href="#window-management-keymaps">Window Management Keymaps</a></li>
+    <li><a href="#tab-management-keymaps">Tab Management Keymaps</a></li>
+    <li><a href="#window-navigation-keymaps">Window Navigation Keymaps</a></li>
+    <li><a href="#file-explorer-keymaps">File Explorer Keymaps</a></li>
+    <li><a href="#navigation-within-code">Navigation within Code</a></li>
+    <li><a href="#swap-text-objects-in-code">Swap Text Objects in Code</a></li>
+    <li><a href="#manipulate-text-objects-in-code">Manipulate Text Objects in Code</a></li>
+    <li><a href="#fuzzy-search-keybinds">Fuzzy Search Keybinds</a></li>
+    <li><a href="#code-comments-keymaps">Code Comments Keymaps</a></li>
+    <li><a href="#delimiter-pairs-keymaps">Delimiter Pairs Keymaps</a></li>
+    <li><a href="#code-completion">Code Completion</a></li>
+    <li><a href="#language-server-keymaps">Language Server Keymaps</a></li>
+    <li><a href="#debugging-keymaps">Debugging Keymaps</a></li>
+    <li><a href="#formatting-keymaps">Formatting Keymaps</a></li>
+    <li><a href="#linting-keymaps">Linting Keymaps</a></li>
+    <li><a href="#git-keymaps">Git Keymaps</a>
+      <ul>
+        <li><a href="#commits">Commits</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#stash">Stash</a></li>
+        <li><a href="#merge">Merge</a></li>
+        <li><a href="#rebase">Rebase</a></li>
+        <li><a href="#cherry-pick">Cherry Pick</a></li>
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#remote">Remote</a></li>
+      </ul>
+    </li>
+    <li><a href="#git-diffview">Git diffview</a>
+      <ul>
+        <li><a href="#diffview-file-panel">diffview File Panel</a></li>
+        <li><a href="#diffview-view-panel">diffview View Panel</a></li>
+        <li><a href="#diffview-file-history-panel">diffview File History Panel</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+          
+            $(e).removeClass('active');
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5"  open >
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        My Neovim Configuration - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://justicenyaga.me/posts/202401-my-neovim-configuration/">
+            Part 1: My Neovim Configuration Setup Guide
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 2: This Article
+    </div>
+    
+    
+
+</details>
+
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>In this article, I&rsquo;ll be sharing the keymaps I&rsquo;ve configured within my Neovim setup to enhance simplicity and improve efficiency.</p>
+<h2 class="relative group">Basic Keymaps 
+    <div id="basic-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#basic-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;Space&gt;</code></td>
+<td>N/A</td>
+<td>Leader key</td>
+</tr>
+<tr>
+<td><code>jk</code></td>
+<td>Insert</td>
+<td>Exit insert mode</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;nh</code></td>
+<td>Normal</td>
+<td>Clear search highlights</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;+</code></td>
+<td>Normal</td>
+<td>Increment number under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;-</code></td>
+<td>Normal</td>
+<td>Decrement number under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;rw</code></td>
+<td>Normal</td>
+<td>Toggle Find &amp; Replace</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;rc</code></td>
+<td>Normal</td>
+<td>Toggle Find &amp; Replace for word under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;C-z&gt;</code></td>
+<td>Normal &amp; Terminal</td>
+<td>Toggle FTerm terminal</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Window Management Keymaps 
+    <div id="window-management-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#window-management-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;sv</code></td>
+<td>Normal</td>
+<td>Split window vertically</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;sh</code></td>
+<td>Normal</td>
+<td>Split window horizontally</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;se</code></td>
+<td>Normal</td>
+<td>Make split windows equal width &amp; height</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;sm</code></td>
+<td>Normal</td>
+<td>Maximize/Minimize a split window</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;sx</code></td>
+<td>Normal</td>
+<td>Close current slit window</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Tab Management Keymaps 
+    <div id="tab-management-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tab-management-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;to</code></td>
+<td>Normal</td>
+<td>Open new tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;tx</code></td>
+<td>Normal</td>
+<td>Close current tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;tn</code></td>
+<td>Normal</td>
+<td>Go to next tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;tp</code></td>
+<td>Normal</td>
+<td>Go to previous tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;tf</code></td>
+<td>Normal</td>
+<td>Move current buffer to new tab</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Window Navigation Keymaps 
+    <div id="window-navigation-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#window-navigation-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-h&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to the window on the left</td>
+</tr>
+<tr>
+<td><code>&lt;C-j&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to the window below</td>
+</tr>
+<tr>
+<td><code>&lt;C-k&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to the window above</td>
+</tr>
+<tr>
+<td><code>&lt;C-l&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to the window on the right</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>This works with my Tmux confnguration, so be sure to check it out as well. Link provided on the <a href="#recommendations"  >
+    Recommendations</a> section.</li>
+</ul>
+<h2 class="relative group">File Explorer Keymaps 
+    <div id="file-explorer-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#file-explorer-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>Explore the various keymaps of <code>nvim-tree</code> by opening the <code>QUICKSTART HELP</code> with <code>g?</code> while the cursor is on the explorer split. Close the help menu using <code>q</code> key.</li>
+</ul>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;ee</code></td>
+<td>Normal</td>
+<td>Toggle file explorer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;ef</code></td>
+<td>Normal</td>
+<td>Toggle file explorer on the current file</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;ec</code></td>
+<td>Normal</td>
+<td>Collapse file explorer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;er</code></td>
+<td>Normal</td>
+<td>Refresh file explorer</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Navigation within Code 
+    <div id="navigation-within-code" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#navigation-within-code" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>]f</code></td>
+<td>Normal</td>
+<td>Jump to next function call start</td>
+</tr>
+<tr>
+<td><code>]m</code></td>
+<td>Normal</td>
+<td>Jump to next method/function definition start</td>
+</tr>
+<tr>
+<td><code>]c</code></td>
+<td>Normal</td>
+<td>Jump to next class start</td>
+</tr>
+<tr>
+<td><code>]i</code></td>
+<td>Normal</td>
+<td>Jump to next conditional start</td>
+</tr>
+<tr>
+<td><code>]l</code></td>
+<td>Normal</td>
+<td>Jump to next loop start</td>
+</tr>
+<tr>
+<td><code>[f</code></td>
+<td>Normal</td>
+<td>Jump to previous function call start</td>
+</tr>
+<tr>
+<td><code>[m</code></td>
+<td>Normal</td>
+<td>Jump to previous method/function definition start</td>
+</tr>
+<tr>
+<td><code>[c</code></td>
+<td>Normal</td>
+<td>Jump to previous class start</td>
+</tr>
+<tr>
+<td><code>[i</code></td>
+<td>Normal</td>
+<td>Jump to previous conditional start</td>
+</tr>
+<tr>
+<td><code>[l</code></td>
+<td>Normal</td>
+<td>Jump to previous loop start</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>]F</code></td>
+<td>Normal</td>
+<td>Jump to next function call end</td>
+</tr>
+<tr>
+<td><code>]M</code></td>
+<td>Normal</td>
+<td>Jump to next method/function definition end</td>
+</tr>
+<tr>
+<td><code>]C</code></td>
+<td>Normal</td>
+<td>Jump to next class end</td>
+</tr>
+<tr>
+<td><code>]I</code></td>
+<td>Normal</td>
+<td>Jump to next conditional end</td>
+</tr>
+<tr>
+<td><code>]L</code></td>
+<td>Normal</td>
+<td>Jump to next loop end</td>
+</tr>
+<tr>
+<td><code>[F</code></td>
+<td>Normal</td>
+<td>Jump to previous function call end</td>
+</tr>
+<tr>
+<td><code>[M</code></td>
+<td>Normal</td>
+<td>Jump to previous method/function definition end</td>
+</tr>
+<tr>
+<td><code>[C</code></td>
+<td>Normal</td>
+<td>Jump to previous class end</td>
+</tr>
+<tr>
+<td><code>[I</code></td>
+<td>Normal</td>
+<td>Jump to previous conditional end</td>
+</tr>
+<tr>
+<td><code>[L</code></td>
+<td>Normal</td>
+<td>Jump to previous loop end</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>]s</code></td>
+<td>Normal</td>
+<td>Jump to next scope</td>
+</tr>
+<tr>
+<td><code>]z</code></td>
+<td>Normal</td>
+<td>Jump to next fold</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Swap Text Objects in Code 
+    <div id="swap-text-objects-in-code" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#swap-text-objects-in-code" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;na</code></td>
+<td>Normal</td>
+<td>Swap parameter/argument with the next</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;nm</code></td>
+<td>Normal</td>
+<td>Swap function with the next</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;pa</code></td>
+<td>Normal</td>
+<td>Swap parameter/argument with the previous</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;pm</code></td>
+<td>Normal</td>
+<td>Swap function with the previous</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Manipulate Text Objects in Code 
+    <div id="manipulate-text-objects-in-code" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#manipulate-text-objects-in-code" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>In <code>Normal</code> mode, you can use the following key bindings prefixed with operations like <code>d</code>, <code>c</code>, or <code>y</code> to interact with text objects. Here are some examples:</p>
+<ul>
+<li><code>daa</code>: Delete the outer part of an argument.</li>
+<li><code>caa</code>: Change the outer part of an argument.</li>
+<li><code>yaa</code>: Yank the outer part of an argument.</li>
+</ul>
+<p>And so on.</p>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a=</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of an assignment</td>
+</tr>
+<tr>
+<td><code>i=</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of an assignment</td>
+</tr>
+<tr>
+<td><code>l=</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select left hand side of an assignment</td>
+</tr>
+<tr>
+<td><code>r=</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select right hand side of an assignment</td>
+</tr>
+<tr>
+<td><code>aa</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a parameter/argument</td>
+</tr>
+<tr>
+<td><code>ia</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a parameter/argument</td>
+</tr>
+<tr>
+<td><code>ai</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a condition</td>
+</tr>
+<tr>
+<td><code>ii</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a condition</td>
+</tr>
+<tr>
+<td><code>al</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a loop</td>
+</tr>
+<tr>
+<td><code>il</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a loop</td>
+</tr>
+<tr>
+<td><code>af</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a function call</td>
+</tr>
+<tr>
+<td><code>if</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a function call</td>
+</tr>
+<tr>
+<td><code>am</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a method/function definition</td>
+</tr>
+<tr>
+<td><code>im</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a method/function definition</td>
+</tr>
+<tr>
+<td><code>ac</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select outer part of a class</td>
+</tr>
+<tr>
+<td><code>ic</code></td>
+<td>Normal &amp; Visual</td>
+<td>Select inner part of a class</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Fuzzy Search Keybinds 
+    <div id="fuzzy-search-keybinds" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#fuzzy-search-keybinds" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;ff</code></td>
+<td>Normal</td>
+<td>Fuzzy find files in cwd</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;fr</code></td>
+<td>Normal</td>
+<td>Fuzzy find recent files</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;fs</code></td>
+<td>Normal</td>
+<td>Find strings in cwd</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;fc</code></td>
+<td>Normal</td>
+<td>Find string under cursor in cwd</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Code Comments Keymaps 
+    <div id="code-comments-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#code-comments-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>I use the default keymaps in <code>Comment.nvim</code>. To learn how to use them, check out their <a href="https://github.com/numToStr/Comment.nvim/#-usage"   target="_blank">
+    usage guide</a>.</li>
+</ul>
+<h2 class="relative group">Delimiter Pairs Keymaps 
+    <div id="delimiter-pairs-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#delimiter-pairs-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>For swift manipulation of delimiter pairs, I rely on the default keymaps from <code>nvim-surround</code>. Explore their <a href="https://github.com/kylechui/nvim-surround?tab=readme-ov-file#rocket-usage"   target="_blank">
+    usage guide</a> for insights into the diverse keymaps available.</li>
+</ul>
+<h2 class="relative group">Code Completion 
+    <div id="code-completion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#code-completion" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-k&gt;</code></td>
+<td>Insert</td>
+<td>Previous suggestion</td>
+</tr>
+<tr>
+<td><code>&lt;C-j&gt;</code></td>
+<td>Insert</td>
+<td>Next suggestion</td>
+</tr>
+<tr>
+<td><code>&lt;C-b&gt;</code></td>
+<td>Insert</td>
+<td>Scroll up</td>
+</tr>
+<tr>
+<td><code>&lt;C-f&gt;</code></td>
+<td>Insert</td>
+<td>Scroll down</td>
+</tr>
+<tr>
+<td><code>&lt;C-Space&gt;</code></td>
+<td>Insert</td>
+<td>Show completion suggestions</td>
+</tr>
+<tr>
+<td><code>&lt;C-e&gt;</code></td>
+<td>Insert</td>
+<td>Close completion window/menu</td>
+</tr>
+<tr>
+<td><code>&lt;CR&gt;</code></td>
+<td>Insert</td>
+<td>Select suggestion</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Language Server Keymaps 
+    <div id="language-server-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#language-server-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gR</code></td>
+<td>Normal</td>
+<td>Show references and definition</td>
+</tr>
+<tr>
+<td><code>gD</code></td>
+<td>Normal</td>
+<td>Go to declaration</td>
+</tr>
+<tr>
+<td><code>gd</code></td>
+<td>Normal</td>
+<td>Show lsp definitions</td>
+</tr>
+<tr>
+<td><code>gi</code></td>
+<td>Normal</td>
+<td>Show lsp implementations</td>
+</tr>
+<tr>
+<td><code>gt</code></td>
+<td>Normal</td>
+<td>Show lsp type definitions</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;ca</code></td>
+<td>Normal &amp; Visual</td>
+<td>See available code actions</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;rn</code></td>
+<td>Normal</td>
+<td>Smart rename</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;D</code></td>
+<td>Normal</td>
+<td>Show diagnostics for file</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;d</code></td>
+<td>Normal</td>
+<td>Show diagnostics for line</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;[d</code></td>
+<td>Normal</td>
+<td>Jump to previous diagnostic in buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;]d</code></td>
+<td>Normal</td>
+<td>Jump to next diagnostic in buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;K</code></td>
+<td>Normal</td>
+<td>Show documentation for what is under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;rs</code></td>
+<td>Normal</td>
+<td>Restart lsp</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Debugging Keymaps 
+    <div id="debugging-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#debugging-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;db</code></td>
+<td>Normal</td>
+<td>Toggle breaking point on line under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;dC</code></td>
+<td>Normal</td>
+<td>Clear breakpoints</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;ds</code></td>
+<td>Normal</td>
+<td>Start debugging session</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;dc</code></td>
+<td>Normal</td>
+<td>Continue</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;dn</code></td>
+<td>Normal</td>
+<td>Step over</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;di</code></td>
+<td>Normal</td>
+<td>Step into</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;do</code></td>
+<td>Normal</td>
+<td>Step out</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;de</code></td>
+<td>Normal</td>
+<td>Close debugger and end debugging session</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;dc</code></td>
+<td>Normal</td>
+<td>Continue</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Formatting Keymaps 
+    <div id="formatting-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#formatting-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>Automatic formatting takes effect upon saving the current buffer, provided you have a formatter for the language in use.</li>
+</ul>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;mp</code></td>
+<td>Normal</td>
+<td>Format file</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;mp</code></td>
+<td>Normal &amp; Visual</td>
+<td>Format selected range</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Linting Keymaps 
+    <div id="linting-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#linting-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;l</code></td>
+<td>Normal</td>
+<td>Trigger linting for current file</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Git Keymaps 
+    <div id="git-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#git-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gi</code></td>
+<td>Normal</td>
+<td>Git init</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;ga</code></td>
+<td>Normal</td>
+<td>Stage current buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gw</code></td>
+<td>Normal</td>
+<td>Save and stage current buffer in WT, checkout buffer in index</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gm</code></td>
+<td>Normal</td>
+<td>Rename and stage current buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gs</code></td>
+<td>Normal</td>
+<td>Toggle open/close of status tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gd</code></td>
+<td>Normal</td>
+<td>Toggle open/close of diff tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gg</code></td>
+<td>Normal</td>
+<td>Open git graph</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Commits 
+    <div id="commits" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#commits" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gcc</code></td>
+<td>Normal</td>
+<td>Populate git commit with message flag on command line</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gca</code></td>
+<td>Normal</td>
+<td>Amend the last commit</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gcm</code></td>
+<td>Normal</td>
+<td>populate git commit on command line</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Branches 
+    <div id="branches" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#branches" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gbl</code></td>
+<td>Normal</td>
+<td>List all branches</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbv</code></td>
+<td>Normal</td>
+<td>List all branches with their remote tracking branches</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbo</code></td>
+<td>Normal</td>
+<td>Populate git branch on command line</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gba</code></td>
+<td>Normal</td>
+<td>Populate create branch and switch to it</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbr</code></td>
+<td>Normal</td>
+<td>Populate rename branch</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbd</code></td>
+<td>Normal</td>
+<td>Populate delete branch</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbD</code></td>
+<td>Normal</td>
+<td>Populate force delete branch</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gco</code></td>
+<td>Normal</td>
+<td>Populate git checkout</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Stash 
+    <div id="stash" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#stash" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gzz</code></td>
+<td>Normal</td>
+<td>Push stash (includes untracked files) from both WT and index</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzw</code></td>
+<td>Normal</td>
+<td>Push stash (includes untracked files) from WT only</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gza</code></td>
+<td>Normal</td>
+<td>Apply top most stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzA</code></td>
+<td>Normal</td>
+<td>Populate apply stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzp</code></td>
+<td>Normal</td>
+<td>Pop top most stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzP</code></td>
+<td>Normal</td>
+<td>Populate pop stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzd</code></td>
+<td>Normal</td>
+<td>Drop top most stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzD</code></td>
+<td>Normal</td>
+<td>Populate drop stash</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gzo</code></td>
+<td>Normal</td>
+<td>Populate git stash</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Merge 
+    <div id="merge" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#merge" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gmo</code></td>
+<td>Normal</td>
+<td>Populate git merge</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gmt</code></td>
+<td>Normal</td>
+<td>Open merge tool <em>consider using diffview for solving conflicts</em></td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gmr</code></td>
+<td>Normal</td>
+<td>Continue merging</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gmx</code></td>
+<td>Normal</td>
+<td>Abort merging</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Rebase 
+    <div id="rebase" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#rebase" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gri</code></td>
+<td>Normal</td>
+<td>Populate interactive rebase</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grn</code></td>
+<td>Normal</td>
+<td>Populate interactive rebase with count from HEAD</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grr</code></td>
+<td>Normal</td>
+<td>Continue with current rebase</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grx</code></td>
+<td>Normal</td>
+<td>Abort current rebase</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gre</code></td>
+<td>Normal</td>
+<td>Edit todo list of current rebase</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gro</code></td>
+<td>Normal</td>
+<td>Populate git rebase</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Cherry Pick 
+    <div id="cherry-pick" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cherry-pick" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gyi</code></td>
+<td>Normal</td>
+<td>Populate git cherry-pick</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gyr</code></td>
+<td>Normal</td>
+<td>Continue with cherry-pick</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gyx</code></td>
+<td>Normal</td>
+<td>Abort cherry-pick</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Reset 
+    <div id="reset" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#reset" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;grh</code></td>
+<td>Normal</td>
+<td>Reset the last commit</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gRr</code></td>
+<td>Normal</td>
+<td>Hard reset the last commit</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gri</code></td>
+<td>Normal</td>
+<td>Populate reset with count from HEAD</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gRi</code></td>
+<td>Normal</td>
+<td>Populate hard reset with count from HEAD</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grO</code></td>
+<td>Normal</td>
+<td>Populate git reset</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Remote 
+    <div id="remote" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#remote" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gps</code></td>
+<td>Normal</td>
+<td>Git push</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gPs</code></td>
+<td>Normal</td>
+<td>Git force push</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gpl</code></td>
+<td>Normal</td>
+<td>Git pull</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gPL</code></td>
+<td>Normal</td>
+<td>Git force pull</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gpu</code></td>
+<td>Normal</td>
+<td>Populate git push set upstream</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gra</code></td>
+<td>Normal</td>
+<td>Populate add remote</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grd</code></td>
+<td>Normal</td>
+<td>Populate remove remote</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grl</code></td>
+<td>Normal</td>
+<td>List all remotes</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gor</code></td>
+<td>Normal</td>
+<td>Populate git remote</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Git diffview 
+    <div id="git-diffview" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#git-diffview" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;gd</code></td>
+<td>Normal</td>
+<td>Toggle open/close diffview tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gfh</code></td>
+<td>Normal</td>
+<td>Toggle open/close file history of current buffer tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gh</code></td>
+<td>Normal</td>
+<td>Toggle open/close all commits/files history tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gR</code></td>
+<td>Normal</td>
+<td>Toggle open/close diff of HEAD and main branch</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">diffview File Panel 
+    <div id="diffview-file-panel" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#diffview-file-panel" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>j</code>, <code>&lt;Down&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to next file entry</td>
+</tr>
+<tr>
+<td><code>k</code>, <code>&lt;Up&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to next file entry</td>
+</tr>
+<tr>
+<td><code>o</code>, <code>&lt;2-LeftMouse&gt;</code></td>
+<td>Normal</td>
+<td>Select current entry</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Normal</td>
+<td>Stage/unstage selected entry</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>Normal</td>
+<td>Stage all entries</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>Normal</td>
+<td>Unstage all entries</td>
+</tr>
+<tr>
+<td><code>X</code></td>
+<td>Normal</td>
+<td>Restore entry to state on left side</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>Normal</td>
+<td>Update stats and entries on file list</td>
+</tr>
+<tr>
+<td><code>&lt;S-Up&gt;</code></td>
+<td>Normal</td>
+<td>Scroll up</td>
+</tr>
+<tr>
+<td><code>&lt;S-Down&gt;</code></td>
+<td>Normal</td>
+<td>Scroll down</td>
+</tr>
+<tr>
+<td><code>&lt;C-j&gt;</code></td>
+<td>Normal</td>
+<td>Open diff for next entry</td>
+</tr>
+<tr>
+<td><code>&lt;C-k&gt;</code></td>
+<td>Normal</td>
+<td>Open diff for previous entry</td>
+</tr>
+<tr>
+<td><code>gf</code></td>
+<td>Normal</td>
+<td>Open file in a split window</td>
+</tr>
+<tr>
+<td><code>&lt;CR&gt;</code></td>
+<td>Normal</td>
+<td>Open file in a new tab</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>Normal</td>
+<td>Toggle between list/tree views</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>Normal</td>
+<td>Flatten empty subdirectories in tree listing style</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;e</code></td>
+<td>Normal</td>
+<td>Bring focus to the file panel</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">diffview View Panel 
+    <div id="diffview-view-panel" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#diffview-view-panel" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;C-j&gt;</code></td>
+<td>Normal</td>
+<td>Open diff for next file</td>
+</tr>
+<tr>
+<td><code>&lt;C-k&gt;</code></td>
+<td>Normal</td>
+<td>Open diff for previous file</td>
+</tr>
+<tr>
+<td><code>&lt;CR&gt;</code></td>
+<td>Normal</td>
+<td>Open file in a previous tab</td>
+</tr>
+<tr>
+<td><code>&lt;C-w&gt;&lt;C-f&gt;</code></td>
+<td>Normal</td>
+<td>Open file in a split window</td>
+</tr>
+<tr>
+<td><code>&lt;C-w&gt;gf</code></td>
+<td>Normal</td>
+<td>Open file in a new tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;e</code></td>
+<td>Normal</td>
+<td>Bring focus to the file panel</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;b</code></td>
+<td>Normal</td>
+<td>Toggle file panel</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">diffview File History Panel 
+    <div id="diffview-file-history-panel" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#diffview-file-history-panel" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>g!</code></td>
+<td>Normal</td>
+<td>Open option panel</td>
+</tr>
+<tr>
+<td><code>&lt;C-A-d&gt;</code></td>
+<td>Normal</td>
+<td>Open entry under cursor in a diffview</td>
+</tr>
+<tr>
+<td><code>zR</code></td>
+<td>Normal</td>
+<td>Open all folds</td>
+</tr>
+<tr>
+<td><code>zM</code></td>
+<td>Normal</td>
+<td>Close all folds</td>
+</tr>
+<tr>
+<td><code>j</code>, <code>&lt;Down&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to next entry</td>
+</tr>
+<tr>
+<td><code>k</code>, <code>&lt;Up&gt;</code></td>
+<td>Normal</td>
+<td>Move cursor to previous entry</td>
+</tr>
+<tr>
+<td><code>o</code>, <code>&lt;CR&gt;</code>, <code>&lt;2-LeftMouse&gt;</code></td>
+<td>Normal</td>
+<td>Select entry</td>
+</tr>
+<tr>
+<td><code>&lt;C-j&gt;</code></td>
+<td>Normal</td>
+<td>Select next entry</td>
+</tr>
+<tr>
+<td><code>&lt;C-k&gt;</code></td>
+<td>Normal</td>
+<td>Select previous entry</td>
+</tr>
+<tr>
+<td><code>gf</code></td>
+<td>Normal</td>
+<td>Go to file</td>
+</tr>
+<tr>
+<td><code>&lt;C-w&gt;&lt;C-f&gt;</code></td>
+<td>Normal</td>
+<td>Open file in a split window</td>
+</tr>
+<tr>
+<td><code>&lt;C-w&gt;gf</code></td>
+<td>Normal</td>
+<td>Open file in a new tab</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;e</code></td>
+<td>Normal</td>
+<td>Bring focus to the file panel</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;b</code></td>
+<td>Normal</td>
+<td>Toggle file panel</td>
+</tr>
+</tbody>
+</table>
+
+
+
+        </div>
+                
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        My Neovim Configuration - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://justicenyaga.me/posts/202401-my-neovim-configuration/">
+            Part 1: My Neovim Configuration Setup Guide
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 2: This Article
+    </div>
+    
+    
+
+</details>
+
+
+        
+
+          
+      </div>
+     
+    
+     <script>
+        var oid = "views_posts\/202402-my-neovim-keymaps\/index.md"
+        var oid_likes = "likes_posts\/202402-my-neovim-keymaps\/index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.5b1bad196a6075a1e11bae1dc95f24f67b610948a00525e347566c5a62338ea78f1c7224ab9a53873dcdb2a1a7d7d391b8a8ef45561297f68806c01315b0c4f6.js" integrity="sha512-WxutGWpgdaHhG64dyV8k9nthCUigBSXjR1ZsWmIzjqePHHIkq5pThz3NsqGn19ORuKjvRVYSl/aIBsATFbDE9g=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/202402-arrays/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Arrays: The Fundamental Data Structure</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-02-11 22:39:33 &#43;0300 &#43;0300">11-02-2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/tags/"
+            title="Tags">
+            
+            Tags
+          </a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/series/"
+            title="Series">
+            
+            Series
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      Justice Nyaga
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://justicenyaga.me/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
