@@ -105,7 +105,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "797"
+    "wordCount": "910"
   }]
   </script>
 
@@ -560,7 +560,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>797 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>910 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -643,8 +643,31 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#features">Features</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a></li>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-ensure-you-have-neovim-v09-and-above">1. <strong>Ensure you have Neovim v0.9 and Above:</strong></a></li>
+        <li><a href="#2-install-python310-venv">2. <strong>Install python3.10-venv:</strong></a></li>
+        <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
+        <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
+        <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
+        <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
+        <li><a href="#7-_optional_-go-language-server-gopls">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong></a></li>
+        <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
+        <li><a href="#9-clone-configuration-repository">9. <strong>Clone Configuration Repository:</strong></a></li>
+        <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
+      <ul>
+        <li><a href="#1-open-neovim">1. <strong>Open Neovim:</strong></a></li>
+        <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
+        <li><a href="#3-compile-the-es7-snippets-plugin">3. <strong>Compile the ES7 snippets plugin:</strong></a></li>
+        <li><a href="#4-language-servers-customizations">4. <strong>Language Servers Customizations:</strong></a></li>
+        <li><a href="#5-_for-java-developers_">5. <strong><em>For Java Developers:</em></strong></a></li>
+        <li><a href="#6-_for-non-wsl-users_">6. <strong><em>For Non-WSL users</em>:</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusions">Conclusions</a></li>
     <li><a href="#recommendations">Recommendations</a></li>
   </ul>
 </nav>
@@ -662,8 +685,31 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#features">Features</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a></li>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-ensure-you-have-neovim-v09-and-above">1. <strong>Ensure you have Neovim v0.9 and Above:</strong></a></li>
+        <li><a href="#2-install-python310-venv">2. <strong>Install python3.10-venv:</strong></a></li>
+        <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
+        <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
+        <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
+        <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
+        <li><a href="#7-_optional_-go-language-server-gopls">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong></a></li>
+        <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
+        <li><a href="#9-clone-configuration-repository">9. <strong>Clone Configuration Repository:</strong></a></li>
+        <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
+      <ul>
+        <li><a href="#1-open-neovim">1. <strong>Open Neovim:</strong></a></li>
+        <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
+        <li><a href="#3-compile-the-es7-snippets-plugin">3. <strong>Compile the ES7 snippets plugin:</strong></a></li>
+        <li><a href="#4-language-servers-customizations">4. <strong>Language Servers Customizations:</strong></a></li>
+        <li><a href="#5-_for-java-developers_">5. <strong><em>For Java Developers:</em></strong></a></li>
+        <li><a href="#6-_for-non-wsl-users_">6. <strong><em>For Non-WSL users</em>:</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusions">Conclusions</a></li>
     <li><a href="#recommendations">Recommendations</a></li>
   </ul>
 </nav>
@@ -897,19 +943,40 @@ Screenshots # Features # Plugins managed with lazy."/>
     
 </h2>
 <p>Before diving into the configuration, ensure you have the following prerequisites installed:</p>
-<ol>
-<li>
-<p><strong>Ensure you have Neovim v0.9 and Above:</strong>
-Ensure that you have Neovim version 0.9 or above installed. Check your Neovim version using:</p>
+<h3 class="relative group">1. <strong>Ensure you have Neovim v0.9 and Above:</strong> 
+    <div id="1-ensure-you-have-neovim-v09-and-above" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-ensure-you-have-neovim-v09-and-above" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Ensure that you have Neovim version 0.9 or above installed. Check your Neovim version using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvim --version
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Install python3.10-venv:</strong>
-Install the <code>python3.10-venv</code> package using the following command:</p>
+</span></span></code></pre></div><h3 class="relative group">2. <strong>Install python3.10-venv:</strong> 
+    <div id="2-install-python310-venv" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-install-python310-venv" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install the <code>python3.10-venv</code> package using the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install python3.10-venv
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Install Go (Golang):</strong></p>
+</span></span></code></pre></div><h3 class="relative group">3. <strong>Install Go (Golang):</strong> 
+    <div id="3-install-go-golang" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-install-go-golang" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Certain plugins in my configuration rely on Go. Ensure a seamless experience by installing Go using the official <a href="https://go.dev/doc/install"   target="_blank">
     installation guide</a>.</p>
 <p>After installation, set up the required environment variables in your shell configuration file (e.g., <code>.bashrc</code> or <code>.zshrc</code>):</p>
@@ -917,32 +984,67 @@ Install the <code>python3.10-venv</code> package using the following command:</p
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/go/bin
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/go/bin
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Node Packages:</strong>
-Install neovim and tree-sitter node packages by running the following command:</p>
+</span></span></code></pre></div><h3 class="relative group">4. <strong>Node Packages:</strong> 
+    <div id="4-node-packages" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-node-packages" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install neovim and tree-sitter node packages by running the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i -g neovim tree-sitter
-</span></span></code></pre></div></li>
-<li>
-<p><strong>pynvim Package:</strong>
-Install the pynvim package using pip:</p>
+</span></span></code></pre></div><h3 class="relative group">5. <strong>pynvim Package:</strong> 
+    <div id="5-pynvim-package" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-pynvim-package" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install the pynvim package using pip:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m pip install -U pynvim
 </span></span></code></pre></div><p>Ensure that the <code>python</code> command points to <code>python3</code> by adding the following alias on your <code>.bashrc</code> or <code>.zshrc</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
-</span></span></code></pre></div></li>
-<li>
-<p><strong>ripgrep Package:</strong></p>
-<p>For telescope&rsquo;s live_grep to work, you need the ripgrep package. Install it using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ripgrep
-</span></span></code></pre></div></li>
-<li>
-<p><strong><em>Optional:</em> Go Language Server (gopls):</strong></p>
+</span></span></code></pre></div><h3 class="relative group">6. <strong>Telescope requirements:</strong> 
+    <div id="6-telescope-requirements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-telescope-requirements" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ripgrep fd-find
+</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong> 
+    <div id="7-_optional_-go-language-server-gopls" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#7-_optional_-go-language-server-gopls" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>For Go developers, consider installing the Go Language Server (gopls) to enhance your Go programming experience. Run the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install golang.org/x/tools/gopls@latest
-</span></span></code></pre></div></li>
-<li>
-<p><strong><em>Optional:</em> Java</strong>
-For Java developer, follow the following steps:</p>
+</span></span></code></pre></div><h3 class="relative group">8. <strong><em>Optional:</em> Java</strong> 
+    <div id="8-_optional_-java" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#8-_optional_-java" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>For Java developer, follow the following steps:</p>
 <ul>
 <li>Ensure you are running JRE 17 and above
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java --version
@@ -959,23 +1061,62 @@ For Java developer, follow the following steps:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
 </span></span></code></pre></div></li>
 </ul>
+<h3 class="relative group">9. <strong>Clone Configuration Repository:</strong> 
+    <div id="9-clone-configuration-repository" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#9-clone-configuration-repository" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Clone my Neovim configuration repository to <code>~/.config/nvim</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
+</span></span></code></pre></div><h3 class="relative group">10. <strong><em>Optional:</em> win32yank for WSL</strong> 
+    <div id="10-_optional_-win32yank-for-wsl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#10-_optional_-win32yank-for-wsl" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>For WSL users, install <code>win32yank</code> for clipboard interaction between Windows and WSL by following these steps:</p>
+<ol>
+<li>
+<p><strong>Download win32yank binary:</strong></p>
+<ul>
+<li>Visit <a href="https://github.com/equalsraf/win32yank/releases"   target="_blank">
+    https://github.com/equalsraf/win32yank/releases</a> to download the <code>win32yank</code> binary.</li>
+</ul>
 </li>
 <li>
-<p><strong>Clone Configuration Repository:</strong>
-Clone my Neovim configuration repository to <code>~/.config/nvim</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
-</span></span></code></pre></div></li>
+<p><strong>Copy it to <code>/usr/local/bin</code>:</strong></p>
+<ul>
+<li>After downloading the binary, copy it to the <code>/usr/local/bin</code> directory.</li>
+</ul>
+</li>
 <li>
-<p><strong><em>For WSL users</em>, Download win32yank to interact with windows clipboard:</strong></p>
-<p>Download win32yank binary here <a href="https://github.com/equalsraf/win32yank/releases"   target="_blank">
-    https://github.com/equalsraf/win32yank/releases</a>
-then copy it to <code>/usr/local/bin</code></p>
-<p>Add execution permissions</p>
+<p><strong>Add execution permissions:</strong></p>
+<ul>
+<li>Set execution permissions for <code>win32yank.exe</code> using the following command:
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x win32yank.exe
-</span></span></code></pre></div><p>Uninstall <code>xclip</code> if you have it installed to avoid potential conflit as it would be used as the default:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt remove xclip
 </span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Uninstall <code>xclip</code> and <code>xsel</code>:</strong></p>
+<ul>
+<li>To avoid potential conflicts, uninstall <code>xclip</code> and <code>xsel</code> if they are installed on your system as they would be used by default.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt remove xclip
+</span></span><span class="line"><span class="cl">sudo apt remove xsel   <span class="c1"># if it exists</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
 </ol>
+<p>These steps ensure the proper installation and configuration of <code>win32yank</code> as the default clipboard tool, avoiding conflicts with <code>xclip</code> and/or<code>xsel</code>.</p>
 <h2 class="relative group">Neovim Plugin Installation 
     <div id="neovim-plugin-installation" class="anchor"></div>
     
@@ -986,36 +1127,86 @@ then copy it to <code>/usr/local/bin</code></p>
     </span>        
     
 </h2>
-<ol>
-<li>
-<p><strong>Open Neovim:</strong></p>
+<h3 class="relative group">1. <strong>Open Neovim:</strong> 
+    <div id="1-open-neovim" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-open-neovim" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvim
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Allow the plugins to load.</strong></p>
+</span></span></code></pre></div><h3 class="relative group">2. <strong>Allow the plugins to load.</strong> 
+    <div id="2-allow-the-plugins-to-load" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-allow-the-plugins-to-load" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>You can issue the command <code>:Lazy</code> to view the progress</p>
 <p>Once the plugins are installed, exit Neovim.</p>
-</li>
-<li>
-<p><strong>Compile the ES7/Javascript/React snippets plugin:</strong></p>
+<h3 class="relative group">3. <strong>Compile the ES7 snippets plugin:</strong> 
+    <div id="3-compile-the-es7-snippets-plugin" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-compile-the-es7-snippets-plugin" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/lazy/vscode-es7-javascript-react-snippets
 </span></span><span class="line"><span class="cl">yarn install --frozen-lockfile <span class="o">&amp;&amp;</span> yarn compile
 </span></span></code></pre></div><p>This step is crucial for the proper functioning of the snippets plugin.</p>
-</li>
-<li>
-<p><strong>Customize Your Language Server Protocol (LPS), Linters, and Formatters Installation:</strong></p>
-<p>Open up Mason using the command <code>:Mason</code> to seamlessly install and configure your preferred Language Server Protocol, along with Linters and Formatters. Tailor these tools to your specific needs, providing a customized and optimized setup for an enhanced coding experience.</p>
-<p>To add more language servers to the ones I&rsquo;ve configured, check out the <a href="https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md"   target="_blank">
-    server_configuration</a> guide from neovim/nvim-lspconfig repository.</p>
-</li>
-<li>
-<p><strong><em>For Java Developers:</em></strong> Download and setup the <code>java-debug</code> extension. Install it on your neovim data folder <code>~/.local/share/nvim</code> using the following commands:</p>
+<h3 class="relative group">4. <strong>Language Servers Customizations:</strong> 
+    <div id="4-language-servers-customizations" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-language-servers-customizations" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>To add more language servers and debug adapters to the ones I&rsquo;ve configured, check out the <a href="https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md"   target="_blank">
+    lsp server</a>, <a href="https://github.com/mfussenegger/nvim-lint?tab=readme-ov-file#Usage"   target="_blank">
+    linters</a>, <a href="https://github.com/stevearc/conform.nvim#Setup"   target="_blank">
+    formatters</a> and <a href="https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation"   target="_blank">
+    debug adapter</a> configuration guides.</p>
+<p>You can use <code>Mason</code> (opened with the command <code>:Mason</code>) to seamlessly install the configured servers. You can also use Mason to ensure certain servers, formatters, linters, and DAPs are installed. Check out the <a href="https://github.com/williamboman/mason-lspconfig.nvim#Configuration"   target="_blank">
+    mason-lspconfig</a>, <a href="https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim#Configuration"   target="_blank">
+    mason-tool-installer</a> and <a href="https://github.com/jay-babu/mason-nvim-dap.nvim#Configuration"   target="_blank">
+    mason-nvim-dap</a> configuration guides for more information on this.</p>
+<h3 class="relative group">5. <strong><em>For Java Developers:</em></strong> 
+    <div id="5-_for-java-developers_" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-_for-java-developers_" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Download and setup the <code>java-debug</code> extension. Install it on your neovim data folder <code>~/.local/share/nvim</code> using the following commands:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl">./mvnw clean install
-</span></span></code></pre></div></li>
-<li>
-<p><strong><em>For Non-WSL users</em>:</strong> Comment the wsl clipboard block on <code>~/.config/nvim/lua/justice/core/options.lua</code> if you are not using WSL.</p>
+</span></span></code></pre></div><h3 class="relative group">6. <strong><em>For Non-WSL users</em>:</strong> 
+    <div id="6-_for-non-wsl-users_" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-_for-non-wsl-users_" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Comment the wsl clipboard block on <code>~/.config/nvim/lua/justice/core/options.lua</code> if you are not using WSL.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">vim.g</span><span class="p">.</span><span class="n">clipboard</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;win32yank-wsl&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="n">copy</span> <span class="o">=</span> <span class="p">{</span>
@@ -1028,10 +1219,17 @@ then copy it to <code>/usr/local/bin</code></p>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
 </span></span><span class="line"><span class="cl">  <span class="n">cache_enabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div></li>
-</ol>
+</span></span></code></pre></div><h2 class="relative group">Conclusions 
+    <div id="conclusions" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusions" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <p>That&rsquo;s it! Your Neovim environment is now configured and ready for use. Customize further based on your preferences, and happy coding!</p>
-<br/>
 <h2 class="relative group">Recommendations 
     <div id="recommendations" class="anchor"></div>
     
