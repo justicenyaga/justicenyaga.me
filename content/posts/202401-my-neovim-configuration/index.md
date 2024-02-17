@@ -3,6 +3,8 @@ title = "My Neovim Configuration Setup Guide"
 date = 2024-01-16T13:32:33+03:00
 draft = false
 tags = ['lua', 'neovim']
+series = ["My Neovim Configuration"]
+series_order = 1
 +++
 
 ## Introduction
@@ -238,6 +240,12 @@ vim.g.clipboard = {
 ## Conclusions
 
 That's it! Your Neovim environment is now configured and ready for use. Customize further based on your preferences, and happy coding!
+
+{{< alert icon="none" >}}
+
+Navigate to the next article in this series via the blue drop-down list at the end/beginning of this page for a detailed walkthrough of the keymaps configured in my Neovim setup.
+
+{{< /alert >}}
 
 ## Recommendations
 
