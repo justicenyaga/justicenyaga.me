@@ -44,6 +44,12 @@ learning and creative exploration.
             <td><a target="_blank" href="https://proshop-eshop.azurewebsites.net/">site</a></br><a target="_blank" href="https://github.com/justicenyaga/proshop_api">github</a></td>
         </tr>
         <tr>
+            <td><img class="customEntitityAlbum" style="background-color:transparent" src="bridge-high.png"/></td>
+            <td>Bridge School</td>
+            <td>A high school management system web application</td>
+            <td><a target="_blank" href="https://github.com/justicenyaga/bridge_high">github</a></td>
+        </tr>
+        <tr>
             <td><img class="customEntitityAlbum" style="background-color:transparent" src="done-with-it.png"/></td>
             <td>DoneWithIt</td>
             <td>A faux native app marketplace designed for selling items you no longer need.</td>
