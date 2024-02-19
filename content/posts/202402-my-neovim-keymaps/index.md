@@ -412,7 +412,7 @@ And so on.
 | `<leader>gps` | Normal | Git push                       |
 | `<leader>gPs` | Normal | Git force push                 |
 | `<leader>gpl` | Normal | Git pull                       |
-| `<leader>gPL` | Normal | Git force pull                 |
+| `<leader>gPl` | Normal | Git force pull                 |
 | `<leader>gpu` | Normal | Populate git push set upstream |
 | `<leader>gra` | Normal | Populate add remote            |
 | `<leader>grd` | Normal | Populate remove remote         |
