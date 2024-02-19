@@ -208,7 +208,11 @@ To add more language servers and debug adapters to the ones I've configured, che
 
 You can use `Mason` (opened with the command `:Mason`) to seamlessly install the configured servers. You can also use Mason to ensure certain servers, formatters, linters, and DAPs are installed. Check out the [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim#Configuration), [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim#Configuration) and [mason-nvim-dap](https://github.com/jay-babu/mason-nvim-dap.nvim#Configuration) configuration guides for more information on this.
 
-### 5. **_For Java Developers:_**
+### 5. **Language Parsers Customizations:**
+
+I've employed `nvim-treesitter` to customize language parsers. Explore their [list of supported languages](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages). To integrate a new language parser, just include it in the `ensure_installed` object within the `nvim-treesitter` configuration file (`~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua`). `treesitter` will handle the automatic installation of parsers specified in the `ensure_installed` section.
+
+### 6. **_For Java Developers:_**
 
 Download and setup the `java-debug` extension. Install it on your neovim data folder `~/.local/share/nvim` using the following commands:
 
@@ -218,7 +222,7 @@ cd ~/.local/share/nvim/java-debug
 ./mvnw clean install
 ```
 
-### 6. **_For Non-WSL users_:**
+### 7. **_For Non-WSL users_:**
 
 Comment the wsl clipboard block on `~/.config/nvim/lua/justice/core/options.lua` if you are not using WSL.
 
