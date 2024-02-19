@@ -106,7 +106,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "953"
+    "wordCount": "1003"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>953 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>1003 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -664,8 +664,9 @@ Screenshots # Features # Plugins managed with lazy."/>
         <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
         <li><a href="#3-compile-the-es7-snippets-plugin">3. <strong>Compile the ES7 snippets plugin:</strong></a></li>
         <li><a href="#4-language-servers-customizations">4. <strong>Language Servers Customizations:</strong></a></li>
-        <li><a href="#5-_for-java-developers_">5. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#6-_for-non-wsl-users_">6. <strong><em>For Non-WSL users</em>:</strong></a></li>
+        <li><a href="#5-language-parsers-customizations">5. <strong>Language Parsers Customizations:</strong></a></li>
+        <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
+        <li><a href="#7-_for-non-wsl-users_">7. <strong><em>For Non-WSL users</em>:</strong></a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -706,8 +707,9 @@ Screenshots # Features # Plugins managed with lazy."/>
         <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
         <li><a href="#3-compile-the-es7-snippets-plugin">3. <strong>Compile the ES7 snippets plugin:</strong></a></li>
         <li><a href="#4-language-servers-customizations">4. <strong>Language Servers Customizations:</strong></a></li>
-        <li><a href="#5-_for-java-developers_">5. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#6-_for-non-wsl-users_">6. <strong><em>For Non-WSL users</em>:</strong></a></li>
+        <li><a href="#5-language-parsers-customizations">5. <strong>Language Parsers Customizations:</strong></a></li>
+        <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
+        <li><a href="#7-_for-non-wsl-users_">7. <strong><em>For Non-WSL users</em>:</strong></a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -1215,13 +1217,25 @@ Screenshots # Features # Plugins managed with lazy."/>
     mason-lspconfig</a>, <a href="https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim#Configuration"   target="_blank">
     mason-tool-installer</a> and <a href="https://github.com/jay-babu/mason-nvim-dap.nvim#Configuration"   target="_blank">
     mason-nvim-dap</a> configuration guides for more information on this.</p>
-<h3 class="relative group">5. <strong><em>For Java Developers:</em></strong> 
-    <div id="5-_for-java-developers_" class="anchor"></div>
+<h3 class="relative group">5. <strong>Language Parsers Customizations:</strong> 
+    <div id="5-language-parsers-customizations" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#5-_for-java-developers_" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#5-language-parsers-customizations" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I&rsquo;ve employed <code>nvim-treesitter</code> to customize language parsers. Explore their <a href="https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages"   target="_blank">
+    list of supported languages</a>. To integrate a new language parser, just include it in the <code>ensure_installed</code> object within the <code>nvim-treesitter</code> configuration file (<code>~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua</code>). <code>treesitter</code> will handle the automatic installation of parsers specified in the <code>ensure_installed</code> section.</p>
+<h3 class="relative group">6. <strong><em>For Java Developers:</em></strong> 
+    <div id="6-_for-java-developers_" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-_for-java-developers_" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1229,13 +1243,13 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl">./mvnw clean install
-</span></span></code></pre></div><h3 class="relative group">6. <strong><em>For Non-WSL users</em>:</strong> 
-    <div id="6-_for-non-wsl-users_" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">7. <strong><em>For Non-WSL users</em>:</strong> 
+    <div id="7-_for-non-wsl-users_" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#6-_for-non-wsl-users_" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#7-_for-non-wsl-users_" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
