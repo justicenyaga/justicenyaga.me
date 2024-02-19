@@ -275,6 +275,17 @@ And so on.
 
 {{</table>}}
 
+## Markdown Preview Keymaps
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap        | Mode   | Description                          |
+| ------------- | ------ | ------------------------------------ |
+| `<leader>mdp` | Normal | Start markdown preview (Browser tab) |
+| `<leader>mdx` | Normal | Stop markdown preview                |
+
+{{</table>}}
+
 ## Git Keymaps
 
 {{<table "table table-striped table-bordered">}}
