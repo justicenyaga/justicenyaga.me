@@ -18,8 +18,9 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `<Space>`    | N/A               | Leader key                                  |
 | `jk`         | Insert            | Exit insert mode                            |
 | `<leader>nh` | Normal            | Clear search highlights                     |
-| `<leader>+`  | Normal            | Increment number under cursor               |
-| `<leader>-`  | Normal            | Decrement number under cursor               |
+| `<C-a>`      | Normal            | Select all                                  |
+| `+`          | Normal            | Increment number under cursor               |
+| `-`          | Normal            | Decrement number under cursor               |
 | `<leader>rw` | Normal            | Toggle Find & Replace                       |
 | `<leader>rc` | Normal            | Toggle Find & Replace for word under cursor |
 | `<C-z>`      | Normal & Terminal | Toggle FTerm terminal                       |
@@ -244,9 +245,9 @@ And so on.
 | `<leader>dC` | Normal | Clear breakpoints                          |
 | `<leader>ds` | Normal | Start debugging session                    |
 | `<leader>dc` | Normal | Continue                                   |
-| `<leader>dn` | Normal | Step over                                  |
+| `<leader>do` | Normal | Step over                                  |
 | `<leader>di` | Normal | Step into                                  |
-| `<leader>do` | Normal | Step out                                   |
+| `<leader>dO` | Normal | Step out                                   |
 | `<leader>de` | Normal | Close debugger and end debugging session   |
 | `<leader>dc` | Normal | Continue                                   |
 
@@ -396,7 +397,7 @@ And so on.
 | Keymap        | Mode   | Description                              |
 | ------------- | ------ | ---------------------------------------- |
 | `<leader>grh` | Normal | Reset the last commit                    |
-| `<leader>gRr` | Normal | Hard reset the last commit               |
+| `<leader>gRh` | Normal | Hard reset the last commit               |
 | `<leader>gri` | Normal | Populate reset with count from HEAD      |
 | `<leader>gRi` | Normal | Populate hard reset with count from HEAD |
 | `<leader>grO` | Normal | Populate git reset                       |
