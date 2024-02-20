@@ -2,7 +2,7 @@
 title = "Arrays: The Fundamental Data Structure"
 date = 2024-02-11T22:39:33+03:00
 draft = false
-tags = ["data-structures-and-algorithms", "arrays"]
+tags = ["data-structures-and-algorithms", "arrays", "java"]
 series = ["Data Structures and Algorithms"]
 series_order = 2
 +++
