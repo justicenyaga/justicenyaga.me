@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Sun, 11 Feb 2024 22:39:33 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/data-structures-and-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Feb 2024 11:11:59 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/data-structures-and-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linked Lists Data Structure</title>
+      <link>https://justicenyaga.me/posts/202402-linked-lists-data-structure/</link>
+      <pubDate>Tue, 20 Feb 2024 11:11:59 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-linked-lists-data-structure/</guid>
+      <description>Linked Lists: Understanding and Implementing in Java # Introduction # Linked lists provide a dynamic way of storing and managing data, allowing for automatic growth and shrinkage. Unlike arrays, linked lists consist of nodes, each holding a value and a reference to the next node in the sequence.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-linked-lists-data-structure/featured.png" />
+    </item>
+    
     <item>
       <title>Arrays: The Fundamental Data Structure</title>
       <link>https://justicenyaga.me/posts/202402-arrays/</link>

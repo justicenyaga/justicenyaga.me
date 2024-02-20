@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Justice Nyaga</copyright>
-    <lastBuildDate>Sat, 17 Feb 2024 23:36:25 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Feb 2024 11:11:59 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linked Lists Data Structure</title>
+      <link>https://justicenyaga.me/posts/202402-linked-lists-data-structure/</link>
+      <pubDate>Tue, 20 Feb 2024 11:11:59 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-linked-lists-data-structure/</guid>
+      <description>Linked Lists: Understanding and Implementing in Java # Introduction # Linked lists provide a dynamic way of storing and managing data, allowing for automatic growth and shrinkage. Unlike arrays, linked lists consist of nodes, each holding a value and a reference to the next node in the sequence.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-linked-lists-data-structure/featured.png" />
+    </item>
+    
     <item>
       <title>My Neovim Keymaps</title>
       <link>https://justicenyaga.me/posts/202402-my-neovim-keymaps/</link>
