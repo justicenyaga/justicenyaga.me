@@ -180,12 +180,30 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap       | Mode   | Description                     |
-| ------------ | ------ | ------------------------------- |
-| `<leader>ff` | Normal | Fuzzy find files in cwd         |
-| `<leader>fr` | Normal | Fuzzy find recent files         |
-| `<leader>fs` | Normal | Find strings in cwd             |
-| `<leader>fc` | Normal | Find string under cursor in cwd |
+| Keymap       | Mode   | Description                             |
+| ------------ | ------ | --------------------------------------- |
+| `<leader>ff` | Normal | Fuzzy find files in cwd                 |
+| `<leader>fr` | Normal | Fuzzy find recent files                 |
+| `<leader>fs` | Normal | Find strings in cwd                     |
+| `<leader>fc` | Normal | Find string under cursor in cwd         |
+| `<leader>fh` | Normal | Fuzzy find files in harpoon marked list |
+
+{{</table>}}
+
+## Harpoon Keybinds
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap      | Mode   | Description                                |
+| ----------- | ------ | ------------------------------------------ |
+| `<leader>a` | Normal | Add current buffer to harpoon marked list  |
+| `<leader>h` | Normal | Toggle open/close harpoon marked list menu |
+| `<leader>n` | Normal | Go to next file on harpoon marked list     |
+| `<leader>p` | Normal | Go to previous file on harpoon marked list |
+| `<leader>1` | Normal | Go to first file on harpoon marked list    |
+| `<leader>2` | Normal | Go to second file on harpoon marked list   |
+| `<leader>3` | Normal | Go to third file on harpoon marked list    |
+| `<leader>4` | Normal | Go to fourth file on harpoon marked list   |
 
 {{</table>}}
 
