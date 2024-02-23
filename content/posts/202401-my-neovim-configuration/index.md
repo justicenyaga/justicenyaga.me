@@ -203,7 +203,12 @@ You can use `Mason` (opened with the command `:Mason`) to seamlessly install the
 
 I've employed `nvim-treesitter` to customize language parsers. Explore their [list of supported languages](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages). To integrate a new language parser, just include it in the `ensure_installed` object within the `nvim-treesitter` configuration file (`~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua`). `treesitter` will handle the automatic installation of parsers specified in the `ensure_installed` section.
 
-### 5. **_For Java Developers:_**
+### 5. **_Optional_: Copilot auto-completion**
+
+- To use copilot auto completion, you need to have a github copilot subscription.
+- Authenticate to Copilot using `:Copilot auth` command.
+
+### 6. **_For Java Developers:_**
 
 Download and setup the `java-debug` extension. Install it on your neovim data folder `~/.local/share/nvim` using the following commands:
 
@@ -213,7 +218,7 @@ cd ~/.local/share/nvim/java-debug
 ./mvnw clean install
 ```
 
-### 6. **_For Non-WSL users_:**
+### 7. **_For Non-WSL users_:**
 
 Comment the wsl clipboard block on `~/.config/nvim/lua/justice/core/options.lua` if you are not using WSL.
 
