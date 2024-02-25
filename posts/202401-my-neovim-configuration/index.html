@@ -106,7 +106,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1001"
+    "wordCount": "996"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>1001 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>996 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -646,15 +646,15 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#features">Features</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#1-ensure-you-have-neovim-v09-and-above">1. <strong>Ensure you have Neovim v0.9 and Above:</strong></a></li>
+        <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
         <li><a href="#2-install-python310-venv">2. <strong>Install python3.10-venv:</strong></a></li>
         <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
         <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
         <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
         <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#7-_optional_-go-language-server-gopls">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong></a></li>
+        <li><a href="#7-_optional_-go-language-server">7. <strong><em>Optional:</em> Go Language Server:</strong></a></li>
         <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#9-clone-configuration-repository">9. <strong>Clone Configuration Repository:</strong></a></li>
+        <li><a href="#9-clone-configuration-repo">9. <strong>Clone Configuration Repo:</strong></a></li>
         <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
       </ul>
     </li>
@@ -689,15 +689,15 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#features">Features</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#1-ensure-you-have-neovim-v09-and-above">1. <strong>Ensure you have Neovim v0.9 and Above:</strong></a></li>
+        <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
         <li><a href="#2-install-python310-venv">2. <strong>Install python3.10-venv:</strong></a></li>
         <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
         <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
         <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
         <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#7-_optional_-go-language-server-gopls">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong></a></li>
+        <li><a href="#7-_optional_-go-language-server">7. <strong><em>Optional:</em> Go Language Server:</strong></a></li>
         <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#9-clone-configuration-repository">9. <strong>Clone Configuration Repository:</strong></a></li>
+        <li><a href="#9-clone-configuration-repo">9. <strong>Clone Configuration Repo:</strong></a></li>
         <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
       </ul>
     </li>
@@ -980,13 +980,13 @@ Screenshots # Features # Plugins managed with lazy."/>
     
 </h2>
 <p>Before diving into the configuration, ensure you have the following prerequisites installed:</p>
-<h3 class="relative group">1. <strong>Ensure you have Neovim v0.9 and Above:</strong> 
-    <div id="1-ensure-you-have-neovim-v09-and-above" class="anchor"></div>
+<h3 class="relative group">1. <strong>Ensure Neovim v0.9+:</strong> 
+    <div id="1-ensure-neovim-v09" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-ensure-you-have-neovim-v09-and-above" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#1-ensure-neovim-v09" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1059,13 +1059,13 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ripgrep fd-find
-</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Go Language Server (gopls):</strong> 
-    <div id="7-_optional_-go-language-server-gopls" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Go Language Server:</strong> 
+    <div id="7-_optional_-go-language-server" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#7-_optional_-go-language-server-gopls" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#7-_optional_-go-language-server" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1098,13 +1098,13 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
 </span></span></code></pre></div></li>
 </ul>
-<h3 class="relative group">9. <strong>Clone Configuration Repository:</strong> 
-    <div id="9-clone-configuration-repository" class="anchor"></div>
+<h3 class="relative group">9. <strong>Clone Configuration Repo:</strong> 
+    <div id="9-clone-configuration-repo" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#9-clone-configuration-repository" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#9-clone-configuration-repo" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
