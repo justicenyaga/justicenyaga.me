@@ -50,7 +50,7 @@ Welcome to my Neovim configuration repository, where I've curated a powerful set
 
 Before diving into the configuration, ensure you have the following prerequisites installed:
 
-### 1. **Ensure you have Neovim v0.9 and Above:**
+### 1. **Ensure Neovim v0.9+:**
 
 Ensure that you have Neovim version 0.9 or above installed. Check your Neovim version using:
 
@@ -110,7 +110,7 @@ For telescope to work without any issues, you need to have both ripgrep and fd p
 sudo apt install ripgrep fd-find
 ```
 
-### 7. **_Optional:_ Go Language Server (gopls):**
+### 7. **_Optional:_ Go Language Server:**
 
 For Go developers, consider installing the Go Language Server (gopls) to enhance your Go programming experience. Run the following command:
 
@@ -143,7 +143,7 @@ For Java developer, follow the following steps:
   wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz && sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
   ```
 
-### 9. **Clone Configuration Repository:**
+### 9. **Clone Configuration Repo:**
 
 Clone my Neovim configuration repository to `~/.config/nvim`:
 
