@@ -732,8 +732,8 @@
         if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
 
         active.each(function (i, e) {
-          
-            $(e).removeClass('active');
+           
+            $(e).removeClass('active').siblings('ul').hide();
           
         });
         $toc.find('a[href="#' + id + '"]').addClass('active')
@@ -744,6 +744,8 @@
 
       $window.on('scroll', onScroll);
       $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
         
         onScroll();
       });
@@ -1409,14 +1411,6 @@
     
 
     
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
-      
-      
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
-    </p>
     
 
   </div>
