@@ -198,8 +198,8 @@ And so on.
 | ----------- | ------ | ------------------------------------------ |
 | `<leader>a` | Normal | Add current buffer to harpoon marked list  |
 | `<leader>h` | Normal | Toggle open/close harpoon marked list menu |
-| `<leader>n` | Normal | Go to next file on harpoon marked list     |
-| `<leader>p` | Normal | Go to previous file on harpoon marked list |
+| `<C-u>`     | Normal | Go to next file on harpoon marked list     |
+| `<C-p>`     | Normal | Go to previous file on harpoon marked list |
 | `<leader>1` | Normal | Go to first file on harpoon marked list    |
 | `<leader>2` | Normal | Go to second file on harpoon marked list   |
 | `<leader>3` | Normal | Go to third file on harpoon marked list    |
@@ -364,6 +364,7 @@ And so on.
 | `<leader>gzP` | Normal | Populate pop stash                                           |
 | `<leader>gzd` | Normal | Drop top most stash                                          |
 | `<leader>gzD` | Normal | Populate drop stash                                          |
+| `<leader>gzl` | Normal | List all the stash                                           |
 | `<leader>gzo` | Normal | Populate git stash                                           |
 
 {{</table>}}
