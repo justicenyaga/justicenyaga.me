@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stacks on Justice Nyaga</title>
+    <link>https://justicenyaga.me/tags/stacks/</link>
+    <description>Recent content in stacks on Justice Nyaga</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Justice Nyaga</copyright>
+    <lastBuildDate>Sun, 25 Feb 2024 00:08:52 +0300</lastBuildDate><atom:link href="https://justicenyaga.me/tags/stacks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stacks Data Structure</title>
+      <link>https://justicenyaga.me/posts/202402-stacks-data-structure/</link>
+      <pubDate>Sun, 25 Feb 2024 00:08:52 +0300</pubDate>
+      
+      <guid>https://justicenyaga.me/posts/202402-stacks-data-structure/</guid>
+      <description>Introduction # Stacks are powerful data structures with a simple yet versatile nature. They operate on the Last In, First Out (LIFO) principle, making them ideal for tasks like:
+Undo/redo functionality in application Implementing compilers (syntax checking) Evaluating arithmetic expressions (e.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202402-stacks-data-structure/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
