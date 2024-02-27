@@ -106,7 +106,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "996"
+    "wordCount": "995"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>996 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>995 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -666,7 +666,7 @@ Screenshots # Features # Plugins managed with lazy."/>
         <li><a href="#4-language-parsers-customizations">4. <strong>Language Parsers Customizations:</strong></a></li>
         <li><a href="#5-_optional_-copilot-auto-completion">5. <strong><em>Optional</em>: Copilot auto-completion</strong></a></li>
         <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#7-_for-non-wsl-users_">7. <strong><em>For Non-WSL users</em>:</strong></a></li>
+        <li><a href="#7-_for-wsl-users_">7. <strong><em>For WSL users</em>:</strong></a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -709,7 +709,7 @@ Screenshots # Features # Plugins managed with lazy."/>
         <li><a href="#4-language-parsers-customizations">4. <strong>Language Parsers Customizations:</strong></a></li>
         <li><a href="#5-_optional_-copilot-auto-completion">5. <strong><em>Optional</em>: Copilot auto-completion</strong></a></li>
         <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#7-_for-non-wsl-users_">7. <strong><em>For Non-WSL users</em>:</strong></a></li>
+        <li><a href="#7-_for-wsl-users_">7. <strong><em>For WSL users</em>:</strong></a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -1246,17 +1246,17 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl">./mvnw clean install
-</span></span></code></pre></div><h3 class="relative group">7. <strong><em>For Non-WSL users</em>:</strong> 
-    <div id="7-_for-non-wsl-users_" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">7. <strong><em>For WSL users</em>:</strong> 
+    <div id="7-_for-wsl-users_" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#7-_for-non-wsl-users_" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#7-_for-wsl-users_" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Comment the wsl clipboard block on <code>~/.config/nvim/lua/justice/core/options.lua</code> if you are not using WSL.</p>
+<p>Uncomment the wsl clipboard block on <code>~/.config/nvim/lua/justice/core/options.lua</code> if you are using WSL.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">vim.g</span><span class="p">.</span><span class="n">clipboard</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;win32yank-wsl&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="n">copy</span> <span class="o">=</span> <span class="p">{</span>
