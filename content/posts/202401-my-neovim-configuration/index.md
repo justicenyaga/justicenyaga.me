@@ -218,9 +218,9 @@ cd ~/.local/share/nvim/java-debug
 ./mvnw clean install
 ```
 
-### 7. **_For Non-WSL users_:**
+### 7. **_For WSL users_:**
 
-Comment the wsl clipboard block on `~/.config/nvim/lua/justice/core/options.lua` if you are not using WSL.
+Uncomment the wsl clipboard block on `~/.config/nvim/lua/justice/core/options.lua` if you are using WSL.
 
 ```lua
 vim.g.clipboard = {
