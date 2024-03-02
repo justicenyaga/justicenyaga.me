@@ -37,7 +37,7 @@ Follow these steps to set up and enhance your Tmux experience:
    Download the Tmux configuration file and seamlessly integrate it into your home directory using the following command:
 
    ```bash
-   wget https://raw.githubusercontent.com/justicenyaga/my_nvim_config/main/.tmux.conf -O ~/.tmux.conf
+   wget https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/.tmux.conf -O ~/.tmux.conf
 
    ```
 
