@@ -58,12 +58,12 @@ Ensure that you have Neovim version 0.9 or above installed. Check your Neovim ve
 nvim --version
 ```
 
-### 2. **Install python3.10-venv:**
+### 2. **Install python3-venv:**
 
-Install the `python3.10-venv` package using the following command:
+Install the `python3-venv` package using the following command:
 
 ```bash
-sudo apt install python3.10-venv
+sudo apt install python3-venv
 ```
 
 ### 3. **Install Go (Golang):**
