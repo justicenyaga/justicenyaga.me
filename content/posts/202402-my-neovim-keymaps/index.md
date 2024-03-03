@@ -417,8 +417,8 @@ And so on.
 | ------------- | ------ | ---------------------------------------- |
 | `<leader>grh` | Normal | Reset the last commit                    |
 | `<leader>gRh` | Normal | Hard reset the last commit               |
-| `<leader>gri` | Normal | Populate reset with count from HEAD      |
-| `<leader>gRi` | Normal | Populate hard reset with count from HEAD |
+| `<leader>grk` | Normal | Populate reset with count from HEAD      |
+| `<leader>gRk` | Normal | Populate hard reset with count from HEAD |
 | `<leader>grO` | Normal | Populate git reset                       |
 
 {{</table>}}
