@@ -77,7 +77,7 @@ Basic Keymaps # Keymap Mode Description &amp;lt;Space&amp;gt; N/A Leader key jk 
       
       <guid>https://justicenyaga.me/about/</guid>
       <description>I&amp;rsquo;m a fullstack software developer based in Kenya. I&amp;rsquo;m proficient in Python, Django, Javascript, Node.js, React, React Native and Golang.
-Dive into my blog for concise insights and hands-on experiences, where we&amp;rsquo;ll unravel the intricacies of software engineering together.</description>
+Feel free to reach out.</description>
       
     </item>
     
@@ -87,7 +87,8 @@ Dive into my blog for concise insights and hands-on experiences, where we&amp;rs
       <pubDate>Wed, 31 Jan 2024 02:49:46 +0300</pubDate>
       
       <guid>https://justicenyaga.me/projects/</guid>
-      <description>Step into the realm of my digital playground, a space where curiosity meets code and innovation takes flight. Within these project walls, each endeavor is a crafted narrative, a testament to my commitment to perpetual learning and creative exploration.</description>
+      <description>Here are a few past projects I&amp;rsquo;ve worked on:
+Logo Title Description Link Proshop A fake shopping app built on React. The app utilizes proshop_api (Django REST API) sitegithub Proshop-Api An e-commerce REST API crafted with Django and Django Rest Framework, incorporating diverse shopping app features.</description>
       
     </item>
     
