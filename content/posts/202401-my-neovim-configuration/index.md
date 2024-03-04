@@ -9,7 +9,7 @@ series_order = 1
 
 ## Introduction
 
-Welcome to my Neovim configuration repository, where I've curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.
+This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.
 
 ## Screenshots
 
@@ -66,20 +66,7 @@ Install the `python3-venv` package using the following command:
 sudo apt install python3-venv
 ```
 
-### 3. **Install Go (Golang):**
-
-Certain plugins in my configuration rely on Go. Ensure a seamless experience by installing Go using the official [installation guide](https://go.dev/doc/install).
-
-After installation, set up the required environment variables in your shell configuration file (e.g., `.bashrc` or `.zshrc`):
-
-```bash
-export GOPATH=~/go
-export GOROOT=/usr/local/go
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/go/bin
-```
-
-### 4. **Node Packages:**
+### 3. **Node Packages:**
 
 Install neovim and tree-sitter node packages by running the following command:
 
@@ -87,7 +74,7 @@ Install neovim and tree-sitter node packages by running the following command:
 npm i -g neovim tree-sitter
 ```
 
-### 5. **pynvim Package:**
+### 4. **pynvim Package:**
 
 Install the pynvim package using pip:
 
@@ -102,7 +89,7 @@ alias python=python3
 
 ```
 
-### 6. **Telescope requirements:**
+### 5. **Telescope requirements:**
 
 For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:
 
@@ -110,15 +97,26 @@ For telescope to work without any issues, you need to have both ripgrep and fd p
 sudo apt install ripgrep fd-find
 ```
 
-### 7. **_Optional:_ Go Language Server:**
+### 6. **_Optional:_ For GoDevs:**
 
-For Go developers, consider installing the Go Language Server (gopls) to enhance your Go programming experience. Run the following command:
+If you haven't installed Go, use the official [installation guide](https://go.dev/doc/install) on how to go about it.
+
+After installation, set up the required environment variables in your shell configuration file (e.g., `.bashrc` or `.zshrc`):
+
+```bash
+export GOPATH=~/go
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
+```
+
+Install Go Language Server (gopls) with the following command:
 
 ```bash
 go install golang.org/x/tools/gopls@latest
 ```
 
-### 8. **_Optional:_ Java**
+### 7. **_Optional:_ Java**
 
 For Java developer, follow the following steps:
 
@@ -143,7 +141,7 @@ For Java developer, follow the following steps:
   wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz && sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
   ```
 
-### 9. **Clone Configuration Repo:**
+### 8. **Clone Configuration Repo:**
 
 Clone my Neovim configuration repository to `~/.config/nvim`:
 
@@ -151,7 +149,7 @@ Clone my Neovim configuration repository to `~/.config/nvim`:
 git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
 ```
 
-### 10. **_Optional:_ win32yank for WSL**
+### 9. **_Optional:_ win32yank for WSL**
 
 For WSL users, install `win32yank` for clipboard interaction between Windows and WSL by following these steps:
 
@@ -189,9 +187,9 @@ nvim
 
 ### 2. **Allow the plugins to load.**
 
-You can issue the command `:Lazy` to view the progress
+Wait for the plugins to download. Once the plugins are installed, issue the command `:Mason` to view the progress of LSPs, linters, formatters, and debuggers installations.
 
-Once the plugins are installed, exit Neovim.
+Once everything has been installed, exit neovim and carry on with further configurations.
 
 ### 3. **Language Servers Customizations:**
 
@@ -201,7 +199,7 @@ You can use `Mason` (opened with the command `:Mason`) to seamlessly install the
 
 ### 4. **Language Parsers Customizations:**
 
-I've employed `nvim-treesitter` to customize language parsers. Explore their [list of supported languages](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages). To integrate a new language parser, just include it in the `ensure_installed` object within the `nvim-treesitter` configuration file (`~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua`). `treesitter` will handle the automatic installation of parsers specified in the `ensure_installed` section.
+I've employed `nvim-treesitter` to customize language parsers. Explore their [list of supported languages](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages). To integrate a new language parser, just include it in the `ensure_installed` object within the `nvim-treesitter` configuration file (`~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua`). Treesitter will handle the automatic installation of parsers specified in the `ensure_installed` section.
 
 ### 5. **_Optional_: Copilot auto-completion**
 
@@ -253,6 +251,4 @@ Congratulations on setting up your Neovim environment! If you're looking to furt
 
 {{< article link="/posts/202401-my-tmux-configuration/" >}}
 
-Discover how to optimize your workflow, split your terminal into panes, and efficiently navigate through different sessions. Tmux can significantly boost your productivity and provide a seamless terminal experience alongside your Neovim setup.
-
-Happy coding, and may your terminal sessions be ever productive!
+Happy coding!
