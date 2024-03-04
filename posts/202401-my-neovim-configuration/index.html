@@ -66,7 +66,7 @@
   
   
   <meta property="og:title" content="My Neovim Configuration Setup Guide" />
-<meta property="og:description" content="Introduction # Welcome to my Neovim configuration repository, where I&rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.
+<meta property="og:description" content="Introduction # This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.
 Screenshots # Features # Plugins managed with lazy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://justicenyaga.me/posts/202401-my-neovim-configuration/" /><meta property="og:image" content="https://justicenyaga.me/posts/202401-my-neovim-configuration/featured.jpg" /><meta property="article:section" content="posts" />
@@ -78,7 +78,7 @@ Screenshots # Features # Plugins managed with lazy." />
 
   <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://justicenyaga.me/posts/202401-my-neovim-configuration/featured.jpg" /><meta name="twitter:title" content="My Neovim Configuration Setup Guide"/>
-<meta name="twitter:description" content="Introduction # Welcome to my Neovim configuration repository, where I&rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.
+<meta name="twitter:description" content="Introduction # This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.
 Screenshots # Features # Plugins managed with lazy."/>
 
   
@@ -90,7 +90,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "name": "My Neovim Configuration Setup Guide",
     "headline": "My Neovim Configuration Setup Guide",
     
-    "abstract": "Introduction # Welcome to my Neovim configuration repository, where I\u0026rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.\nScreenshots # Features # Plugins managed with lazy.",
+    "abstract": "Introduction # This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.\nScreenshots # Features # Plugins managed with lazy.",
     "inLanguage": "en",
     "url" : "https:\/\/justicenyaga.me\/posts\/202401-my-neovim-configuration\/",
     "author" : {
@@ -106,7 +106,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "995"
+    "wordCount": "936"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>995 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>936 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
   
 
   
@@ -648,14 +648,13 @@ Screenshots # Features # Plugins managed with lazy."/>
       <ul>
         <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
         <li><a href="#2-install-python3-venv">2. <strong>Install python3-venv:</strong></a></li>
-        <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
-        <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
-        <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
-        <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#7-_optional_-go-language-server">7. <strong><em>Optional:</em> Go Language Server:</strong></a></li>
-        <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#9-clone-configuration-repo">9. <strong>Clone Configuration Repo:</strong></a></li>
-        <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+        <li><a href="#3-node-packages">3. <strong>Node Packages:</strong></a></li>
+        <li><a href="#4-pynvim-package">4. <strong>pynvim Package:</strong></a></li>
+        <li><a href="#5-telescope-requirements">5. <strong>Telescope requirements:</strong></a></li>
+        <li><a href="#6-_optional_-for-godevs">6. <strong><em>Optional:</em> For GoDevs:</strong></a></li>
+        <li><a href="#7-_optional_-java">7. <strong><em>Optional:</em> Java</strong></a></li>
+        <li><a href="#8-clone-configuration-repo">8. <strong>Clone Configuration Repo:</strong></a></li>
+        <li><a href="#9-_optional_-win32yank-for-wsl">9. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
       </ul>
     </li>
     <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
@@ -691,14 +690,13 @@ Screenshots # Features # Plugins managed with lazy."/>
       <ul>
         <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
         <li><a href="#2-install-python3-venv">2. <strong>Install python3-venv:</strong></a></li>
-        <li><a href="#3-install-go-golang">3. <strong>Install Go (Golang):</strong></a></li>
-        <li><a href="#4-node-packages">4. <strong>Node Packages:</strong></a></li>
-        <li><a href="#5-pynvim-package">5. <strong>pynvim Package:</strong></a></li>
-        <li><a href="#6-telescope-requirements">6. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#7-_optional_-go-language-server">7. <strong><em>Optional:</em> Go Language Server:</strong></a></li>
-        <li><a href="#8-_optional_-java">8. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#9-clone-configuration-repo">9. <strong>Clone Configuration Repo:</strong></a></li>
-        <li><a href="#10-_optional_-win32yank-for-wsl">10. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+        <li><a href="#3-node-packages">3. <strong>Node Packages:</strong></a></li>
+        <li><a href="#4-pynvim-package">4. <strong>pynvim Package:</strong></a></li>
+        <li><a href="#5-telescope-requirements">5. <strong>Telescope requirements:</strong></a></li>
+        <li><a href="#6-_optional_-for-godevs">6. <strong><em>Optional:</em> For GoDevs:</strong></a></li>
+        <li><a href="#7-_optional_-java">7. <strong><em>Optional:</em> Java</strong></a></li>
+        <li><a href="#8-clone-configuration-repo">8. <strong>Clone Configuration Repo:</strong></a></li>
+        <li><a href="#9-_optional_-win32yank-for-wsl">9. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
       </ul>
     </li>
     <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
@@ -807,7 +805,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     </span>        
     
 </h2>
-<p>Welcome to my Neovim configuration repository, where I&rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.</p>
+<p>This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.</p>
 <h2 class="relative group">Screenshots 
     <div id="screenshots" class="anchor"></div>
     
@@ -1004,42 +1002,25 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>Install the <code>python3-venv</code> package using the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install python3-venv
-</span></span></code></pre></div><h3 class="relative group">3. <strong>Install Go (Golang):</strong> 
-    <div id="3-install-go-golang" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">3. <strong>Node Packages:</strong> 
+    <div id="3-node-packages" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#3-install-go-golang" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Certain plugins in my configuration rely on Go. Ensure a seamless experience by installing Go using the official <a href="https://go.dev/doc/install"   target="_blank">
-    installation guide</a>.</p>
-<p>After installation, set up the required environment variables in your shell configuration file (e.g., <code>.bashrc</code> or <code>.zshrc</code>):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>~/go
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/go/bin
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/go/bin
-</span></span></code></pre></div><h3 class="relative group">4. <strong>Node Packages:</strong> 
-    <div id="4-node-packages" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#4-node-packages" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#3-node-packages" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Install neovim and tree-sitter node packages by running the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i -g neovim tree-sitter
-</span></span></code></pre></div><h3 class="relative group">5. <strong>pynvim Package:</strong> 
-    <div id="5-pynvim-package" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">4. <strong>pynvim Package:</strong> 
+    <div id="4-pynvim-package" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#5-pynvim-package" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#4-pynvim-package" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1047,37 +1028,44 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m pip install -U pynvim
 </span></span></code></pre></div><p>Ensure that the <code>python</code> command points to <code>python3</code> by adding the following alias on your <code>.bashrc</code> or <code>.zshrc</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
-</span></span></code></pre></div><h3 class="relative group">6. <strong>Telescope requirements:</strong> 
-    <div id="6-telescope-requirements" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">5. <strong>Telescope requirements:</strong> 
+    <div id="5-telescope-requirements" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#6-telescope-requirements" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#5-telescope-requirements" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ripgrep fd-find
-</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Go Language Server:</strong> 
-    <div id="7-_optional_-go-language-server" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">6. <strong><em>Optional:</em> For GoDevs:</strong> 
+    <div id="6-_optional_-for-godevs" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#7-_optional_-go-language-server" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#6-_optional_-for-godevs" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>For Go developers, consider installing the Go Language Server (gopls) to enhance your Go programming experience. Run the following command:</p>
+<p>If you haven&rsquo;t installed Go, use the official <a href="https://go.dev/doc/install"   target="_blank">
+    installation guide</a> on how to go about it.</p>
+<p>After installation, set up the required environment variables in your shell configuration file (e.g., <code>.bashrc</code> or <code>.zshrc</code>):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>~/go
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/go/bin
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/go/bin
+</span></span></code></pre></div><p>Install Go Language Server (gopls) with the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install golang.org/x/tools/gopls@latest
-</span></span></code></pre></div><h3 class="relative group">8. <strong><em>Optional:</em> Java</strong> 
-    <div id="8-_optional_-java" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Java</strong> 
+    <div id="7-_optional_-java" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#8-_optional_-java" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#7-_optional_-java" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1098,25 +1086,25 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
 </span></span></code></pre></div></li>
 </ul>
-<h3 class="relative group">9. <strong>Clone Configuration Repo:</strong> 
-    <div id="9-clone-configuration-repo" class="anchor"></div>
+<h3 class="relative group">8. <strong>Clone Configuration Repo:</strong> 
+    <div id="8-clone-configuration-repo" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#9-clone-configuration-repo" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#8-clone-configuration-repo" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Clone my Neovim configuration repository to <code>~/.config/nvim</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
-</span></span></code></pre></div><h3 class="relative group">10. <strong><em>Optional:</em> win32yank for WSL</strong> 
-    <div id="10-_optional_-win32yank-for-wsl" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">9. <strong><em>Optional:</em> win32yank for WSL</strong> 
+    <div id="9-_optional_-win32yank-for-wsl" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#10-_optional_-win32yank-for-wsl" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#9-_optional_-win32yank-for-wsl" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1496,8 +1484,7 @@ Screenshots # Features # Plugins managed with lazy."/>
         
     
 </section>
-<p>Discover how to optimize your workflow, split your terminal into panes, and efficiently navigate through different sessions. Tmux can significantly boost your productivity and provide a seamless terminal experience alongside your Neovim setup.</p>
-<p>Happy coding, and may your terminal sessions be ever productive!</p>
+<p>Happy coding!</p>
 
         </div>
                 

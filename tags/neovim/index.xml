@@ -45,7 +45,7 @@ Basic Keymaps # Keymap Mode Description &amp;lt;Space&amp;gt; N/A Leader key jk 
       <pubDate>Tue, 16 Jan 2024 13:32:33 +0300</pubDate>
       
       <guid>https://justicenyaga.me/posts/202401-my-neovim-configuration/</guid>
-      <description>Introduction # Welcome to my Neovim configuration repository, where I&amp;rsquo;ve curated a powerful setup tailored for developers working with Node.js, React, Python, Golang, and Java.
+      <description>Introduction # This article is a walkthrough on how to configure my neovim setup. My setup has been configured for working with Javascript, React, Python, Golang, and Java.
 Screenshots # Features # Plugins managed with lazy.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-neovim-configuration/featured.jpg" />
     </item>
