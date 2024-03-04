@@ -22,6 +22,4 @@ layoutBackgroundHeaderSpace = false
 
 I'm a fullstack software developer based in Kenya. I'm proficient in `Python`, `Django`, `Javascript`, `Node.js`, `React`, `React Native` and `Golang`.
 
-Dive into my blog for concise insights and hands-on experiences, where we'll unravel the intricacies of software engineering together. Let's embark on this coding journey!
-
 Feel free to reach out.

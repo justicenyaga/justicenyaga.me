@@ -17,9 +17,7 @@ layoutBackgroundHeaderSpace = false
 #groupByYear  = false
 +++
 
-Step into the realm of my digital playground, a space where curiosity meets code and innovation takes flight.
-Within these project walls, each endeavor is a crafted narrative, a testament to my commitment to perpetual
-learning and creative exploration.
+Here are a few past projects I've worked on:
 
 <table>
     <thead>
