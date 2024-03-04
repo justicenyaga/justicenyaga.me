@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>My Tmux Configuration: Elevating Your Terminal Experience &middot; Justice Nyaga</title>
-  <meta name="title" content="My Tmux Configuration: Elevating Your Terminal Experience &middot; Justice Nyaga" />
+  <title>My Tmux Configuration &middot; Justice Nyaga</title>
+  <meta name="title" content="My Tmux Configuration &middot; Justice Nyaga" />
   
   <meta name="description" content="Justice Nyaga" />
-  <meta name="keywords" content="tmux, tpm, vim-tmux-navigator, tmux-themepack, tmux-resurrect, tmux-continuum, neovim, " />
+  <meta name="keywords" content="tmux, neovim, " />
   
   
   <link rel="canonical" href="https://justicenyaga.me/posts/202401-my-tmux-configuration/" />
@@ -65,8 +65,9 @@
   
   
   
-  <meta property="og:title" content="My Tmux Configuration: Elevating Your Terminal Experience" />
-<meta property="og:description" content="Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration." />
+  <meta property="og:title" content="My Tmux Configuration" />
+<meta property="og:description" content="Introduction # Tmux is a terminal multiplexer; it allows multiple terminal sessions to be accessed from a single window.
+In this article, we&rsquo;ll walk through my Tmux setup that is designed for efficient integration with Neovim." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/" /><meta property="og:image" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-01-20T14:47:38+03:00" />
@@ -75,8 +76,9 @@
 
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" /><meta name="twitter:title" content="My Tmux Configuration: Elevating Your Terminal Experience"/>
-<meta name="twitter:description" content="Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration."/>
+<meta name="twitter:image" content="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" /><meta name="twitter:title" content="My Tmux Configuration"/>
+<meta name="twitter:description" content="Introduction # Tmux is a terminal multiplexer; it allows multiple terminal sessions to be accessed from a single window.
+In this article, we&rsquo;ll walk through my Tmux setup that is designed for efficient integration with Neovim."/>
 
   
   <script type="application/ld+json">
@@ -84,10 +86,10 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "My Tmux Configuration: Elevating Your Terminal Experience",
-    "headline": "My Tmux Configuration: Elevating Your Terminal Experience",
+    "name": "My Tmux Configuration",
+    "headline": "My Tmux Configuration",
     
-    "abstract": "Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we\u0026rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.",
+    "abstract": "Introduction # Tmux is a terminal multiplexer; it allows multiple terminal sessions to be accessed from a single window.\nIn this article, we\u0026rsquo;ll walk through my Tmux setup that is designed for efficient integration with Neovim.",
     "inLanguage": "en",
     "url" : "https:\/\/justicenyaga.me\/posts\/202401-my-tmux-configuration\/",
     "author" : {
@@ -100,10 +102,10 @@
     
     "dateModified": "2024-01-20T14:47:38\u002b03:00",
     
-    "keywords": ["tmux","tpm","vim-tmux-navigator","tmux-themepack","tmux-resurrect","tmux-continuum","neovim"],
+    "keywords": ["tmux","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "721"
+    "wordCount": "323"
   }]
   </script>
 
@@ -504,7 +506,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/posts/202401-my-tmux-configuration/"
-      >My Tmux Configuration: Elevating Your Terminal Experience</a
+      >My Tmux Configuration</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -513,7 +515,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      My Tmux Configuration: Elevating Your Terminal Experience
+      My Tmux Configuration
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -558,7 +560,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-20 14:47:38 &#43;0300 &#43;0300">20-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>721 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="2024-01-20 14:47:38 &#43;0300 &#43;0300">20-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>323 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -586,46 +588,6 @@
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
     tmux
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tpm/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    tpm
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/vim-tmux-navigator/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    vim-tmux-navigator
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-themepack/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    tmux-themepack
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-resurrect/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    tmux-resurrect
-  </span>
-</span>
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tmux-continuum/&#34;,'_self');">
-    <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    tmux-continuum
   </span>
 </span>
   </span>
@@ -679,13 +641,12 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#configuration-setup-step">Configuration Setup Step</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#keybinds-explanation">Keybinds Explanation</a></li>
-        <li><a href="#copy-mode-and-selection">Copy Mode and Selection</a></li>
-        <li><a href="#neovim-integration">Neovim Integration</a></li>
-        <li><a href="#tmux-plugins">Tmux Plugins</a></li>
+        <li><a href="#normal-keymaps">Normal Keymaps</a></li>
+        <li><a href="#copy-mode-keymaps">Copy Mode Keymaps</a></li>
       </ul>
     </li>
   </ul>
@@ -702,13 +663,12 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#configuration-setup-step">Configuration Setup Step</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#keybinds-explanation">Keybinds Explanation</a></li>
-        <li><a href="#copy-mode-and-selection">Copy Mode and Selection</a></li>
-        <li><a href="#neovim-integration">Neovim Integration</a></li>
-        <li><a href="#tmux-plugins">Tmux Plugins</a></li>
+        <li><a href="#normal-keymaps">Normal Keymaps</a></li>
+        <li><a href="#copy-mode-keymaps">Copy Mode Keymaps</a></li>
       </ul>
     </li>
   </ul>
@@ -777,8 +737,18 @@
     </span>        
     
 </h2>
-<p>Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</p>
-<p>Designed for efficient integration with Neovim, this carefully crafted configuration aims to streamline your terminal workflow. It provides a seamless and productive environment for both Tmux and Neovim enthusiasts. Whether you&rsquo;re a seasoned user or just diving into the world of terminal customization, this guide will help you unlock the full potential of Tmux in conjunction with Neovim. Let&rsquo;s dive in!</p>
+<p>Tmux is a terminal multiplexer; it allows multiple terminal sessions to be accessed from a single window.</p>
+<p>In this article, we&rsquo;ll walk through my Tmux setup that is designed for efficient integration with Neovim.</p>
+<h2 class="relative group">Screenshots 
+    <div id="screenshots" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#screenshots" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <p>
 
 
@@ -802,17 +772,17 @@
   
 
 </p>
-<h2 class="relative group">Configuration Setup Step 
-    <div id="configuration-setup-step" class="anchor"></div>
+<h2 class="relative group">Configuration 
+    <div id="configuration" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#configuration-setup-step" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#configuration" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>Follow these steps to set up and enhance your Tmux experience:</p>
+<p>Follow these steps to set up Tmux:</p>
 <ol>
 <li>
 <p><strong>Install Tmux:</strong></p>
@@ -822,24 +792,24 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux -V
 </span></span></code></pre></div></li>
 <li>
-<p><strong>Retrieve the Configuration File:</strong></p>
-<p>Download the Tmux configuration file and seamlessly integrate it into your home directory using the following command:</p>
+<p><strong>Retrieve My Configuration File:</strong></p>
+<p>Download my Tmux configuration file into your home directory using the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://raw.githubusercontent.com/justicenyaga/my_nvim_config/master/.tmux.conf -O ~/.tmux.conf
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Install Tmux Plugin Manager (tpm):</strong></p>
-<p>Clone the Tmux Plugin Manager repository to your local machine:</p>
+<p>Clone the Tmux Plugin Manager repository to <code>~/.tmux/plugins/</code> using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Create a Tmux session:</strong></p>
-<p>Start a new Tmux session with a specific name (replace <code>SessionName</code> with your desired name):</p>
+<p>Start a new Tmux session.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tmux new -s SessionName
 </span></span></code></pre></div><p>This should create a session and attach you to the created session.</p>
 </li>
 <li>
 <p><strong>Reload the Tmux configuration file:</strong></p>
-<p>Press your Tmux prefix key (the configuration file uses <code>Ctrl + N</code>) followed by <code>r</code> to reload the configuration file:</p>
+<p>Press your Tmux prefix key (my configuration uses <code>Ctrl + N</code>) followed by <code>r</code> to reload the configuration file:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-n&gt;r
 </span></span></code></pre></div>
   
@@ -920,155 +890,100 @@
     </span>        
     
 </h2>
-<h3 class="relative group">Keybinds Explanation 
-    <div id="keybinds-explanation" class="anchor"></div>
+<h3 class="relative group">Normal Keymaps 
+    <div id="normal-keymaps" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#keybinds-explanation" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#normal-keymaps" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<ul>
-<li>
-<p><strong>Prefix Key: <code>C-n</code></strong></p>
-<ul>
-<li>The prefix key is set to <code>C-n</code> for easier accessibility and to avoid conflicts with the default <code>C-b</code>. It&rsquo;s a comfortable and ergonomic choice.</li>
-</ul>
-</li>
-<li>
-<p><strong>Vertical Split: <code>prefix + |</code></strong></p>
-<ul>
-<li>The keybind for vertical split is set to <code>prefix + |</code> for better visualization. The vertical bar (<code>|</code>) visually represents a vertical split, making it intuitive and memorable.</li>
-</ul>
-</li>
-<li>
-<p><strong>Horizontal Split: <code>prefix + -</code></strong></p>
-<ul>
-<li>Horizontal split is initiated with <code>prefix + -</code>, providing a straightforward and balanced key combination for creating horizontal panes.</li>
-</ul>
-</li>
-<li>
-<p><strong>Reload Configuration: <code>prefix + r</code></strong></p>
-<ul>
-<li>Reloading the configuration is done with <code>prefix + r</code>, making it quick and easy to apply any changes made to the configuration file.</li>
-</ul>
-</li>
-<li>
-<p><strong>Resize Panes: <code>prefix + j/k/l/h</code></strong></p>
-<ul>
-<li>Resizing panes is streamlined with <code>prefix + j/k/l/h</code> for downward, upward, right, and left respectively. The mnemonic association with arrow keys makes it intuitive.</li>
-</ul>
-</li>
-<li>
-<p><strong>Maximize Pane: <code>prefix + m</code></strong></p>
-<ul>
-<li>The keybind <code>prefix + m</code> maximizes the active pane, providing a convenient way to focus on one task at a time.</li>
-</ul>
-</li>
-<li>
-<p><strong>Enable Mouse Mode: <code>prefix + M</code></strong></p>
-<ul>
-<li>Mouse mode is toggled with <code>prefix + M</code>, allowing for easy resizing and scrolling using the mouse.</li>
-</ul>
-</li>
-</ul>
-<h3 class="relative group">Copy Mode and Selection 
-    <div id="copy-mode-and-selection" class="anchor"></div>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th><strong>Keybind</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>C-n</code></td>
+<td>Prefix key</td>
+</tr>
+<tr>
+<td><code>prefix + |</code></td>
+<td>Vertical split</td>
+</tr>
+<tr>
+<td><code>prefix + -</code></td>
+<td>Horizontal split</td>
+</tr>
+<tr>
+<td><code>prefix + r</code></td>
+<td>Reload configuration</td>
+</tr>
+<tr>
+<td><code>prefix + j/k/l/h</code></td>
+<td>Resize panes</td>
+</tr>
+<tr>
+<td><code>prefix + m</code></td>
+<td>Maximize pane</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 class="relative group">Copy Mode Keymaps 
+    <div id="copy-mode-keymaps" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#copy-mode-and-selection" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#copy-mode-keymaps" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<ul>
-<li>
-<p><strong>Enter Copy Mode: <code>prefix + [</code></strong></p>
-<ul>
-<li>Copy mode is entered with <code>prefix + [</code>, initiating vi-style selection for efficient copying of text.</li>
-</ul>
-</li>
-<li>
-<p><strong>Start Selection: <code>v</code></strong></p>
-<ul>
-<li>Text selection starts with the <code>v</code> key in copy mode, following the vi-style conventions.</li>
-</ul>
-</li>
-<li>
-<p><strong>Copy Selection: <code>y</code></strong></p>
-<ul>
-<li>The selected text is copied using the <code>y</code> key in copy mode, mirroring vi-style copy operations.</li>
-</ul>
-</li>
-<li>
-<p><strong>No Exit on Mouse Drag:</strong></p>
-<ul>
-<li>Dragging with the mouse in copy mode (<code>MouseDragEnd1Pane</code>) won&rsquo;t exit copy mode, providing a seamless experience.</li>
-</ul>
-</li>
-</ul>
-<h3 class="relative group">Neovim Integration 
-    <div id="neovim-integration" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#neovim-integration" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>
-<p><strong>No Delay for Exiting Insert Mode:</strong></p>
-<ul>
-<li>The delay for exiting insert mode with <code>ESC</code> in Neovim is removed (<code>escape-time 10</code>), ensuring a smooth transition.</li>
-</ul>
-</li>
-</ul>
-<h3 class="relative group">Tmux Plugins 
-    <div id="tmux-plugins" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#tmux-plugins" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<ul>
-<li>
-<p><strong>Tmux Plugin Manager (tpm):</strong></p>
-<ul>
-<li>The Tmux Plugin Manager is initialized at the bottom of the configuration, allowing easy management of plugins.</li>
-</ul>
-</li>
-<li>
-<p><strong>List of Plugins:</strong></p>
-<ul>
-<li>
-<ul>
-<li><a href="https://github.com/christoomey/vim-tmux-navigator"   target="_blank">
-    vim-tmux-navigator</a>: Navigate seamlessly between Vim and Tmux panes.</li>
-<li><a href="https://github.com/jimeh/tmux-themepack"   target="_blank">
-    tmux-themepack</a>: A collection of themes for Tmux.</li>
-<li><a href="https://github.com/tmux-plugins/tmux-resurrect"   target="_blank">
-    tmux-resurrect</a>: Persist Tmux sessions after computer restart.</li>
-<li><a href="https://github.com/tmux-plugins/tmux-continuum"   target="_blank">
-    tmux-continuum</a>: Automatically save sessions every 15 minutes.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Theme: Powerline Cyan</strong></p>
-<ul>
-<li>The chosen theme from tmux-themepack is <code>powerline/default/cyan</code> for a visually appealing and distinctive look.</li>
-</ul>
-</li>
-</ul>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th><strong>Keybind</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>prefix + [</code></td>
+<td>Enter copy mode</td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td>Start selection</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>Copy selection</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td>Exit copy mode</td>
+</tr>
+</tbody>
+</table>
+
+
 <p>Remember to customize these keybinds further based on your preferences and workflow!</p>
 
         </div>

@@ -81,12 +81,13 @@ Basic Keymaps # Keymap Mode Description &amp;lt;Space&amp;gt; N/A Leader key jk 
     </item>
     
     <item>
-      <title>My Tmux Configuration: Elevating Your Terminal Experience</title>
+      <title>My Tmux Configuration</title>
       <link>https://justicenyaga.me/posts/202401-my-tmux-configuration/</link>
       <pubDate>Sat, 20 Jan 2024 14:47:38 +0300</pubDate>
       
       <guid>https://justicenyaga.me/posts/202401-my-tmux-configuration/</guid>
-      <description>Introduction # Welcome to the world of Tmux, where terminal multitasking becomes a breeze. In this guide, we&amp;rsquo;ll walk through setting up and enhancing your Tmux experience with a customized configuration.</description>
+      <description>Introduction # Tmux is a terminal multiplexer; it allows multiple terminal sessions to be accessed from a single window.
+In this article, we&amp;rsquo;ll walk through my Tmux setup that is designed for efficient integration with Neovim.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://justicenyaga.me/posts/202401-my-tmux-configuration/featured.jpg" />
     </item>
     
