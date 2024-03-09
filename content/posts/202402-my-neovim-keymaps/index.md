@@ -459,25 +459,30 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap               | Mode   | Description                                        |
-| -------------------- | ------ | -------------------------------------------------- |
-| `j`, `<Down>`        | Normal | Move cursor to next file entry                     |
-| `k`, `<Up>`          | Normal | Move cursor to next file entry                     |
-| `o`, `<2-LeftMouse>` | Normal | Select current entry                               |
-| `s`                  | Normal | Stage/unstage selected entry                       |
-| `S`                  | Normal | Stage all entries                                  |
-| `U`                  | Normal | Unstage all entries                                |
-| `X`                  | Normal | Restore entry to state on left side                |
-| `R`                  | Normal | Update stats and entries on file list              |
-| `<S-Up>`             | Normal | Scroll up                                          |
-| `<S-Down>`           | Normal | Scroll down                                        |
-| `<C-j>`              | Normal | Open diff for next entry                           |
-| `<C-k>`              | Normal | Open diff for previous entry                       |
-| `gf`                 | Normal | Open file in a split window                        |
-| `<CR>`               | Normal | Open file in a new tab                             |
-| `i`                  | Normal | Toggle between list/tree views                     |
-| `f`                  | Normal | Flatten empty subdirectories in tree listing style |
-| `<leader>e`          | Normal | Bring focus to the file panel                      |
+| Keymap               | Mode   | Description                                           |
+| -------------------- | ------ | ----------------------------------------------------- |
+| `j`, `<Down>`        | Normal | Move cursor to next file entry                        |
+| `k`, `<Up>`          | Normal | Move cursor to next file entry                        |
+| `o`, `<2-LeftMouse>` | Normal | Select current entry                                  |
+| `s`                  | Normal | Stage/unstage selected entry                          |
+| `S`                  | Normal | Stage all entries                                     |
+| `U`                  | Normal | Unstage all entries                                   |
+| `X`                  | Normal | Restore entry to state on left side                   |
+| `R`                  | Normal | Update stats and entries on file list                 |
+| `<S-Up>`             | Normal | Scroll up                                             |
+| `<S-Down>`           | Normal | Scroll down                                           |
+| `<C-j>`              | Normal | Open diff for next entry                              |
+| `<C-k>`              | Normal | Open diff for previous entry                          |
+| `gf`                 | Normal | Open file in a split window                           |
+| `<CR>`               | Normal | Open file in a new tab                                |
+| `i`                  | Normal | Toggle between list/tree views                        |
+| `f`                  | Normal | Flatten empty subdirectories in tree listing style    |
+| `<leader>e`          | Normal | Bring focus to the file panel                         |
+| `<leader>cO`         | Normal | Choose OURS version of a confict for the whole file   |
+| `<leader>cT`         | Normal | Choose THEIRS version of a confict for the whole file |
+| `<leader>cB`         | Normal | Choose BASE version of a confict for the whole file   |
+| `<leader>cA`         | Normal | Choose all versions of a confict for the whole file   |
+| `dX`                 | Normal | Delete the confict region for the whole file          |
 
 {{</table>}}
 
@@ -485,15 +490,25 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap       | Mode   | Description                   |
-| ------------ | ------ | ----------------------------- |
-| `<C-j>`      | Normal | Open diff for next file       |
-| `<C-k>`      | Normal | Open diff for previous file   |
-| `<CR>`       | Normal | Open file in a previous tab   |
-| `<C-w><C-f>` | Normal | Open file in a split window   |
-| `<C-w>gf`    | Normal | Open file in a new tab        |
-| `<leader>e`  | Normal | Bring focus to the file panel |
-| `<leader>b`  | Normal | Toggle file panel             |
+| Keymap       | Mode   | Description                                           |
+| ------------ | ------ | ----------------------------------------------------- |
+| `<C-j>`      | Normal | Open diff for next file                               |
+| `<C-k>`      | Normal | Open diff for previous file                           |
+| `<CR>`       | Normal | Open file in a previous tab                           |
+| `<C-w><C-f>` | Normal | Open file in a split window                           |
+| `<C-w>gf`    | Normal | Open file in a new tab                                |
+| `<leader>e`  | Normal | Bring focus to the file panel                         |
+| `<leader>b`  | Normal | Toggle file panel                                     |
+| `<leader>co` | Normal | Choose OURS version of a confict                      |
+| `<leader>ct` | Normal | Choose THEIRS version of a confict                    |
+| `<leader>cb` | Normal | Choose BASE version of a confict                      |
+| `<leader>ca` | Normal | Choose all versions of a confict                      |
+| `dx`         | Normal | Delete the conflict region                            |
+| `<leader>cO` | Normal | Choose OURS version of a confict for the whole file   |
+| `<leader>cT` | Normal | Choose THEIRS version of a confict for the whole file |
+| `<leader>cB` | Normal | Choose BASE version of a confict for the whole file   |
+| `<leader>cA` | Normal | Choose all versions of a confict for the whole file   |
+| `dX`         | Normal | Delete the conflict region for the whole file         |
 
 {{</table>}}
 
