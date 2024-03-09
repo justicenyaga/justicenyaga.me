@@ -187,6 +187,7 @@ And so on.
 | `<leader>fs` | Normal | Find strings in cwd                     |
 | `<leader>fc` | Normal | Find string under cursor in cwd         |
 | `<leader>fh` | Normal | Fuzzy find files in harpoon marked list |
+| `<leader>ft` | Normal | Fuzzy find todos                        |
 
 {{</table>}}
 
@@ -463,7 +464,7 @@ And so on.
 | `j`, `<Down>`        | Normal | Move cursor to next file entry                     |
 | `k`, `<Up>`          | Normal | Move cursor to next file entry                     |
 | `o`, `<2-LeftMouse>` | Normal | Select current entry                               |
-| `-`                  | Normal | Stage/unstage selected entry                       |
+| `s`                  | Normal | Stage/unstage selected entry                       |
 | `S`                  | Normal | Stage all entries                                  |
 | `U`                  | Normal | Unstage all entries                                |
 | `X`                  | Normal | Restore entry to state on left side                |
