@@ -13,13 +13,15 @@ This article is a walkthrough on how to configure my neovim setup. My setup has 
 
 ## Screenshots
 
-![Editor](nvim.png)
+![Editor](https://proshop.blob.core.windows.net/proshop-container/nvim.png)
 
-![Diff View](diffview.png)
+![Diff View](https://proshop.blob.core.windows.net/proshop-container/diffview.png)
 
-![Git Graph](git-graph.png)
+![Git Graph](https://proshop.blob.core.windows.net/proshop-container/git-graph.png)
 
-![Debugging](debugging.png)
+![Debugging](https://proshop.blob.core.windows.net/proshop-container/debugging.png)
+
+![Todo](https://proshop.blob.core.windows.net/proshop-container/todo.png)
 
 ## Features
 
