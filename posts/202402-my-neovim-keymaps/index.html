@@ -106,7 +106,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
     "keywords": ["neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2009"
+    "wordCount": "2092"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-17 23:36:25 &#43;0300 &#43;0300">17-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>2009 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
+  <time datetime="2024-02-17 23:36:25 &#43;0300 &#43;0300">17-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>2092 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">10 mins</span>
   
 
   
@@ -1136,6 +1136,11 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td>Jump to next loop start</td>
 </tr>
 <tr>
+<td><code>]h</code></td>
+<td>Normal</td>
+<td>Jump to next git hunk start</td>
+</tr>
+<tr>
 <td><code>[f</code></td>
 <td>Normal</td>
 <td>Jump to previous function call start</td>
@@ -1159,6 +1164,11 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td><code>[l</code></td>
 <td>Normal</td>
 <td>Jump to previous loop start</td>
+</tr>
+<tr>
+<td><code>[h</code></td>
+<td>Normal</td>
+<td>Jump to previous git hunk end</td>
 </tr>
 </tbody>
 </table>
@@ -1418,6 +1428,11 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td><code>ic</code></td>
 <td>Normal &amp; Visual</td>
 <td>Select inner part of a class</td>
+</tr>
+<tr>
+<td><code>ih</code></td>
+<td>Normal &amp;&amp; Visual</td>
+<td>Select git hunk</td>
 </tr>
 </tbody>
 </table>
@@ -1948,9 +1963,44 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td>Git init</td>
 </tr>
 <tr>
-<td><code>&lt;leader&gt;ga</code></td>
+<td><code>&lt;leader&gt;gab</code></td>
 <td>Normal</td>
 <td>Stage current buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gub</code></td>
+<td>Normal</td>
+<td>Unstage current buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gac</code></td>
+<td>Normal &amp;&amp; Visual</td>
+<td>Stage selected hunk or hunk under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;guc</code></td>
+<td>Normal</td>
+<td>Undo recent hunk stage</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;grc</code></td>
+<td>Normal &amp;&amp; Visual</td>
+<td>Reset selected hunk or hunk under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbh</code></td>
+<td>Normal</td>
+<td>Open git blame</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gbt</code></td>
+<td>Normal</td>
+<td>Toggle git blame on line under cursor</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gD</code></td>
+<td>Normal</td>
+<td>Toggle deleted hunks</td>
 </tr>
 <tr>
 <td><code>&lt;leader&gt;gw</code></td>
@@ -1961,6 +2011,11 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td><code>&lt;leader&gt;gm</code></td>
 <td>Normal</td>
 <td>Rename and stage current buffer</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;gx</code></td>
+<td>Normal</td>
+<td>Reset local changes in current buffer</td>
 </tr>
 <tr>
 <td><code>&lt;leader&gt;gs</code></td>
