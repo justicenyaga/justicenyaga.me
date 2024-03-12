@@ -96,11 +96,13 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `]c`   | Normal | Jump to next class start                          |
 | `]i`   | Normal | Jump to next conditional start                    |
 | `]l`   | Normal | Jump to next loop start                           |
+| `]h`   | Normal | Jump to next git hunk start                       |
 | `[f`   | Normal | Jump to previous function call start              |
 | `[m`   | Normal | Jump to previous method/function definition start |
 | `[c`   | Normal | Jump to previous class start                      |
 | `[i`   | Normal | Jump to previous conditional start                |
 | `[l`   | Normal | Jump to previous loop start                       |
+| `[h`   | Normal | Jump to previous git hunk end                     |
 
 {{</table>}}
 
@@ -173,6 +175,7 @@ And so on.
 | `im`   | Normal & Visual | Select inner part of a method/function definition |
 | `ac`   | Normal & Visual | Select outer part of a class                      |
 | `ic`   | Normal & Visual | Select inner part of a class                      |
+| `ih`   | Normal & Visual | Select git hunk                                   |
 
 {{</table>}}
 
@@ -183,11 +186,15 @@ And so on.
 | Keymap       | Mode   | Description                             |
 | ------------ | ------ | --------------------------------------- |
 | `<leader>ff` | Normal | Fuzzy find files in cwd                 |
-| `<leader>fr` | Normal | Fuzzy find recent files                 |
+| `<leader>f.` | Normal | Fuzzy find recent files                 |
 | `<leader>fs` | Normal | Find strings in cwd                     |
 | `<leader>fc` | Normal | Find string under cursor in cwd         |
+| `<leader>fr` | Normal | Resume Search                           |
 | `<leader>fh` | Normal | Fuzzy find files in harpoon marked list |
 | `<leader>ft` | Normal | Fuzzy find todos                        |
+| `<leader>fn` | Normal | Fuzzy find neovim config files          |
+| `<leader>/`  | Normal | Fuzzily search in current buffer        |
+| `<leader>s/` | Normal | Find string in open files               |
 
 {{</table>}}
 
@@ -199,7 +206,7 @@ And so on.
 | ----------- | ------ | ------------------------------------------ |
 | `<leader>a` | Normal | Add current buffer to harpoon marked list  |
 | `<leader>h` | Normal | Toggle open/close harpoon marked list menu |
-| `<C-u>`     | Normal | Go to next file on harpoon marked list     |
+| `<C-n>`     | Normal | Go to next file on harpoon marked list     |
 | `<C-p>`     | Normal | Go to previous file on harpoon marked list |
 | `<leader>1` | Normal | Go to first file on harpoon marked list    |
 | `<leader>2` | Normal | Go to second file on harpoon marked list   |
@@ -220,15 +227,17 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap      | Mode   | Description                  |
-| ----------- | ------ | ---------------------------- |
-| `<C-k>`     | Insert | Previous suggestion          |
-| `<C-j>`     | Insert | Next suggestion              |
-| `<C-b>`     | Insert | Scroll up                    |
-| `<C-f>`     | Insert | Scroll down                  |
-| `<C-Space>` | Insert | Show completion suggestions  |
-| `<C-e>`     | Insert | Close completion window/menu |
-| `<CR>`      | Insert | Select suggestion            |
+| Keymap  | Mode   | Description                            |
+| ------- | ------ | -------------------------------------- |
+| `<C-k>` | Insert | Previous suggestion                    |
+| `<C-j>` | Insert | Next suggestion                        |
+| `<C-b>` | Insert | Scroll up                              |
+| `<C-f>` | Insert | Scroll down                            |
+| `<C-c>` | Insert | Show completion suggestions            |
+| `<C-e>` | Insert | Close completion window/menu           |
+| `<CR>`  | Insert | Select suggestion                      |
+| `<C-l>` | Insert | Move to the right of snippet expansion |
+| `<C-h>` | Insert | Move to the left of snippet expansion  |
 
 {{</table>}}
 
@@ -236,21 +245,23 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap       | Mode            | Description                                 |
-| ------------ | --------------- | ------------------------------------------- |
-| `gR`         | Normal          | Show references and definition              |
-| `gD`         | Normal          | Go to declaration                           |
-| `gd`         | Normal          | Show lsp definitions                        |
-| `gi`         | Normal          | Show lsp implementations                    |
-| `gt`         | Normal          | Show lsp type definitions                   |
-| `<leader>ca` | Normal & Visual | See available code actions                  |
-| `<leader>rn` | Normal          | Smart rename                                |
-| `<leader>D`  | Normal          | Show diagnostics for file                   |
-| `<leader>d`  | Normal          | Show diagnostics for line                   |
-| `<leader>[d` | Normal          | Jump to previous diagnostic in buffer       |
-| `<leader>]d` | Normal          | Jump to next diagnostic in buffer           |
-| `<leader>K`  | Normal          | Show documentation for what is under cursor |
-| `<leader>rs` | Normal          | Restart lsp                                 |
+| Keymap       | Mode            | Description                                           |
+| ------------ | --------------- | ----------------------------------------------------- |
+| `gR`         | Normal          | Show references and definition                        |
+| `gD`         | Normal          | Go to declaration                                     |
+| `gd`         | Normal          | Show lsp definitions                                  |
+| `gi`         | Normal          | Show lsp implementations                              |
+| `gt`         | Normal          | Show lsp type definitions                             |
+| `<leader>ca` | Normal & Visual | See available code actions                            |
+| `<leader>rn` | Normal          | Smart rename                                          |
+| `<leader>D`  | Normal          | Show diagnostics for file                             |
+| `<leader>d`  | Normal          | Show diagnostics for line                             |
+| `<leader>[d` | Normal          | Jump to previous diagnostic in buffer                 |
+| `<leader>]d` | Normal          | Jump to next diagnostic in buffer                     |
+| `<leader>K`  | Normal          | Show documentation for what is under cursor           |
+| `<leader>rs` | Normal          | Restart lsp                                           |
+| `dS`         | Normal          | Show LSP document symbols (variables, functions, etc) |
+| `wS`         | Normal          | Show LSP workspace symbols                            |
 
 {{</table>}}
 
@@ -310,15 +321,24 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap       | Mode   | Description                                                   |
-| ------------ | ------ | ------------------------------------------------------------- |
-| `<leader>gi` | Normal | Git init                                                      |
-| `<leader>ga` | Normal | Stage current buffer                                          |
-| `<leader>gw` | Normal | Save and stage current buffer in WT, checkout buffer in index |
-| `<leader>gm` | Normal | Rename and stage current buffer                               |
-| `<leader>gs` | Normal | Toggle open/close of status tab                               |
-| `<leader>gd` | Normal | Toggle open/close of diff tab                                 |
-| `<leader>gg` | Normal | Open git graph                                                |
+| Keymap        | Mode            | Description                                                   |
+| ------------- | --------------- | ------------------------------------------------------------- |
+| `<leader>gi`  | Normal          | Git init                                                      |
+| `<leader>gab` | Normal          | Stage current buffer                                          |
+| `<leader>gub` | Normal          | Unstage current buffer                                        |
+| `<leader>gac` | Normal & Visual | Stage selected hunk or hunk under cursor                      |
+| `<leader>guc` | Normal          | Undo recent hunk stage                                        |
+| `<leader>grc` | Normal & Visual | Reset selected hunk or hunk under cursor                      |
+| `<leader>gbh` | Normal          | Open git blame                                                |
+| `<leader>gbt` | Normal          | Toggle git blame on line under cursor                         |
+| `<leader>gcp` | Normal          | Preview a hunk                                                |
+| `<leader>gD`  | Normal          | Toggle deleted hunks                                          |
+| `<leader>gw`  | Normal          | Save and stage current buffer in WT, checkout buffer in index |
+| `<leader>gm`  | Normal          | Rename and stage current buffer                               |
+| `<leader>gx`  | Normal          | Reset local changes in current buffer                         |
+| `<leader>gs`  | Normal          | Toggle open/close of status tab                               |
+| `<leader>gd`  | Normal          | Toggle open/close of diff tab                                 |
+| `<leader>gg`  | Normal          | Open git graph                                                |
 
 {{</table>}}
 
