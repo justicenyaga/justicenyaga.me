@@ -809,8 +809,8 @@ In this article, we&rsquo;ll walk through my Tmux setup that is designed for eff
 </li>
 <li>
 <p><strong>Reload the Tmux configuration file:</strong></p>
-<p>Press your Tmux prefix key (my configuration uses <code>Ctrl + N</code>) followed by <code>r</code> to reload the configuration file:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-n&gt;r
+<p>Press your Tmux prefix key (my configuration uses <code>Ctrl + U</code>) followed by <code>r</code> to reload the configuration file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-u&gt;r
 </span></span></code></pre></div>
   
   
@@ -837,9 +837,9 @@ In this article, we&rsquo;ll walk through my Tmux setup that is designed for eff
   <span
     
       class="dark:text-neutral-300"
-    ><p>On the configuration file, replace <code>C-n</code> with a prefered key bind to override the default prefix key bind, on the following lines:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">set</span> -g prefix C-n
-</span></span><span class="line"><span class="cl">bind-key C-n send-prefix
+    ><p>On the configuration file, replace <code>C-u</code> with a prefered key bind to override the default prefix key bind, on the following lines:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">set</span> -g prefix C-u
+</span></span><span class="line"><span class="cl">bind-key C-u send-prefix
 </span></span></code></pre></div></span>
 </div>
 
@@ -847,7 +847,7 @@ In this article, we&rsquo;ll walk through my Tmux setup that is designed for eff
 <li>
 <p><strong>Install Tmux plugins:</strong></p>
 <p>While inside a Tmux session, install plugins by pressing your Tmux prefix key followed by <code>I</code> (uppercase):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-n&gt;I
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;C-u&gt;I
 </span></span></code></pre></div>
   
   
@@ -874,7 +874,7 @@ In this article, we&rsquo;ll walk through my Tmux setup that is designed for eff
   <span
     
       class="dark:text-neutral-300"
-    >Again, replace <code>&lt;C-n&gt;</code> with your configured prefix key bind.</span>
+    >Again, replace <code>&lt;C-u&gt;</code> with your configured prefix key bind.</span>
 </div>
 
 </li>
@@ -914,7 +914,7 @@ In this article, we&rsquo;ll walk through my Tmux setup that is designed for eff
 </thead>
 <tbody>
 <tr>
-<td><code>C-n</code></td>
+<td><code>C-u</code></td>
 <td>Prefix key</td>
 </tr>
 <tr>
