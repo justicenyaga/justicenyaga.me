@@ -63,18 +63,18 @@ Follow these steps to set up Tmux:
 
 5. **Reload the Tmux configuration file:**
 
-   Press your Tmux prefix key (my configuration uses `Ctrl + N`) followed by `r` to reload the configuration file:
+   Press your Tmux prefix key (my configuration uses `Ctrl + Space`) followed by `r` to reload the configuration file:
 
    ```bash
-   <C-n>r
+   <C-Space>r
    ```
 
    {{< alert icon="none" >}}
-   On the configuration file, replace `C-n` with a prefered key bind to override the default prefix key bind, on the following lines:
+   On the configuration file, replace `C-Space` with a prefered key bind to override the default prefix key bind, on the following lines:
 
    ```bash
-   set -g prefix C-n
-   bind-key C-n send-prefix
+   set -g prefix C-Space
+   bind-key C-Space send-prefix
    ```
 
    {{< /alert >}}
@@ -84,11 +84,11 @@ Follow these steps to set up Tmux:
    While inside a Tmux session, install plugins by pressing your Tmux prefix key followed by `I` (uppercase):
 
    ```bash
-   <C-n>I
+   <C-Space>I
    ```
 
    {{< alert icon="none" >}}
-   Again, replace `<C-n>` with your configured prefix key bind.
+   Again, replace `<C-Space>` with your configured prefix key bind.
    {{< /alert >}}
 
 That's it! Your Tmux environment is now configured with the specified settings and plugins. Customize further based on your preferences.
@@ -101,7 +101,7 @@ That's it! Your Tmux environment is now configured with the specified settings a
 
 | **Keybind**        | **Description**      |
 | ------------------ | -------------------- |
-| `C-n`              | Prefix key           |
+| `C-Space`          | Prefix key           |
 | `prefix + \|`      | Vertical split       |
 | `prefix + -`       | Horizontal split     |
 | `prefix + r`       | Reload configuration |
