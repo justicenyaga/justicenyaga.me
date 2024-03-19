@@ -221,7 +221,7 @@ And so on.
 
 ## Delimiter Pairs Keymaps
 
-- For swift manipulation of delimiter pairs, I rely on the default keymaps from `nvim-surround`. Explore their [usage guide](https://github.com/kylechui/nvim-surround?tab=readme-ov-file#rocket-usage) for insights into the diverse keymaps available.
+- For swift manipulation of delimiter pairs(quotes, braces, etc), I rely on the default keymaps from `mini.surround`. Explore their [usage guide](https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md#features) for insights into the diverse keymaps available.
 
 ## Code Completion
 
@@ -300,9 +300,9 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap      | Mode   | Description                      |
-| ----------- | ------ | -------------------------------- |
-| `<leader>l` | Normal | Trigger linting for current file |
+| Keymap       | Mode   | Description                      |
+| ------------ | ------ | -------------------------------- |
+| `<leader>lt` | Normal | Trigger linting for current file |
 
 {{</table>}}
 
@@ -314,6 +314,19 @@ And so on.
 | ------------- | ------ | ------------------------------------ |
 | `<leader>mdp` | Normal | Start markdown preview (Browser tab) |
 | `<leader>mdx` | Normal | Stop markdown preview                |
+
+{{</table>}}
+
+## Live Server Keymaps
+
+- Live server is used to live reload HTML, CSS, and JavaScript files inside neovim
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap        | Mode   | Description       |
+| ------------- | ------ | ----------------- |
+| `<leader>lss` | Normal | Start Live Server |
+| `<leader>lse` | Normal | Stop Live Server  |
 
 {{</table>}}
 
