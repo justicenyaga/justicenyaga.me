@@ -106,7 +106,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
     "keywords": ["neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2155"
+    "wordCount": "2188"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-02-17 23:36:25 &#43;0300 &#43;0300">17-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>2155 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+  <time datetime="2024-02-17 23:36:25 &#43;0300 &#43;0300">17-02-2024</time><span class="px-2 text-primary-500">&middot;</span><span>2188 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
   
 
   
@@ -651,6 +651,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
     <li><a href="#formatting-keymaps">Formatting Keymaps</a></li>
     <li><a href="#linting-keymaps">Linting Keymaps</a></li>
     <li><a href="#markdown-preview-keymaps">Markdown Preview Keymaps</a></li>
+    <li><a href="#live-server-keymaps">Live Server Keymaps</a></li>
     <li><a href="#git-keymaps">Git Keymaps</a>
       <ul>
         <li><a href="#commits">Commits</a></li>
@@ -701,6 +702,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
     <li><a href="#formatting-keymaps">Formatting Keymaps</a></li>
     <li><a href="#linting-keymaps">Linting Keymaps</a></li>
     <li><a href="#markdown-preview-keymaps">Markdown Preview Keymaps</a></li>
+    <li><a href="#live-server-keymaps">Live Server Keymaps</a></li>
     <li><a href="#git-keymaps">Git Keymaps</a>
       <ul>
         <li><a href="#commits">Commits</a></li>
@@ -1609,7 +1611,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
     
 </h2>
 <ul>
-<li>For swift manipulation of delimiter pairs, I rely on the default keymaps from <code>nvim-surround</code>. Explore their <a href="https://github.com/kylechui/nvim-surround?tab=readme-ov-file#rocket-usage"   target="_blank">
+<li>For swift manipulation of delimiter pairs(quotes, braces, etc), I rely on the default keymaps from <code>mini.surround</code>. Explore their <a href="https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-surround.md#features"   target="_blank">
     usage guide</a> for insights into the diverse keymaps available.</li>
 </ul>
 <h2 class="relative group">Code Completion 
@@ -1927,7 +1929,7 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 </thead>
 <tbody>
 <tr>
-<td><code>&lt;leader&gt;l</code></td>
+<td><code>&lt;leader&gt;lt</code></td>
 <td>Normal</td>
 <td>Trigger linting for current file</td>
 </tr>
@@ -1968,6 +1970,47 @@ Basic Keymaps # Keymap Mode Description &lt;Space&gt; N/A Leader key jk Insert E
 <td><code>&lt;leader&gt;mdx</code></td>
 <td>Normal</td>
 <td>Stop markdown preview</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="relative group">Live Server Keymaps 
+    <div id="live-server-keymaps" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#live-server-keymaps" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>Live server is used to live reload HTML, CSS, and JavaScript files inside neovim</li>
+</ul>
+
+
+
+
+
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Keymap</th>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;leader&gt;lss</code></td>
+<td>Normal</td>
+<td>Start Live Server</td>
+</tr>
+<tr>
+<td><code>&lt;leader&gt;lse</code></td>
+<td>Normal</td>
+<td>Stop Live Server</td>
 </tr>
 </tbody>
 </table>

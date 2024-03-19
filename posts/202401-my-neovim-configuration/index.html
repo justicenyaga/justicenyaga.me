@@ -106,7 +106,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     "keywords": ["lua","neovim"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "985"
+    "wordCount": "1168"
   }]
   </script>
 
@@ -561,7 +561,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>985 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+  <time datetime="2024-01-16 13:32:33 &#43;0300 &#43;0300">16-01-2024</time><span class="px-2 text-primary-500">&middot;</span><span>1168 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
   
 
   
@@ -646,26 +646,34 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#features">Features</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
-        <li><a href="#2-install-python3-venv">2. <strong>Install python3-venv:</strong></a></li>
-        <li><a href="#3-node-packages">3. <strong>Node Packages:</strong></a></li>
-        <li><a href="#4-pynvim-package">4. <strong>pynvim Package:</strong></a></li>
-        <li><a href="#5-telescope-requirements">5. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#6-_optional_-for-godevs">6. <strong><em>Optional:</em> For GoDevs:</strong></a></li>
-        <li><a href="#7-_optional_-java">7. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#8-clone-configuration-repo">8. <strong>Clone Configuration Repo:</strong></a></li>
-        <li><a href="#9-_optional_-win32yank-for-wsl">9. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+        <li><a href="#terminal-emulators">Terminal Emulators</a></li>
+        <li><a href="#patched-fonts">Patched Fonts</a></li>
+      </ul>
+    </li>
+    <li><a href="#dependencies">Dependencies</a>
+      <ul>
+        <li><a href="#1-ensure-neovim-v09">1. Ensure Neovim v0.9+:</a></li>
+        <li><a href="#2-python">2. Python</a></li>
+        <li><a href="#3-install-python3-venv">3. Install python3-venv:</a></li>
+        <li><a href="#4-pynvim-package">4. pynvim Package:</a></li>
+        <li><a href="#5-node">5. Node:</a></li>
+        <li><a href="#6-node-packages">6. Node Packages:</a></li>
+        <li><a href="#7-telescope-requirements">7. Telescope requirements:</a></li>
+        <li><a href="#8-_optional_-for-godevs">8. <em>Optional:</em> For GoDevs:</a></li>
+        <li><a href="#9-_optional_-java">9. <em>Optional:</em> Java</a></li>
+        <li><a href="#10-clone-configuration-repo">10. Clone Configuration Repo:</a></li>
+        <li><a href="#11-_optional_-win32yank-for-wsl">11. <em>Optional:</em> win32yank for WSL</a></li>
       </ul>
     </li>
     <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
       <ul>
-        <li><a href="#1-open-neovim">1. <strong>Open Neovim:</strong></a></li>
-        <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
-        <li><a href="#3-language-servers-customizations">3. <strong>Language Servers Customizations:</strong></a></li>
-        <li><a href="#4-language-parsers-customizations">4. <strong>Language Parsers Customizations:</strong></a></li>
-        <li><a href="#5-_optional_-copilot-auto-completion">5. <strong><em>Optional</em>: Copilot auto-completion</strong></a></li>
-        <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#7-_for-wsl-users_">7. <strong><em>For WSL users</em>:</strong></a></li>
+        <li><a href="#1-open-neovim">1. Open Neovim:</a></li>
+        <li><a href="#2-allow-the-plugins-to-load">2. Allow the plugins to load.</a></li>
+        <li><a href="#3-language-servers-customizations">3. Language Servers Customizations:</a></li>
+        <li><a href="#4-language-parsers-customizations">4. Language Parsers Customizations:</a></li>
+        <li><a href="#5-_optional_-copilot-auto-completion">5. <em>Optional</em>: Copilot auto-completion</a></li>
+        <li><a href="#6-_for-java-developers_">6. <em>For Java Developers:</em></a></li>
+        <li><a href="#7-_for-wsl-users_">7. <em>For WSL users</em>:</a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -688,26 +696,34 @@ Screenshots # Features # Plugins managed with lazy."/>
     <li><a href="#features">Features</a></li>
     <li><a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#1-ensure-neovim-v09">1. <strong>Ensure Neovim v0.9+:</strong></a></li>
-        <li><a href="#2-install-python3-venv">2. <strong>Install python3-venv:</strong></a></li>
-        <li><a href="#3-node-packages">3. <strong>Node Packages:</strong></a></li>
-        <li><a href="#4-pynvim-package">4. <strong>pynvim Package:</strong></a></li>
-        <li><a href="#5-telescope-requirements">5. <strong>Telescope requirements:</strong></a></li>
-        <li><a href="#6-_optional_-for-godevs">6. <strong><em>Optional:</em> For GoDevs:</strong></a></li>
-        <li><a href="#7-_optional_-java">7. <strong><em>Optional:</em> Java</strong></a></li>
-        <li><a href="#8-clone-configuration-repo">8. <strong>Clone Configuration Repo:</strong></a></li>
-        <li><a href="#9-_optional_-win32yank-for-wsl">9. <strong><em>Optional:</em> win32yank for WSL</strong></a></li>
+        <li><a href="#terminal-emulators">Terminal Emulators</a></li>
+        <li><a href="#patched-fonts">Patched Fonts</a></li>
+      </ul>
+    </li>
+    <li><a href="#dependencies">Dependencies</a>
+      <ul>
+        <li><a href="#1-ensure-neovim-v09">1. Ensure Neovim v0.9+:</a></li>
+        <li><a href="#2-python">2. Python</a></li>
+        <li><a href="#3-install-python3-venv">3. Install python3-venv:</a></li>
+        <li><a href="#4-pynvim-package">4. pynvim Package:</a></li>
+        <li><a href="#5-node">5. Node:</a></li>
+        <li><a href="#6-node-packages">6. Node Packages:</a></li>
+        <li><a href="#7-telescope-requirements">7. Telescope requirements:</a></li>
+        <li><a href="#8-_optional_-for-godevs">8. <em>Optional:</em> For GoDevs:</a></li>
+        <li><a href="#9-_optional_-java">9. <em>Optional:</em> Java</a></li>
+        <li><a href="#10-clone-configuration-repo">10. Clone Configuration Repo:</a></li>
+        <li><a href="#11-_optional_-win32yank-for-wsl">11. <em>Optional:</em> win32yank for WSL</a></li>
       </ul>
     </li>
     <li><a href="#neovim-plugin-installation">Neovim Plugin Installation</a>
       <ul>
-        <li><a href="#1-open-neovim">1. <strong>Open Neovim:</strong></a></li>
-        <li><a href="#2-allow-the-plugins-to-load">2. <strong>Allow the plugins to load.</strong></a></li>
-        <li><a href="#3-language-servers-customizations">3. <strong>Language Servers Customizations:</strong></a></li>
-        <li><a href="#4-language-parsers-customizations">4. <strong>Language Parsers Customizations:</strong></a></li>
-        <li><a href="#5-_optional_-copilot-auto-completion">5. <strong><em>Optional</em>: Copilot auto-completion</strong></a></li>
-        <li><a href="#6-_for-java-developers_">6. <strong><em>For Java Developers:</em></strong></a></li>
-        <li><a href="#7-_for-wsl-users_">7. <strong><em>For WSL users</em>:</strong></a></li>
+        <li><a href="#1-open-neovim">1. Open Neovim:</a></li>
+        <li><a href="#2-allow-the-plugins-to-load">2. Allow the plugins to load.</a></li>
+        <li><a href="#3-language-servers-customizations">3. Language Servers Customizations:</a></li>
+        <li><a href="#4-language-parsers-customizations">4. Language Parsers Customizations:</a></li>
+        <li><a href="#5-_optional_-copilot-auto-completion">5. <em>Optional</em>: Copilot auto-completion</a></li>
+        <li><a href="#6-_for-java-developers_">6. <em>For Java Developers:</em></a></li>
+        <li><a href="#7-_for-wsl-users_">7. <em>For WSL users</em>:</a></li>
       </ul>
     </li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -952,8 +968,42 @@ Screenshots # Features # Plugins managed with lazy."/>
     </span>        
     
 </h2>
-<p>Before diving into the configuration, ensure you have the following prerequisites installed:</p>
-<h3 class="relative group">1. <strong>Ensure Neovim v0.9+:</strong> 
+<h3 class="relative group">Terminal Emulators 
+    <div id="terminal-emulators" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#terminal-emulators" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The terminal emulator you choose to use greatly affects the appearance and features on Nvim. Since Nvim supports true colors, terminals that supports true colors are preferred.</p>
+<p>For a list of terminals that support true colors, see <a href="https://github.com/termstandard/colors"   target="_blank">
+    here</a></p>
+<h3 class="relative group">Patched Fonts 
+    <div id="patched-fonts" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#patched-fonts" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Some plugins often use Unicode symbols that are not available in normal fonts, you need to install a patched font from the <a href="https://github.com/ryanoasis/nerd-fonts"   target="_blank">
+    nerd-fonts</a> project.</p>
+<h2 class="relative group">Dependencies 
+    <div id="dependencies" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#dependencies" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<h3 class="relative group">1. Ensure Neovim v0.9+: 
     <div id="1-ensure-neovim-v09" class="anchor"></div>
     
     <span
@@ -965,31 +1015,32 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>Ensure that you have Neovim version 0.9 or above installed. Check your Neovim version using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvim --version
-</span></span></code></pre></div><h3 class="relative group">2. <strong>Install python3-venv:</strong> 
-    <div id="2-install-python3-venv" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">2. Python 
+    <div id="2-python" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-install-python3-venv" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#2-python" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>A lot of Nvim plugins are mainly written in Python. Install python3 from <a href="https://www.python.org/downloads/"   target="_blank">
+    python.org</a> and ensure that typing <code>python --version</code> outputs Python 3.x. by adding python alias on your <code>.bashrc</code> or <code>.zshrc</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
+</span></span></code></pre></div><h3 class="relative group">3. Install python3-venv: 
+    <div id="3-install-python3-venv" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-install-python3-venv" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Install the <code>python3-venv</code> package using the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install python3-venv
-</span></span></code></pre></div><h3 class="relative group">3. <strong>Node Packages:</strong> 
-    <div id="3-node-packages" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#3-node-packages" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>Install neovim and tree-sitter node packages by running the following command:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i -g neovim tree-sitter
-</span></span></code></pre></div><h3 class="relative group">4. <strong>pynvim Package:</strong> 
+</span></span></code></pre></div><h3 class="relative group">4. pynvim Package: 
     <div id="4-pynvim-package" class="anchor"></div>
     
     <span
@@ -1001,27 +1052,57 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>Install the pynvim package using pip:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m pip install -U pynvim
-</span></span></code></pre></div><p>Ensure that the <code>python</code> command points to <code>python3</code> by adding the following alias on your <code>.bashrc</code> or <code>.zshrc</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">python</span><span class="o">=</span>python3
-</span></span></code></pre></div><h3 class="relative group">5. <strong>Telescope requirements:</strong> 
-    <div id="5-telescope-requirements" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">5. Node: 
+    <div id="5-node" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#5-telescope-requirements" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#5-node" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>To install node.js, you can use binaries from <a href="https://nodejs.org/en/download/"   target="_blank">
+    nodejs.org</a> or Node Version Manager <code>nvm</code>. I personally prefer using nvm as it allows you to quickly install and use different versions of node.</p>
+<p>Install nvm using either cURL or Wget:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh <span class="p">|</span> bash
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh <span class="p">|</span> bash
+</span></span></code></pre></div><p>Running either of the above commands runs a script that downloads nvm and sets up nvm source lines on your correct profile file (<code>.bash_profile</code>, <code>.zshrc</code>, <code>.profile</code>, or <code>.bashrc</code> )</p>
+<p>Reload the shell configuration. Replace <code>.zshrc</code> with your shell configuration file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
+</span></span></code></pre></div><p>Install the latest node version using the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvm install latest
+</span></span></code></pre></div><h3 class="relative group">6. Node Packages: 
+    <div id="6-node-packages" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-node-packages" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Install yarn, neovim and tree-sitter node packages by running the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm i -g yarn neovim tree-sitter
+</span></span></code></pre></div><h3 class="relative group">7. Telescope requirements: 
+    <div id="7-telescope-requirements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#7-telescope-requirements" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install ripgrep fd-find
-</span></span></code></pre></div><h3 class="relative group">6. <strong><em>Optional:</em> For GoDevs:</strong> 
-    <div id="6-_optional_-for-godevs" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">8. <em>Optional:</em> For GoDevs: 
+    <div id="8-_optional_-for-godevs" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#6-_optional_-for-godevs" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#8-_optional_-for-godevs" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1034,13 +1115,13 @@ Screenshots # Features # Plugins managed with lazy."/>
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/go/bin
 </span></span></code></pre></div><p>Install Go Language Server (gopls) with the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install golang.org/x/tools/gopls@latest
-</span></span></code></pre></div><h3 class="relative group">7. <strong><em>Optional:</em> Java</strong> 
-    <div id="7-_optional_-java" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">9. <em>Optional:</em> Java 
+    <div id="9-_optional_-java" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#7-_optional_-java" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#9-_optional_-java" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1061,25 +1142,25 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz <span class="o">&amp;&amp;</span> sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
 </span></span></code></pre></div></li>
 </ul>
-<h3 class="relative group">8. <strong>Clone Configuration Repo:</strong> 
-    <div id="8-clone-configuration-repo" class="anchor"></div>
+<h3 class="relative group">10. Clone Configuration Repo: 
+    <div id="10-clone-configuration-repo" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#8-clone-configuration-repo" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#10-clone-configuration-repo" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
 <p>Clone my Neovim configuration repository to <code>~/.config/nvim</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
-</span></span></code></pre></div><h3 class="relative group">9. <strong><em>Optional:</em> win32yank for WSL</strong> 
-    <div id="9-_optional_-win32yank-for-wsl" class="anchor"></div>
+</span></span></code></pre></div><h3 class="relative group">11. <em>Optional:</em> win32yank for WSL 
+    <div id="11-_optional_-win32yank-for-wsl" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#9-_optional_-win32yank-for-wsl" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#11-_optional_-win32yank-for-wsl" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
@@ -1127,7 +1208,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     </span>        
     
 </h2>
-<h3 class="relative group">1. <strong>Open Neovim:</strong> 
+<h3 class="relative group">1. Open Neovim: 
     <div id="1-open-neovim" class="anchor"></div>
     
     <span
@@ -1138,7 +1219,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     
 </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvim
-</span></span></code></pre></div><h3 class="relative group">2. <strong>Allow the plugins to load.</strong> 
+</span></span></code></pre></div><h3 class="relative group">2. Allow the plugins to load. 
     <div id="2-allow-the-plugins-to-load" class="anchor"></div>
     
     <span
@@ -1150,7 +1231,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>Wait for the plugins to download. Once the plugins are installed, issue the command <code>:Mason</code> to view the progress of LSPs, linters, formatters, and debuggers installations.</p>
 <p>Once everything has been installed, exit neovim and carry on with further configurations.</p>
-<h3 class="relative group">3. <strong>Language Servers Customizations:</strong> 
+<h3 class="relative group">3. Language Servers Customizations: 
     <div id="3-language-servers-customizations" class="anchor"></div>
     
     <span
@@ -1169,7 +1250,7 @@ Screenshots # Features # Plugins managed with lazy."/>
     mason-lspconfig</a>, <a href="https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim#Configuration"   target="_blank">
     mason-tool-installer</a> and <a href="https://github.com/jay-babu/mason-nvim-dap.nvim#Configuration"   target="_blank">
     mason-nvim-dap</a> configuration guides for more information on this.</p>
-<h3 class="relative group">4. <strong>Language Parsers Customizations:</strong> 
+<h3 class="relative group">4. Language Parsers Customizations: 
     <div id="4-language-parsers-customizations" class="anchor"></div>
     
     <span
@@ -1181,7 +1262,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 </h3>
 <p>I&rsquo;ve employed <code>nvim-treesitter</code> to customize language parsers. Explore their <a href="https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages"   target="_blank">
     list of supported languages</a>. To integrate a new language parser, just include it in the <code>ensure_installed</code> object within the <code>nvim-treesitter</code> configuration file (<code>~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua</code>). Treesitter will handle the automatic installation of parsers specified in the <code>ensure_installed</code> section.</p>
-<h3 class="relative group">5. <strong><em>Optional</em>: Copilot auto-completion</strong> 
+<h3 class="relative group">5. <em>Optional</em>: Copilot auto-completion 
     <div id="5-_optional_-copilot-auto-completion" class="anchor"></div>
     
     <span
@@ -1195,7 +1276,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <li>To use copilot auto completion, you need to have a github copilot subscription.</li>
 <li>Authenticate to Copilot using <code>:Copilot auth</code> command.</li>
 </ul>
-<h3 class="relative group">6. <strong><em>For Java Developers:</em></strong> 
+<h3 class="relative group">6. <em>For Java Developers:</em> 
     <div id="6-_for-java-developers_" class="anchor"></div>
     
     <span
@@ -1209,7 +1290,7 @@ Screenshots # Features # Plugins managed with lazy."/>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/.local/share/nvim/java-debug
 </span></span><span class="line"><span class="cl">./mvnw clean install
-</span></span></code></pre></div><h3 class="relative group">7. <strong><em>For WSL users</em>:</strong> 
+</span></span></code></pre></div><h3 class="relative group">7. <em>For WSL users</em>: 
     <div id="7-_for-wsl-users_" class="anchor"></div>
     
     <span
