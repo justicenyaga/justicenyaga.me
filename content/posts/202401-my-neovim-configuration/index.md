@@ -56,9 +56,19 @@ This article is a walkthrough on how to configure my neovim setup. My setup has 
 
 ## Prerequisites
 
-Before diving into the configuration, ensure you have the following prerequisites installed:
+### Terminal Emulators
 
-### 1. **Ensure Neovim v0.9+:**
+The terminal emulator you choose to use greatly affects the appearance and features on Nvim. Since Nvim supports true colors, terminals that supports true colors are preferred.
+
+For a list of terminals that support true colors, see [here](https://github.com/termstandard/colors)
+
+### Patched Fonts
+
+Some plugins often use Unicode symbols that are not available in normal fonts, you need to install a patched font from the [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) project.
+
+## Dependencies
+
+### 1. Ensure Neovim v0.9+:
 
 Ensure that you have Neovim version 0.9 or above installed. Check your Neovim version using:
 
@@ -66,7 +76,15 @@ Ensure that you have Neovim version 0.9 or above installed. Check your Neovim ve
 nvim --version
 ```
 
-### 2. **Install python3-venv:**
+### 2. Python
+
+A lot of Nvim plugins are mainly written in Python. Install python3 from [python.org](https://www.python.org/downloads/) and ensure that typing `python --version` outputs Python 3.x. by adding python alias on your `.bashrc` or `.zshrc`:
+
+```bash
+alias python=python3
+```
+
+### 3. Install python3-venv:
 
 Install the `python3-venv` package using the following command:
 
@@ -74,15 +92,7 @@ Install the `python3-venv` package using the following command:
 sudo apt install python3-venv
 ```
 
-### 3. **Node Packages:**
-
-Install neovim and tree-sitter node packages by running the following command:
-
-```bash
-npm i -g neovim tree-sitter
-```
-
-### 4. **pynvim Package:**
+### 4. pynvim Package:
 
 Install the pynvim package using pip:
 
@@ -90,14 +100,43 @@ Install the pynvim package using pip:
 python3 -m pip install -U pynvim
 ```
 
-Ensure that the `python` command points to `python3` by adding the following alias on your `.bashrc` or `.zshrc`:
+### 5. Node:
+
+To install node.js, you can use binaries from [nodejs.org](https://nodejs.org/en/download/) or Node Version Manager `nvm`. I personally prefer using nvm as it allows you to quickly install and use different versions of node.
+
+Install nvm using either cURL or Wget:
 
 ```bash
-alias python=python3
-
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-### 5. **Telescope requirements:**
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Running either of the above commands runs a script that downloads nvm and sets up nvm source lines on your correct profile file (`.bash_profile`, `.zshrc`, `.profile`, or `.bashrc` )
+
+Reload the shell configuration. Replace `.zshrc` with your shell configuration file:
+
+```bash
+source ~/.zshrc
+```
+
+Install the latest node version using the following command:
+
+```bash
+nvm install latest
+```
+
+### 6. Node Packages:
+
+Install yarn, neovim and tree-sitter node packages by running the following command:
+
+```bash
+npm i -g yarn neovim tree-sitter
+```
+
+### 7. Telescope requirements:
 
 For telescope to work without any issues, you need to have both ripgrep and fd packages. Install them using:
 
@@ -105,7 +144,7 @@ For telescope to work without any issues, you need to have both ripgrep and fd p
 sudo apt install ripgrep fd-find
 ```
 
-### 6. **_Optional:_ For GoDevs:**
+### 8. _Optional:_ For GoDevs:
 
 If you haven't installed Go, use the official [installation guide](https://go.dev/doc/install) on how to go about it.
 
@@ -124,7 +163,7 @@ Install Go Language Server (gopls) with the following command:
 go install golang.org/x/tools/gopls@latest
 ```
 
-### 7. **_Optional:_ Java**
+### 9. _Optional:_ Java
 
 For Java developer, follow the following steps:
 
@@ -149,7 +188,7 @@ For Java developer, follow the following steps:
   wget https://download.eclipse.org/jdtls/snapshots/jdt-language-server-1.31.0-202312211634.tar.gz && sudo tar -C /usr/local -xzf jdt-language-server-1.31.0-202312211634.tar.gz
   ```
 
-### 8. **Clone Configuration Repo:**
+### 10. Clone Configuration Repo:
 
 Clone my Neovim configuration repository to `~/.config/nvim`:
 
@@ -157,7 +196,7 @@ Clone my Neovim configuration repository to `~/.config/nvim`:
 git clone https://github.com/justicenyaga/my_nvim_config.git ~/.config/nvim
 ```
 
-### 9. **_Optional:_ win32yank for WSL**
+### 11. _Optional:_ win32yank for WSL
 
 For WSL users, install `win32yank` for clipboard interaction between Windows and WSL by following these steps:
 
@@ -187,34 +226,34 @@ These steps ensure the proper installation and configuration of `win32yank` as t
 
 ## Neovim Plugin Installation
 
-### 1. **Open Neovim:**
+### 1. Open Neovim:
 
 ```bash
 nvim
 ```
 
-### 2. **Allow the plugins to load.**
+### 2. Allow the plugins to load.
 
 Wait for the plugins to download. Once the plugins are installed, issue the command `:Mason` to view the progress of LSPs, linters, formatters, and debuggers installations.
 
 Once everything has been installed, exit neovim and carry on with further configurations.
 
-### 3. **Language Servers Customizations:**
+### 3. Language Servers Customizations:
 
 To add more language servers and debug adapters to the ones I've configured, check out the [lsp server](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md), [linters](https://github.com/mfussenegger/nvim-lint?tab=readme-ov-file#Usage), [formatters](https://github.com/stevearc/conform.nvim#Setup) and [debug adapter](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation) configuration guides.
 
 You can use `Mason` (opened with the command `:Mason`) to seamlessly install the configured servers. You can also use Mason to ensure certain servers, formatters, linters, and DAPs are installed. Check out the [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim#Configuration), [mason-tool-installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim#Configuration) and [mason-nvim-dap](https://github.com/jay-babu/mason-nvim-dap.nvim#Configuration) configuration guides for more information on this.
 
-### 4. **Language Parsers Customizations:**
+### 4. Language Parsers Customizations:
 
 I've employed `nvim-treesitter` to customize language parsers. Explore their [list of supported languages](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages). To integrate a new language parser, just include it in the `ensure_installed` object within the `nvim-treesitter` configuration file (`~/.config/nvim/lua/justice/plugins/nvim-treesitter.lua`). Treesitter will handle the automatic installation of parsers specified in the `ensure_installed` section.
 
-### 5. **_Optional_: Copilot auto-completion**
+### 5. _Optional_: Copilot auto-completion
 
 - To use copilot auto completion, you need to have a github copilot subscription.
 - Authenticate to Copilot using `:Copilot auth` command.
 
-### 6. **_For Java Developers:_**
+### 6. _For Java Developers:_
 
 Download and setup the `java-debug` extension. Install it on your neovim data folder `~/.local/share/nvim` using the following commands:
 
@@ -224,7 +263,7 @@ cd ~/.local/share/nvim/java-debug
 ./mvnw clean install
 ```
 
-### 7. **_For WSL users_:**
+### 7. _For WSL users_:
 
 Uncomment the wsl clipboard block on `~/.config/nvim/lua/justice/core/options.lua` if you are using WSL.
 
