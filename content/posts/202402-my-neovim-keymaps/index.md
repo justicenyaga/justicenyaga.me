@@ -19,6 +19,7 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `jk`         | Insert            | Exit insert mode                            |
 | `<leader>nh` | Normal            | Clear search highlights                     |
 | `<C-a>`      | Normal            | Select all                                  |
+| `<C-d>`      | Insert            | Delete word backwards                       |
 | `+`          | Normal            | Increment number under cursor               |
 | `-`          | Normal            | Decrement number under cursor               |
 | `<leader>rw` | Normal            | Toggle Find & Replace                       |
@@ -35,9 +36,13 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | ------------ | ------ | --------------------------------------- |
 | `<leader>sv` | Normal | Split window vertically                 |
 | `<leader>sh` | Normal | Split window horizontally               |
-| `<leader>se` | Normal | Make split windows equal width & height |
 | `<leader>sm` | Normal | Maximize/Minimize a split window        |
 | `<leader>sx` | Normal | Close current slit window               |
+| `<leader>se` | Normal | Make split windows equal width & height |
+| `<Up>`       | Normal | Increase window height                  |
+| `<Down>`     | Normal | Decrease window height                  |
+| `<Right>`    | Normal | Increase window width                   |
+| `<Left>`     | Normal | Decrease window width                   |
 
 {{</table>}}
 
@@ -235,7 +240,7 @@ And so on.
 | `<C-f>` | Insert | Scroll down                            |
 | `<C-c>` | Insert | Show completion suggestions            |
 | `<C-e>` | Insert | Close completion window/menu           |
-| `<CR>`  | Insert | Select suggestion                      |
+| `<C-y>` | Insert | Select suggestion                      |
 | `<C-l>` | Insert | Move to the right of snippet expansion |
 | `<C-h>` | Insert | Move to the left of snippet expansion  |
 
