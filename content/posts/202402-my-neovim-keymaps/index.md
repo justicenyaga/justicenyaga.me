@@ -19,12 +19,13 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `jk`         | Insert            | Exit insert mode                            |
 | `<leader>nh` | Normal            | Clear search highlights                     |
 | `<C-a>`      | Normal            | Select all                                  |
-| `<C-d>`      | Insert            | Delete word backwards                       |
+| `<M-BS>`     | Insert            | Delete word backwards                       |
 | `+`          | Normal            | Increment number under cursor               |
 | `-`          | Normal            | Decrement number under cursor               |
 | `<leader>rw` | Normal            | Toggle Find & Replace                       |
 | `<leader>rc` | Normal            | Toggle Find & Replace for word under cursor |
 | `<C-z>`      | Normal & Terminal | Toggle FTerm terminal                       |
+| `<leader>wt` | Normal & Terminal | Echo today's coding time                    |
 
 {{</table>}}
 
@@ -357,6 +358,7 @@ And so on.
 | `<leader>gs`  | Normal          | Toggle open/close of status tab                               |
 | `<leader>gd`  | Normal          | Toggle open/close of diff tab                                 |
 | `<leader>gg`  | Normal          | Open git graph                                                |
+| `<leader>gou` | Normal          | Open git object in browser at upstream hosting provider       |
 
 {{</table>}}
 
@@ -472,6 +474,7 @@ And so on.
 | `<leader>gPs` | Normal | Git force push                 |
 | `<leader>gpl` | Normal | Git pull                       |
 | `<leader>gPl` | Normal | Git force pull                 |
+| `<leader>gpo` | Normal | Git push -u origin main        |
 | `<leader>gpu` | Normal | Populate git push set upstream |
 | `<leader>gra` | Normal | Populate add remote            |
 | `<leader>grd` | Normal | Populate remove remote         |
