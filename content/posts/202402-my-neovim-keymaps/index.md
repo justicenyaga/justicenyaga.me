@@ -25,7 +25,6 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `<leader>rw`        | Normal            | Toggle Find & Replace                       |
 | `<leader>rc`        | Normal            | Toggle Find & Replace for word under cursor |
 | `<C-z>`             | Normal & Terminal | Toggle FTerm terminal                       |
-| `<leader>wt`        | Normal & Terminal | Echo today's coding time                    |
 
 {{</table>}}
 
@@ -103,12 +102,14 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `]i`   | Normal | Jump to next conditional start                    |
 | `]l`   | Normal | Jump to next loop start                           |
 | `]h`   | Normal | Jump to next git hunk start                       |
+| `]t`   | Normal | Jump to next todo comment                         |
 | `[f`   | Normal | Jump to previous function call start              |
 | `[m`   | Normal | Jump to previous method/function definition start |
 | `[c`   | Normal | Jump to previous class start                      |
 | `[i`   | Normal | Jump to previous conditional start                |
 | `[l`   | Normal | Jump to previous loop start                       |
 | `[h`   | Normal | Jump to previous git hunk end                     |
+| `[t`   | Normal | Jump to previous todo comment                     |
 
 {{</table>}}
 
@@ -218,6 +219,37 @@ And so on.
 | `<leader>2` | Normal | Go to second file on harpoon marked list   |
 | `<leader>3` | Normal | Go to third file on harpoon marked list    |
 | `<leader>4` | Normal | Go to fourth file on harpoon marked list   |
+
+{{</table>}}
+
+## Wakatime Keymaps
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap       | Mode   | Description              |
+| ------------ | ------ | ------------------------ |
+| `<leader>ct` | Normal | Echo today's coding time |
+
+{{</table>}}
+
+## Auto Session Keymaps
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap       | Mode   | Description                           |
+| ------------ | ------ | ------------------------------------- |
+| `<leader>wr` | Normal | Restore session for current directory |
+| `<leader>ws` | Normal | Save current session                  |
+
+{{</table>}}
+
+## Code Runner Keymaps
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap       | Mode   | Description                         |
+| ------------ | ------ | ----------------------------------- |
+| `<leader>ex` | Normal | Toggle code runner for current file |
 
 {{</table>}}
 
