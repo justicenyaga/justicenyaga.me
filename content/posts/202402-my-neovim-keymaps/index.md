@@ -303,6 +303,21 @@ And so on.
 
 {{</table>}}
 
+## Trouble Keymaps
+
+{{<table "table table-striped table-bordered">}}
+
+| Keymap       | Mode   | Description                        |
+| ------------ | ------ | ---------------------------------- |
+| `<leader>xx` | Normal | Toggle trouble list                |
+| `<leader>xw` | Normal | Open trouble workspace diagnostics |
+| `<leader>xd` | Normal | Open trouble document diagnostics  |
+| `<leader>xq` | Normal | Open trouble quickfix list         |
+| `<leader>xl` | Normal | Open trouble location list         |
+| `<leader>xt` | Normal | Open todos in trouble              |
+
+{{</table>}}
+
 ## Debugging Keymaps
 
 {{<table "table table-striped table-bordered">}}
