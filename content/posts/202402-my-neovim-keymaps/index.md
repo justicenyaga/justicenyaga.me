@@ -17,7 +17,7 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | ------------------- | ----------------- | ------------------------------------------- |
 | `<Space>`           | N/A               | Leader key                                  |
 | `jk`                | Insert            | Exit insert mode                            |
-| `<leader>nh`        | Normal            | Clear search highlights                     |
+| `<ESC>`             | Normal            | Clear search highlights                     |
 | `<C-a>`             | Normal            | Select all                                  |
 | `<C-h>` or `<C-BS>` | Insert            | Delete word backwards                       |
 | `+`                 | Normal            | Increment number under cursor               |
