@@ -247,9 +247,10 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap       | Mode   | Description                         |
-| ------------ | ------ | ----------------------------------- |
-| `<leader>ex` | Normal | Toggle code runner for current file |
+| Keymap       | Mode   | Description        |
+| ------------ | ------ | ------------------ |
+| `<leader>rf` | Normal | Toggle run file    |
+| `<leader>rp` | Normal | Toggle run project |
 
 {{</table>}}
 
