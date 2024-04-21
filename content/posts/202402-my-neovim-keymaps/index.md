@@ -13,18 +13,17 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap              | Mode              | Description                                 |
-| ------------------- | ----------------- | ------------------------------------------- |
-| `<Space>`           | N/A               | Leader key                                  |
-| `jk`                | Insert            | Exit insert mode                            |
-| `<ESC>`             | Normal            | Clear search highlights                     |
-| `<C-a>`             | Normal            | Select all                                  |
-| `<C-h>` or `<C-BS>` | Insert            | Delete word backwards                       |
-| `+`                 | Normal            | Increment number under cursor               |
-| `-`                 | Normal            | Decrement number under cursor               |
-| `<leader>rw`        | Normal            | Toggle Find & Replace                       |
-| `<leader>rc`        | Normal            | Toggle Find & Replace for word under cursor |
-| `<C-z>`             | Normal & Terminal | Toggle FTerm terminal                       |
+| Keymap       | Mode              | Description                                 |
+| ------------ | ----------------- | ------------------------------------------- |
+| `<Space>`    | N/A               | Leader key                                  |
+| `jk`         | Insert            | Exit insert mode                            |
+| `<ESC>`      | Normal            | Clear search highlights                     |
+| `<C-a>`      | Normal            | Select all                                  |
+| `+`          | Normal            | Increment number under cursor               |
+| `-`          | Normal            | Decrement number under cursor               |
+| `<leader>rw` | Normal            | Toggle Find & Replace                       |
+| `<leader>rc` | Normal            | Toggle Find & Replace for word under cursor |
+| `<C-z>`      | Normal & Terminal | Toggle FTerm terminal                       |
 
 {{</table>}}
 
