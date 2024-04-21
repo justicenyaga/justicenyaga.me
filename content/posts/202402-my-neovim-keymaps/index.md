@@ -377,10 +377,9 @@ And so on.
 
 {{<table "table table-striped table-bordered">}}
 
-| Keymap        | Mode   | Description       |
-| ------------- | ------ | ----------------- |
-| `<leader>lss` | Normal | Start Live Server |
-| `<leader>lse` | Normal | Stop Live Server  |
+| Keymap       | Mode   | Description        |
+| ------------ | ------ | ------------------ |
+| `<leader>ls` | Normal | Toggle Live Server |
 
 {{</table>}}
 
