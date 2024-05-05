@@ -86,6 +86,7 @@ In this article, I'll be sharing the keymaps I've configured within my Neovim se
 | `<leader>ef` | Normal | Toggle file explorer on the current file |
 | `<leader>ec` | Normal | Collapse file explorer                   |
 | `<leader>er` | Normal | Refresh file explorer                    |
+| `<leader>fe` | Normal | Toggle mini.files Explorer               |
 
 {{</table>}}
 
